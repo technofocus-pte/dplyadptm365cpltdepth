@@ -2,9 +2,6 @@
 
 **Duration: 25 mins**
 
-![Researcher: A reasoning agent in Microsoft 365 Copilot -
-YouTube](media/image1.jpeg)
-
 ## Overview
 
 -   In this lab, you will learn how to use the **Researcher Agent** in
