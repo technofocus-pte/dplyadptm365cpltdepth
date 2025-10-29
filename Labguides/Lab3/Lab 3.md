@@ -2,7 +2,7 @@
 
 **Duration: 20 minutes**
 
-Objective:
+## Objective:
 
 In this lab you will create and configure a Copilot agent using the
 Describe and Configure tabs.
