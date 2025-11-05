@@ -1,4 +1,4 @@
-# Lab 4- Zava’s Journey to AI Integration – Building MCP-Powered Agents in Microsoft Copilot Studio
+# Lab 8- Zava’s Journey to AI Integration – Building MCP-Powered Agents in Microsoft Copilot Studio
 
 **Scenario:**
 
