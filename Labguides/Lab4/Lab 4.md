@@ -29,39 +29,39 @@ in OneDrive.
     file** from "C:\\LabFiles\\Market Analysis Report for Mystic Spice
     Premium Chai Tea.docx"
 
-![](media/image1.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image1.png)
 
 2.  Ensure Files Are Accessible by Copilot
 
--   Open the document in **Word Online, Excel Online, or PowerPoint
-    Online**.
+	-   Open the document in **Word Online, Excel Online, or PowerPoint
+		Online**.
 
--   Try using **Copilot** inside the file (e.g., “Summarize this
-    document”).
+	-   Try using **Copilot** inside the file (e.g., “Summarize this
+		document”).
 
 3.  You need to sign in to the desktop apps using user/admin credentials
     given in the environment.
 
--   Enter the username and password provided under **Resources** tab on
-    the right hand side of your environment, and click **sign in**
+	-   Enter the username and password provided under **Resources** tab on
+		the right hand side of your environment, and click **sign in**
 
-> ![](media/image2.png)
->
-> ![](media/image3.png)
->
-> ![](media/image4.png)
->
-> ![](media/image5.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image2.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image3.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image4.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image5.png)
 
--   Accept the licence agreement and proceed.
+	-   Accept the licence agreement and proceed.
 
-> ![](media/image6.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image6.png)
 
 4.  Now your word document is open and ready to explore
 
 -   Click on Enable editing to avail the document for analysing
 
-![](media/image7.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image7.png)
 
 ## Exercise 2: Using Microsoft 365 Copilot in Word
 
@@ -75,60 +75,58 @@ citations from where Copilot pulled information in your document.
 
 2.  **Open the Copilot Pane in word file**
 
--   Go to the **Home** tab
+	-   Go to the **Home** tab
 
--   Select the **Copilot icon** to open the Copilot pane.
+	-   Select the **Copilot icon** to open the Copilot pane.
 
-![](media/image8.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image8.png)
 
--   Click on Copilot icon to view the Copilot chat interface
+	-   Click on Copilot icon to view the Copilot chat interface
 
-![](media/image9.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image9.png)
 
 3.  **Interact with Copilot**  
     Use the following prompts to explore Copilot capabilities:
 
-&nbsp;
-
 1.  **Basic prompt: +++Is there a call to action?+++**
 
-**Purpose:** Quickly identify if the document contains a key actionable
-message.
+	**Purpose:** Quickly identify if the document contains a key actionable
+	message.
 
-![](media/image10.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image10.png)
 
-![](media/image11.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image11.png)
 
 2.  **Good prompt:** +++Is there a call to action in this market
     analysis report?+++
 
-**Purpose:** Add a source reference to improve context.
+	**Purpose:** Add a source reference to improve context.
 
-![](media/image12.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image12.png)
 
-![](media/image13.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image13.png)
 
 3.  **Better prompt**: +++Is there a call to action in this market
     analysis report to address our challenges and concerns? Please check
     if the marketing plan includes a clear and specific plan of action,
     such as a promotional plan or limited-time discount.+++
 
-**Purpose:** Add context for more tailored insights.
+	**Purpose:** Add context for more tailored insights.
 
-![](media/image14.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image14.png)
 
-![](media/image15.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image15.png)
 
-4.  **Best prompt: +++**Is there a call to action in this market
+4.  **Best prompt**: +++Is there a call to action in this market
     analysis report to address our challenges and concerns? Please
     provide suggestions for improving the call to action if
     necessary.+++
 
-**Purpose**: Set clear expectations to receive detailed recommendations
+	**Purpose**: Set clear expectations to receive detailed recommendations
 
-![](media/image16.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image16.png)
 
-![](media/image17.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image17.png)
 
 5.  **Observe the Response**
 
@@ -145,18 +143,18 @@ example:
 -   **Prompt**: +++How can I edit this document to make it sound more
     academic?+++
 
-> ![](media/image18.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image18.png)
 >
-> ![](media/image19.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image19.png)
 
 -   **Prompt**: **+++Is there a quote by a United States President about
     courage?+++**
 
-> ![](media/image20.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image20.png)
 >
-> ![](media/image21.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image21.png)
 >
-> ![](media/image22.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab4/media/image22.png)
 
 ## Next Steps
 
@@ -178,5 +176,4 @@ In this lab, you:
 
 -   Practiced crafting effective prompts for Copilot in Word.
 
--   Learned how to extract summaries, identify key messages, and
-    generate contextual recommendations.
+-   Learned how to extract summaries, identify key messages, and generate contextual recommendations.

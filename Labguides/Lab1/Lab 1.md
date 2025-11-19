@@ -3,7 +3,8 @@
 Duration **: 25 mins**
 
 ![Get started with Analyst in Microsoft 365 Copilot - Microsoft
-Support](media/image1.png)
+Support] (https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image1.png)
+
 
 # Objective
 
@@ -17,45 +18,40 @@ averages, and create visuals (charts, heatmaps, etc.).
 1.  Access to Microsoft 365 account with Copilot & Agents enabled
     (Analyst agent available).
 
-2.  Browser: Microsoft Edge recommended (module uses Edge in
-    instructions).
+2.  Browser: Microsoft Edge recommended (module uses Edge in instructions).
 
-3.  Project Nexus Survey Results CSV / XLSX (the Learn page links to a
-    GitHub download).
+3.  Project Nexus Survey Results CSV / XLSX (the Learn page links to a GitHub download).
 
 ## Exercise 1: Set Up and Load the Dataset
 
-1.  **Open a new tab in Microsoft Edge** and navigate to
-    <https://M365copilot.com>.  
-    **Sign in** using the **username and password** provided under the
-    **Resources** tab in the right pane of your lab environment.
+1.  **Open a new tab in Microsoft Edge** and navigate to +++https://M365copilot.com+++. **Sign in** using the **username and password** provided under the **Resources** tab in the right pane of your lab environment.
 
-![](media/image2.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image2.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image3.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image3.png)
 
-![A screenshot of a computer error AI-generated content may be
-incorrect.](media/image4.png)
+	![A screenshot of a computer error AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image4.png)
 
 2.  In Microsoft 365, open the **Analyst** agent.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image5.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image5.png)
 
 3.  If it’s not visible, go to **Expand navigation** icon choose
     **Agents** → select **Analyst Agent**.
 
-![A screenshot of a chat AI-generated content may be
-incorrect.](media/image6.png)
+	![A screenshot of a chat AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image6.png)
 
 4.  Click the prompt field’s **Add content and agents (+)** icon →
     **Upload images and files** → select **Project Nexus survey
     results** lab file from C:\\Lab File.
 
-![](media/image7.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image7.png)
 
-![](media/image8.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image8.png)
 
 > **Note**: After the file is uploaded, you’re ready to start exploring
 > and interacting with the **Analyst Agent.**
@@ -67,27 +63,26 @@ incorrect.](media/image6.png)
     Wait for the Analyst agent to run its analysis and validate the
     response.
 
-> ![A screenshot of a chat AI-generated content may be
-> incorrect.](media/image9.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](media/image10.png)
->
-> **Note**: the page warns of a possible large blank space in the UI —
-> scroll up to see results if it appears.
+	> ![A screenshot of a chat AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image9.png)
+	>
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image10.png)
+	>
+	> **Note**: the page warns of a possible large blank space in the UI —
+	> scroll up to see results if it appears.
+	>
+	> ![A screenshot of a survey AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image11.png)
+
+2.  In the prompt field enter the following prompt and validate agent response and then click on the **Execute** button.
+
+ +++What is the average rating for each survey category?+++
+
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image12.png)
 >
 > ![A screenshot of a survey AI-generated content may be
-> incorrect.](media/image11.png)
-
-2.  In the prompt field enter the following prompt and validate agent
-    response and then click on the **Execute** button.
-
-> +++**What is the average rating for each survey category?+++**
->
-> ![](media/image12.png)
->
-> ![A screenshot of a survey AI-generated content may be
-> incorrect.](media/image13.png)
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image13.png)
 
 ## Exercise 3: Try Extra Prompts (Quantitative, Qualitative, and Visualization)
 
@@ -100,45 +95,43 @@ dataset.
 
 Agent seeks to obtain numerical or measurable information from data.
 
-1.  In the prompt field enter the following prompt and validate agent
-    response and then click on the **Execute** button.
+1.  In the prompt field enter the following prompt and validate agent response and then click on the **Execute** button.
 
-+++How many participants rated the project satisfaction as 4 or
-higher?+++
+	+++How many participants rated the project satisfaction as 4 or
+	higher?+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image14.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image14.png)
 
-**Response Summary:**
+	**Response Summary:**
 
--   A total of **22 participants** rated the project satisfaction as **4
-    (Good)** or **5 (Excellent)** in the Project Nexus survey.
+	-   A total of **22 participants** rated the project satisfaction as **4
+		(Good)** or **5 (Excellent)** in the Project Nexus survey.
 
--   The detailed rating breakdown is:
+	-   The detailed rating breakdown is:
 
-    -   (Poor): 11 responses
+		-   (Poor): 11 responses
 
-    -   (Fair): 7 responses
+		-   (Fair): 7 responses
 
-    -   (Neutral): 10 responses
+		-   (Neutral): 10 responses
 
-    -   (Good): 14 responses
+		-   (Good): 14 responses
 
-    -   (Excellent): 8 responses
+		-   (Excellent): 8 responses
 
--   The calculation: **14 (Good) + 8 (Excellent) = 22 participants**
-    expressing positive satisfaction.
+		-   The calculation: **14 (Good) + 8 (Excellent) = 22 participants**
+			expressing positive satisfaction.
 
-![A screenshot of a survey AI-generated content may be
-incorrect.](media/image15.png)
+	![A screenshot of a survey AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image15.png)
 
 2.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
 
-+++Which category received the highest average rating, and which
-received the lowest**?+++**
+	+++Which category received the highest average rating, and which received the lowest?+++
 
-![](media/image16.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image16.png)
 
 **Response summary:**
 
@@ -148,12 +141,10 @@ received the lowest**?+++**
 
 -   📊 Average Ratings Summary
 
-[TABLE]
-
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image17.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image17.png)
 
-### Qualitative analysis prompts**:** 
+### **Qualitative analysis prompts**:
 
 Agent seeks to explore **opinions, experiences, perceptions, or
 descriptive insights** from data rather than numerical values.
@@ -161,29 +152,29 @@ descriptive insights** from data rather than numerical values.
 1.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
 
-+++Summarize the most common themes in the comments section.+++
+	+++Summarize the most common themes in the comments section.+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image18.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image18.png)
 
-**Response summary:**
+	**Response summary:**
 
--   The **Analyst** identified key **themes** from participants’
-    comments related to project satisfaction.
+	-   The **Analyst** identified key **themes** from participants’
+		comments related to project satisfaction.
 
--   Each theme includes the **number of mentions** and **example
-    comments** representing participant feedback.
+	-   Each theme includes the **number of mentions** and **example
+		comments** representing participant feedback.
 
-![](media/image19.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image19.png)
 
 2.  In the prompt field enter the following prompt and validate agent
     response and then click on the Execute button.
 
-+++Are there any recurring concerns or suggestions mentioned in the
-comments**?+++**
+	+++Are there any recurring concerns or suggestions mentioned in the
+	comments?+++
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image20.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image20.png)
 
 **Response summary:**
 
@@ -191,7 +182,7 @@ incorrect.](media/image20.png)
     from the Project Nexus survey comments.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image21.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image21.png)
 
 ### Insight and recommendation prompts
 
@@ -201,19 +192,19 @@ and **suggest actionable next steps** based on the analysis.
 1.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
 
-+++Based on the survey data, what are the top three strengths of Project
-Nexus?+++
+	+++Based on the survey data, what are the top three strengths of Project
+	Nexus?+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image22.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image22.png)
 
-**Response summary:**
+	**Response summary:**
 
--   The **Analyst** identified **key strengths** from the Project Nexus
-    survey data and comments.
+	-   The **Analyst** identified **key strengths** from the Project Nexus
+		survey data and comments.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image23.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image23.png)
 
 2.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
@@ -221,7 +212,7 @@ incorrect.](media/image23.png)
 +++What are the key areas for improvement suggested by the
 participants?+++
 
-![](media/image24.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image24.png)
 
 Response summary:
 
@@ -230,7 +221,7 @@ Response summary:
     Nexus survey.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image25.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image25.png)
 
 ### Quantitative visualization prompts
 
@@ -241,18 +232,18 @@ compare.
 1.  In the prompt field enter the following prompt and validate agent
     response and then click on the Execute button.
 
-**+++**Generate a pie chart of overall ratings distribution**.+++**
+	**+++Generate a pie chart of overall ratings distribution+++**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image26.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image26.png)
 
-Response summary:
+	Response summary:
 
--   The **Analyst** generated a **pie chart** to visually represent the
-    **distribution of Overall Experience ratings** from the Project
-    Nexus survey.
+	-   The **Analyst** generated a **pie chart** to visually represent the
+		**distribution of Overall Experience ratings** from the Project
+		Nexus survey.
 
-![](media/image27.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image27.png)
 
 2.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
@@ -261,7 +252,7 @@ Response summary:
 Satisfaction, Communication Effectiveness, Timeline Adherence, and
 Overall Experience.+++
 
-![](media/image28.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image28.png)
 
 **Response summary:**
 
@@ -270,7 +261,7 @@ Overall Experience.+++
     and provided a numerical summary
 
 ![A screenshot of a graph AI-generated content may be
-incorrect.](media/image29.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image29.png)
 
 ## Exercise 4: Instruction for Actionable Item for End User
 
@@ -287,31 +278,30 @@ patterns or relationships.
 1.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
 
-+++What percentage of participants rated timeline adherence below 3?+++
+	+++What percentage of participants rated timeline adherence below 3?+++
+
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image30.png)
+
+	> This will calculate the proportion of participants who gave low
+	> ratings for timeline adherence.
+	>
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image31.png)
+
+2.  In the prompt field enter the following prompt and validate agent response and then click on the **Execute** button.
+
+	+++Can you identify any correlations between communication effectiveness
+	and overall experience?+++
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image30.png)
-
-> This will calculate the proportion of participants who gave low
-> ratings for timeline adherence.
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](media/image31.png)
-
-2.  In the prompt field enter the following prompt and validate agent
-    response and then click on the **Execute** button.
-
-+++Can you identify any correlations between communication effectiveness
-and overall experience?+++
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image32.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image32.png)
 
 The Analyst will calculate the correlation coefficient and interpret how
 strongly these two categories are related.
 
 ![A screenshot of a chat AI-generated content may be
-incorrect.](media/image33.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image33.png)
 
 > **Expected Outcome:**
 >
@@ -330,14 +320,14 @@ feedback** from open-ended survey comments.
 timeline.+++
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image34.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image34.png)
 
 This will filter comments containing specific keywords or related
 concerns. Review the extracted comments to identify recurring phrases or
 themes.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image35.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image35.png)
 
 **Expected Outcome:**  
 A categorized list of qualitative insights highlighting feedback
@@ -354,12 +344,12 @@ recommendations** based on both quantitative and qualitative data.
 +++Provide a summary report of the survey findings with actionable
 recommendations.+++
 
-![](media/image36.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image36.png)
 
 The Analyst will compile key takeaways, highlight strengths and
 weaknesses, and suggest improvement actions.
 
-![](media/image37.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image37.png)
 
 **Expected Outcome:**  
 A summarized report containing strategic insights and recommendations
@@ -373,13 +363,13 @@ results more interpretable and presentation-ready.
 1.  In the prompt field enter the following prompt and validate agent
     response and then click on the **Execute** button.
 
-+++Plot a histogram of the satisfaction ratings to see the distribution
-of ratings.+++
+	+++Plot a histogram of the satisfaction ratings to see the distribution
+	of ratings.+++
 
-![](media/image38.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image38.png)
 
-![A screenshot of a graph AI-generated content may be
-incorrect.](media/image39.png)
+	![A screenshot of a graph AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image39.png)
 
 2.  Execute below give prompt as shown in above steps:
 
@@ -411,7 +401,7 @@ Here's a brief overview of the tasks associated with each icon shown in
 your screenshot:
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image40.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image40.png)
 
 1.  **Clipboard Icon** – Likely used for **copying or pasting** content.
 
@@ -446,9 +436,9 @@ report, document, or presentation.
     You might copy “22 participants rated the project satisfaction as 4
     or higher” to include in your project summary file.
 
-> ![](media/image41.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image41.png)
 >
-> ![](media/image42.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image42.png)
 
 ### Download Button
 
@@ -467,7 +457,7 @@ reports** for visual representation.
     Ratings”** pie chart to include in your survey analysis
     presentation.  
       
-    ![](media/image43.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image43.png)
 
 ### Troubleshooting and validation tips
 
@@ -494,3 +484,6 @@ into meaningful recommendations. Finally, participants practiced
 exporting and reusing analytical outputs, reinforcing how Copilot can
 streamline data analysis, reporting, and presentation tasks — making
 business insights faster, clearer, and more accessible.
+
+
+

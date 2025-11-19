@@ -45,26 +45,29 @@ access to.
 
 1.  Sign in to **SharePoint site**.
 
--   Click on the given link and open the Microsoft SharePoint log in
-    page
+	-   Click on the given link and open the Microsoft SharePoint log in
+		page
 
-> <https://www.microsoft.com/en/microsoft-365/sharepoint/collaboration?market=af>
+	+++https://www.microsoft.com/en/microsoft-365/sharepoint/collaboration?market=af+++
 
-![](media/image1.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image1.png)
 
 2.  Click on **Sign in** button and provide the user credentials given
     in your environment under **Resources** tab to sign in to the
     SharePoint site
+	
+	- +++@lab.CloudPortalCredential(User1).Username+++
+	- +++@lab.CloudPortalCredential(User1).AccessToken+++
 
-> ![](media/image2.png)
->
-> ![](media/image3.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image2.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image3.png)
 
--   Click **Yes**, to stay signed in
+	-   Click **Yes**, to stay signed in
 
-> ![](media/image4.png)
->
-> ![](media/image5.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image4.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image5.png)
 
 3.  In the SharePoint site open the already existed site, if you don’t
     have the existed site create one
@@ -72,20 +75,21 @@ access to.
 4.  Click **Create site** button on top left corner of SharePoint site
     home page to create a new site
 
-> ![](media/image6.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image6.png)
 
-5.  Here, I am selecting the existing SharePoint Communication site
-    named **ContosoSite**.
+5.  Here, I am selecting the existing SharePoint Communication site named **ContosoSite**. 
 
-![](media/image7.png)
+    >[!Note] If asked to select a template, choose the **Standard Communication** template and name it +++ContosoSite@lab.LabInstance.Id+++.
+
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image7.png)
 
 ## Exercise 2: Create Your New Agent
 
 1.  Create a new agent for **ContosoSite**
 
--   On the ContosoSite **homepage**, select **+ New → Agent**.
+	-   On the ContosoSite **homepage**, select **+ New → Agent**.
 
-![](media/image8.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image8.png)
 
 2.  **Open the Agent Creation Page**  
     You will see three main tabs at the top: **Overview**, **Sources**,
@@ -96,25 +100,24 @@ access to.
 
 1.  In the **Overview** tab:
 
-    -   Enter the **Agent Name** : Project Knowledge Assistant
+-   Enter the **Agent Name** : +++Project Knowledge Assistant+++
 
-![](media/image9.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image9.png)
 
--   Provide a **Description**: Helps users find project documents and
-    summaries
+-   Provide a **Description**: +++Helps users find project documents and summaries+++
 
-![](media/image10.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image10.png)
 
 -   (Optional) Select **Change icon** and upload a .png file (max size:
     1 MB).
 
-![](media/image11.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image11.png)
 
 ### Exercise 2.2: Add Knowledge Sources
 
-1.  Navigate to the **Source** tab in the Create new agent window
+1.  Navigate to the **Sources** tab in the Create new agent window
 
-> ![](media/image12.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image12.png)
 
 2.  Choose one of the following:
 
@@ -122,7 +125,7 @@ access to.
 
     -   **Sourced from document libraries, folders, or files**
 
-**Note:** Here we choose to go with the default source.
+	**Note:** Here we choose to go with the default source.
 
 3.  If selecting Sourced from document libraries, folders, or files:
 
@@ -136,7 +139,7 @@ access to.
 
     -   Click Select.
 
-![](media/image13.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image13.png)
 
 **Note**: You can add up to 20 sources for a single agent.
 
@@ -144,110 +147,106 @@ access to.
 
 1.  Navigate to the **Behavior** tab in Create new agent window
 
-> ![](media/image14.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image14.png)
 
 2.  Configure the following:
 
--   Welcome Message:  
-    *+++*Hi! I can help you locate project documents and summarize
-    updates*+++*
+    -   Welcome Message:  +++Hi! I can help you locate project documents and summarize updates.+++
 
--   Starter Prompts (max 3):
+    -   Starter Prompts (max 3):
 
-    1.  +++Summarize the latest project updates.+++
+        1.  +++Summarize the latest project updates.+++
 
-    2.  +++Find budget-related documents.+++
+        2.  +++Find budget-related documents.+++
 
-    3.  +++Who authored the project plan?+++
+        3.  +++Who authored the project plan?+++
 
-> ![](media/image15.png)
+        > ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image15.png)
 
--   **Instructions:**  
-    +++Provide concise answers using only verified information from
-    included SharePoint sources.+++
+        -   **Instructions:**  
+            +++Provide concise answers using only verified information from
+            included SharePoint sources.+++
 
-![](media/image16.png)
+        ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image16.png)
 
-3.  Click on **Save and close** to save all the configurations.
+3.  Click on **Create** to save all the configurations and **Chat with agent**.
+
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image17.png)
 
 ## Exercise 3: Test Your Agent
 
 1.  After saving, open the **Copilot chat pane**.
 
--   Click **Chat with agent** to open agent chat window in the
-    SharePoint **ContosoSite**.
+	-   Now you see the **Project Knowledge Assistant** agent panel in the right hand side of your **ContosoSite**
 
-> ![](media/image17.png)
+    > [!Note] you might have to select the copilot icon in the top right corner of the site.
 
--   Now you see the **Project Knowledge Assistant** agent panel in the
-    right hand side of your **ContosoSite**
+	-   You can also switch between agents from the agent drop down
 
--   You can also switch between agents from the agent drop down
-
-> ![](media/image18.png)
->
-> ![](media/image19.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image18.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image19.png)
 
 2.  Enter one of the starter prompts in the agent chat field:
 
-> **Prompt**: +++Summarize the project plan+++
->
-> ![](media/image20.png)
+	> **Prompt**: +++Summarize the project plan+++
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image20.png)
 
 3.  Observe the response.
 
--   As shown in the image, the **Project Knowledge Assistant** does not
-    return any specific project report details.
+	-   As shown in the image, the **Project Knowledge Assistant** does not
+		return any specific project report details.
 
--   This happens because the **ContosoSite** source currently **does not
-    contain any project report files or related data**.
+	-   This happens because the **ContosoSite** source currently **does not
+		contain any project report files or related data**.
 
-> ![](media/image21.png)
->
-> **Note**: You can upload a document or a project report to your
-> ContosoSite library
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image21.png)
+	>
+	> **Note**: You can upload a document or a project report to your
+	> ContosoSite library
 
 4.  Upload a document to your SharePoint **ContosoSite** library
 
--   Go to **ContosoSite** Home page, click on **Toggle navigation pane**
+	-   Go to **ContosoSite** Home page, click on **Toggle navigation pane**
 
--   Select **Documents** option from the dropdown
+	-   Select **Documents** option from the dropdown
 
-![](media/image22.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image22.png)
 
--   You will see the empty documents library of your ContosoSite
+	-   You will see the empty documents library of your ContosoSite
 
--   Click on **Upload** dropdown and select the **file**, **folder**, or
-    **template** you want to upload to the site library.
+	-   Click on **Upload** dropdown and select the **file**, **folder**, or
+		**template** you want to upload to the site library.
 
-> ![](media/image23.png)
->
-> ![](media/image24.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image23.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image24.png)
 
--   Select the file from your **OneDrive** and click **Open** to upload
+	-   Select the file **Project Nexus Survery Results** from your **OneDrive** and click **Open** to upload
 
-> ![](media/image25.png)
->
-> ![](media/image26.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image25.png)
+	>
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image26.png)
 
--   Your **Project Nexus survey results** file is successfully uploaded
-    to the **ContosoSite** documents library
+	-   Your **Project Nexus survey results** file is successfully uploaded
+		to the **ContosoSite** documents library
 
-> ![](media/image27.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image27.png)
 
 5.  Test your agent for the new default source Project Nexus Survey
     results
 
 -   Enter the prompt in the agent chat panel and verify the response
 
-Prompt: +++**Summarise the latest project updates**+++
+    Prompt: +++**Summarise the latest project updates**+++
 
 -   The agent replies with accurate answers based only on the SharePoint
     content you included as sources.
 
-> ![](media/image28.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image28.png)
 >
-> ![](media/image29.png)
+> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab5/media/image29.png)
 
 ## Summary
 
@@ -264,3 +263,6 @@ In this lab, you successfully:
 You now understand how SharePoint Copilot Agents help streamline
 **information retrieval, collaboration, and workflow automation** using
 data already available within your SharePoint environment.
+
+
+===

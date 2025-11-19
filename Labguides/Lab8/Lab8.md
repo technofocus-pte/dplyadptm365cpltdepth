@@ -1,4 +1,4 @@
-# Lab 8- Zava’s Journey to AI Integration – Building MCP-Powered Agents in Microsoft Copilot Studio
+# Lab 8 - Zava’s Journey to AI Integration – Building MCP-Powered Agents in Microsoft Copilot Studio
 
 **Scenario:**
 
@@ -65,82 +65,77 @@ or other applications in later exercises.
 
 1.  Open **Docker Desktop** from the lab VM.
 
-![](./media/image1.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image1.png)
 
 2.  Open the **Visual Studio Code** and select **OpenFolder**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image2.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image2.png)
 
 3.  Select the **mcsmcp** folder from **C:\LabFiles** and click on
     **Select Folder**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image3.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image3.png)
 
 4.  Select **Yes, I trust the authors** to continue.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image4.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image4.png)
 
 5.  From the **VS Code**, select **View** -\> **Terminal** to open the
     terminal.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image5.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image5.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image6.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image6.png)
 
 6.  Enter +++azd auth login+++ to login to **Azure**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image7.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image7.png)
 
 7.  **Login** using the credentials from the **Resources** tab.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image8.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image8.png)
 
 8.  Enter +++azd up+++ and click Enter to scaffold the project into
     Azure.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image9.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image9.png)
 
-9.  Enter the name as +++mcsmcp@labinstaceid+++
+9.  Enter the name as +++mcsmcp@lab.LabInstance.Id+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image10.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image10.png)
 
 10. Select **Enter** to accept the listed subscription.
 
-![A screen shot of a computer AI-generated content may be
-incorrect.](./media/image11.png)
+	![A screen shot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image11.png)
 
-11. Use the arrow marks to scroll up and down the list of regions and
-    select one by clicking **Enter**. **southcentralus** is selected
-    here.
-
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image12.png)
+11. Use the arrow marks to scroll up and down the list of regions and select **East US 2**
 
 12. This deploys the necessary resources in the Azure portal and outputs
     a success message.
 
-![](./media/image13.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image13.png)
 
 13. The output also provides an **Endpoint url**. **Save** it to a
     **notepad** to be used in the upcoming exercises.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image14.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image14.png)
 
-14. Add **/mcp** to the end of that URL and open it in a browser. You
+14. Add **/mcp** to the end of that URL and open it in a browser. You
     will see an error inside a JSON message, which is ok. It means that
     you are reaching the MCP server.
 
-![](./media/image15.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image15.png)
 
 In this exercise, you opened the MCP Server project in Visual Studio
 Code, authenticated to Azure using the Azure Developer CLI, and deployed
@@ -160,49 +155,49 @@ with downstream components in the upcoming exercises.
 To import and configure a **custom MCP connector** in **Power Apps** for
 integration with the deployed MCP Server.
 
-1.  Go to +++<https://make.preview.powerapps.com/customconnectors>+++
+1.  Go to +++https://make.preview.powerapps.com/customconnectors+++
 
 2.  Select **+ New custom connector** -\> **Import from GitHub**.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image16.png)
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image16.png)
 
-3.  Select the below details.
+3.  Select the below details.
 
-- **Connector Type – Custom**
+	- **Connector Type – Custom**
 
-- **Branch – dev**
+	- **Branch – dev**
 
-- **Connector - MCP-Streamable-HTTP **
+	- **Connector - MCP-Streamable-HTTP **
 
-> Select **Continue**.
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image17.png)
+	> Select **Continue**.
+	>
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image17.png)
 
-4.  Change the **Connector Name** to +++**Jokes MCP**+++.
+4.  Change the **Connector Name** to +++**Jokes MCP**+++.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image18.png)
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image18.png)
 
 5.  Paste your root URL (the part after https://) from the url that you
-    saved earlier, in the **Host** field select **Create connector**.
+    saved earlier, in the **Host** field select **Create connector**.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image19.png)
->
-> Warning
->
-> You may see a warning and an error upon creation – it should be
-> resolved soon - but you can ignore it for now.
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image19.png)
+	>
+	> Warning
+	>
+	> You may see a warning and an error upon creation – it should be
+	> resolved soon - but you can ignore it for now.
 
 6.  **Close** the connector.
 
 > ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image20.png)
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image20.png)
 >
 > ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image21.png)
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image21.png)
 
 In this task, you imported the **MCP-Streamable-HTTP** connector from
 GitHub into Power Apps, renamed it to **Jokes MCP**, and configured it
@@ -222,191 +217,178 @@ deliver dynamic jokes from the connected MCP endpoint.
     credentials from the **Resources** tab. Select **Get Started** to
     enable the **trial** license.
 
-![A screenshot of a web page AI-generated content may be
-incorrect.](./media/image22.png)
+	![A screenshot of a web page AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image22.png)
 
 2.  Select **Create** -\> **+ New agent**.
 
-![A screenshot of a phone AI-generated content may be
-incorrect.](./media/image23.png)
+	![A screenshot of a phone AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image23.png)
 
 3.  Select the **Configure** tab to configure your agent.
 
-![A screenshot of a login page AI-generated content may be
-incorrect.](./media/image24.png)
+	![A screenshot of a login page AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image24.png)
 
 4.  Enter the below details and select **Create**.
 
-- **Name** – +++Jokester+++
+	- **Name** – +++Jokester+++
 
-- **Description** –
+	- **Description** –
 
-> +++A humor-focused agent that delivers concise, engaging jokes only
-> upon user request, adapting its style to match the user's tone and
-> preferences. It remains in character, avoids repetition, and filters
-> out offensive content to ensure a consistently appropriate and witty
-> experience.+++
+	+++A humor-focused agent that delivers concise, engaging jokes only
+	upon user request, adapting its style to match the user's tone and
+	preferences. It remains in character, avoids repetition, and filters
+	out offensive content to ensure a consistently appropriate and witty
+	experience.+++
 
-- **Instructions** –
+	- **Instructions** –
 
-> You are a joke-telling assistant. Your sole purpose is to deliver
-> appropriate, clever, and engaging jokes upon request. Follow these
-> rules:
->
-> \* Respond only when the user asks for a joke or something related
-> (e.g., "Tell me something funny").
->
-> \* Match the tone and humor preference of the user based on their
-> input—clean, dark, dry, pun-based, dad jokes, etc.
->
-> \* Never break character or provide information unrelated to humor.
->
-> \* Keep jokes concise and clearly formatted.
->
-> \* Avoid offensive, discriminatory, or NSFW content.
->
-> \* When unsure about humor preference, default to a clever and
-> universally appropriate joke.
->
-> \* Do not repeat jokes within the same session.
->
-> \* Avoid explaining the joke unless explicitly asked.
->
-> \* Be responsive, witty, and quick.
+	+++You are a joke-telling assistant. Your sole purpose is to deliver appropriate, clever, and engaging jokes upon request. Follow these rules:
+	- Respond only when the user asks for a joke or something related
+	- (e.g., "Tell me something funny").
+	- Match the tone and humor preference of the user based on their input—clean, dark, dry, pun-based, dad jokes, etc.
+	- Never break character or provide information unrelated to humor.
+	- Keep jokes concise and clearly formatted.
+	- Avoid offensive, discriminatory, or NSFW content.
+	- When unsure about humor preference, default to a clever and universally appropriate joke.
+	- Do not repeat jokes within the same session.
+	- Avoid explaining the joke unless explicitly asked.
+	- Be responsive, witty, and quick.+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image25.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image25.png)
 
 5.  The **agent** gets **created** as per the instructions provided.
 
-![A logo of a company AI-generated content may be
-incorrect.](./media/image26.png)
+	![A logo of a company AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image26.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image27.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image27.png)
 
 6.  Select **Settings** from the top right corner of the agent page.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image28.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image28.png)
 
 7.  In the **Settings** pane, select **No** under **Use generative AI
     orchestration for your agent responses**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image29.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image29.png)
 
 8.  Scroll down and disable **Use general knowledge** and **Use
     information from the Web** under the Knowledge section.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image30.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image30.png)
 
 9.  Scroll up and select **Yes** under **Use generative AI orchestration
     for your agent responses**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image31.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image31.png)
 
 10. Select **Save** and then **close** the Settings window.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image32.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image32.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image33.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image33.png)
 
 11. From the agent’s **Overview** page, select **Tools**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image34.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image34.png)
 
 12. Select **+ Add a tool** to add a new tool to the agent.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image35.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image35.png)
 
 13. In the Add a tool window, select the **Model Context Protocol** tab.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image36.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image36.png)
 
 14. Select the **Jokes MCP** Server you created earlier.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image37.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image37.png)
 
 15. Select the **drop down** next to **Not connected** and then select
     **Create new connection**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image38.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image38.png)
 
 16. Select **Create** in the next screen.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image39.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image39.png)
 
 17. Once the connection is established, select the **Add to agent**
     button to add the MCP Server to the Jokester agent.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image40.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image40.png)
 
 18. Now the **MCP Server** has been added as a **tool** to the agent.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image41.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image41.png)
 
 19. Select **Refresh** in the Test pane before starting to test the
     agent behaviour.
 
-![A screenshot of a phone AI-generated content may be
-incorrect.](./media/image42.png)
+	![A screenshot of a phone AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image42.png)
 
 20. Enter +++Can I get a Chuck Norris joke?+++ and select **Send**.
 
-![A screenshot of a chat AI-generated content may be
-incorrect.](./media/image43.png)
+	![A screenshot of a chat AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image43.png)
 
 21. Select **Open connection manager**.
 
-![A screenshot of a chat AI-generated content may be
-incorrect.](./media/image44.png)
+	![A screenshot of a chat AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image44.png)
 
 22. Select **Connect** to establish the connection.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image45.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image45.png)
 
 23. Once the Jokes MCP connection is selected, select **Submit**.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image46.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image46.png)
 
 24. You can now see that in the **Manage your connections** page, the
     Jokes MCP Server is in **connected** state.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image47.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image47.png)
 
 25. Now that it is connected, navigate back to the Test pane and select
     **Retry**.
 
-![A screenshot of a chat AI-generated content may be
-incorrect.](./media/image48.png)
+	![A screenshot of a chat AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image48.png)
 
 26. You can now see that the MCP Server is being invoked and the agent
     tries to generate a response from the Jokes MCP Server.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image49.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image49.png)
 
 27. The agent uses the **MCP Server**, generates a response and
     **populates** it in the **Test pane**.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image50.png)
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image50.png)
 
 And this is the **Jokes MCP Server** working in **Microsoft Copilot
 Studio**.

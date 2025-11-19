@@ -39,63 +39,63 @@ Before you begin, ensure the following:
 
 ## Exercise 1: Access the Researcher Agent
 
-1.  Navigate to +++<https://m365copilot.com/>+++ Microsoft 365 copilot
+1.  Navigate to +++https://m365copilot.com/+++ Microsoft 365 copilot
     page.
 
-2.  Enter the **User ID** in the field and then click on the **Next**
+2.  Enter +++@lab.CloudPortalCredential(User1).Username+++ in the field and then click on the **Next**
     button to proceed.
 
-![](media/image2.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image2.png)
 
-3.  Enter **Password** in the field and then click on the **Sign in**
+3.  Enter +++@lab.CloudPortalCredential(User1).AccessToken+++ in the field and then click on the **Sign in**
     button.
 
-![](media/image3.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image3.png)
 
 4.  Click on the **Yes** to stay Signed in.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image4.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image4.png)
 
-> ![](media/image5.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image5.png)
 
 5.  In the left **navigation pane**, look for **Agents**.
 
     -   If **Researcher** appears directly under the **Agents** section
         → select **Researcher**.
 
-> ![](media/image6.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image6.png)
 
--   If not, select **Agents** –&gt; **Explore agents** in the navigation
-    pane.
+	-   If not, select **Agents** –&gt; **Explore agents** in the navigation
+		pane.
 
--   In the **Agent Store** window, under the **Built by Microsoft**
-    section, select **Researcher**.
+	-   In the **Agent Store** window, under the **Built by Microsoft**
+		section, select **Researcher**.
 
-> ![](media/image7.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image7.png)
 
 6.  The **Researcher Agent window** opens in a new pane.
 
-![](media/image8.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image8.png)
 
 ## Exercise 2: Run Your First Research Prompt
 
 1.  In the **prompt field**, enter the following prompt and then click
     on the **Execute** button.
 
-+++Help me gather and summarize all recent discussions, documents, and
-emails related to **Smart Agentic Call Centre Assistant** from the past
-90 days.+++
+	+++Help me gather and summarize all recent discussions, documents, and
+	emails related to **Smart Agentic Call Centre Assistant** from the past
+	90 days.+++
 
-![](media/image9.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image9.png)
 
 2.  Wait for the **Researcher Agent** to gather and summarize the data
     review the Researcher agent carefully. The Researcher Agent may ask
-    clarifying questions. Enter +++**Go ahead**+++ in the prompt field
+    clarifying questions. Enter +++Go ahead+++ in the prompt field
     and click on the **Execute** button.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image10.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image10.png)
 
 3.  **Review the Researcher agent’s response**:
 
@@ -105,10 +105,10 @@ situational analysis of the call centre AI initiative: covering every
 aspect from planning to pilot execution.
 
 ![A screenshot of a phone AI-generated content may be
-incorrect.](media/image11.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image11.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image12.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image12.png)
 
 ## Exercise 3: Refine and Explore Additional Requests
 
@@ -120,21 +120,21 @@ based on the data, findings, or situation.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++List any action items for me.+++
+	+++List any action items for me.+++
 
-![](media/image13.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image13.png)
 
-![](media/image14.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image14.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++Summarize the key decisions from these communications.+++
+	+++Summarize the key decisions from these communications.+++
 
-![](media/image15.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image15.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image16.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image16.png)
 
 3.  Enter the below given prompt in the field and then click on the
     **Execute** button.
@@ -142,10 +142,10 @@ incorrect.](media/image16.png)
 +++Draft an email to the team about the project participation.+++
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image17.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image17.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image18.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image18.png)
 
 ### General Research and Information Gathering
 
@@ -156,23 +156,23 @@ decision-making or documentation.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++Summarize all recent documents, chats, and emails related to Smart
-Agentic Call Centre Assistant.+++
+	+++Summarize all recent documents, chats, and emails related to Smart
+	Agentic Call Centre Assistant.+++
 
-![](media/image19.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image19.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image20.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image20.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
 +++Find and summarize feedback on our updated remote work policy.+++
 
-![](media/image21.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image21.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image22.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image22.png)
 
 ### Meeting Preparation
 
@@ -185,16 +185,16 @@ effectively.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++Help me prepare for an upcoming meeting by summarizing recent
-communication and shared files about.+++
+	+++Help me prepare for an upcoming meeting by summarizing recent
+	communication and shared files about.+++
 
-![](media/image23.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image23.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image24.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image24.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image25.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image25.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
@@ -202,10 +202,10 @@ incorrect.](media/image25.png)
 +++What topics have been discussed in past weekly team syncs?+++
 
 ![A screenshot of a chat AI-generated content may be
-incorrect.](media/image26.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image26.png)
 
 ![A screenshot of a web page AI-generated content may be
-incorrect.](media/image27.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image27.png)
 
 ### Progress and Status Updates
 
@@ -216,29 +216,28 @@ achievements, identify gaps, and plan next steps**.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++Summarize the current status and blockers for Smart Agentic Call
-Centre assistant.+++
+	+++Summarize the current status and blockers for Smart Agentic Call
+	Centre assistant.+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image28.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image28.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image29.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image29.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image30.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image30.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-> +++What progress has been made on **Smart Agentic Call Centre
-> Assistant** based on email and Teams updates?+++
++++What progress has been made on **Smart Agentic Call Centre Assistant** based on email and Teams updates?+++
+
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image31.png)
 >
 > ![A screenshot of a computer AI-generated content may be
-> incorrect.](media/image31.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](media/image32.png)
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image32.png)
 
 ### Unanswered Questions and Gaps
 
@@ -251,13 +250,13 @@ Prompts** guide you to resolve or explore these gaps further.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++What open questions remain about Smart agentic call centre
-assistant+++
+	+++What open questions remain about Smart agentic call centre
+	assistant+++
 
-![](media/image33.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image33.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image34.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image34.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
@@ -266,10 +265,10 @@ incorrect.](media/image34.png)
 incomplete?+++
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image35.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image35.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image36.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image36.png)
 
 ### Document Discovery and Insights
 
@@ -282,17 +281,17 @@ guide research, planning, or project documentation.
 1.  Enter the below given prompt in the field and then click on the
     **Execute** button.
 
-+++Find the latest version of Smart Agentic Call Centre Assistant and
-summarize key updates.+++
+	+++Find the latest version of Smart Agentic Call Centre Assistant and
+	summarize key updates.+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image37.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image37.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image38.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image38.png)
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image39.png)
+	![A screenshot of a computer AI-generated content may be
+	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image39.png)
 
 2.  Enter the below given prompt in the field and then click on the
     **Execute** button.
@@ -300,13 +299,13 @@ incorrect.](media/image39.png)
 +++Summarize contents of shared documents related to Smart Agentic Call
 Center Assistant.+++
 
-![](media/image40.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image40.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image41.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image41.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image42.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image42.png)
 
 ### Generate a Communication Draft
 
@@ -319,16 +318,16 @@ Use the Researcher Agent to help communicate findings to your team.
 Center Assistant for the leadership team.+++
 
 ![A screenshot of a chat AI-generated content may be
-incorrect.](media/image43.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image43.png)
 
 ![A screenshot of a phone AI-generated content may be
-incorrect.](media/image44.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image44.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image45.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image45.png)
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image46.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image46.png)
 
 ## Exercise 4: Review and Validate Output
 
@@ -340,20 +339,20 @@ incorrect.](media/image46.png)
     **Example**: +++Narrow this summary to focus only on deliverables
     and project blockers.+++
 
-> ![](media/image47.png)
+	> ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image47.png)
 
 3.  Export or copy the summary for documentation, reports, or meeting
     notes.
 
 > ![A screenshot of a computer AI-generated content may be
-> incorrect.](media/image48.png)
+> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image48.png)
 
 ## Exercise 5: What you can do with the response
 
 Here's a brief overview of the tasks associated with each icon shown in
 your screenshot:
 
-![](media/image49.png)
+![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab2/media/image49.png)
 
 1.  **Clipboard Icon** – Likely used for **copying or pasting** content.
 
@@ -382,3 +381,5 @@ generate professional outputs such as emails or reports. The exercise
 highlights how the Researcher Agent enhances productivity, improves
 decision-making, and supports better collaboration by transforming
 scattered organizational data into clear, actionable insights.
+
+

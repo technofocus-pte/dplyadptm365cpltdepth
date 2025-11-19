@@ -14,54 +14,54 @@ Estimated duration - 40 minutes
     credentials from the Resources tab if you are not in that page
     already.
 
-    ![](./media/image1.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image1.png)
 
 2.  If you are already on the Copilot Studio page, click on **Home** to
     go to the Home page.
 
-    ![](./media/image2.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image2.png)
 
 3.  On the Home page, in the text area under Describe your agent to
     create it, enter +++I want you to be a question and answering assistant that can answer common  questions from users using the content of a website+++ and click on **Send**.
 
-   ![](./media/image3.png)
+   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image3.png)
     
 5.  It might suggest a name for the agent. Either accept it or provide
     your own name.
     
-   ![](./media/img19.png)
+   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img19.png)
     
 7.  Give other details regarding the functions of the agent like below.
 
     +++help answer common product and support questions using the content of a website, and help answer HR questions from an uploaded file+++
 
-   ![](./media/img20.png)
+   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img20.png)
     
 9.  Provide +++www.microsoft.com+++ for the website that will be used a
     sknowledge source.
 
-   ![](./media/image4.png)
+   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image4.png)
 
 10. Once done with giving instructions, click on **Create** to create
      your agent.
   **Note**: Setting up the agent may take a few minutes. Once the setup is complete, click Skip to continue.
-  ![](./media/img21.png)
+  ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img21.png)
 
 11.  Select the agent gets created to view the agent details. Scroll through
     the page to understand that the agent has been created with the
     instructions you have provided for it.
 
-    ![](./media/image6.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image6.png)
 
-    ![](./media/image7.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image7.png)
 
 11.  Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio+++ and hit **Enter**.
 
-    ![](./media/image8.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image8.png)
 
 11. Enter +++What is the latest xbox model?+++
 
-    ![](./media/image9.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image9.png)
 
 For both the above steps, you will get an answer from the agent which
 will be a generic one since the agent will be using its general
@@ -96,7 +96,7 @@ topic node
 1.  In your agent select the **Topics** tab, select **+ Add a
     topic** and select **From blank**.
 
-    ![](./media/image10.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image10.png)
 
 2.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**.
 
@@ -112,11 +112,11 @@ topic node
 
     Select **Save** on the top right to save the topic.
 
-    ![](./media/img22.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img22.png)
 
 3.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
 
-    ![](./media/img23.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img23.png)
 
 5.  The Prompt dialog will appear, and you may see a flyout appear that
     will guide you on how to create your prompt. Select **Next** to go
@@ -134,60 +134,60 @@ parentheses.+++
 
     Select [number], expand **+ Add context** section and select **Text**.
 
-    ![](./media/img26.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img26.png)
 
 9.  Enter the name as +++number+++ and enter sample data such as
     +++5+++. Select **Close**.
 
-    ![](./media/img27.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img27.png)
 
 10. Select **[topic]**, expand **+ Add context** section and select **Text**. Enter the name as +++topic+++ and enter sample data such as
     +++Science+++.
 
-    ![](./media/img28.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img28.png)
 
 11. Select **[format]**, expand **+ Add context** section and select **Text**.Enter the name as +++format+++ and enter sample data such as
     +++bullet points+++. Select **Save** in the Prompt window
 
-    ![](./media/img30.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img30.png)
 
 16. The prompt action node will now appear in the authoring canvas of
     the Topic. Next, the values of the input parameter need to be
     defined in order for the agent to populate them. Select
     the **\>** icon
 
-    ![](./media/image22.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image22.png)
 
 17. Select the **System** tab and select the **Acivity.Text** as the
     input value for the action to use the user’s entire response and
     identify the format value.
 
-    ![](./media/image23.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image23.png)
 
 18. Repeat the same for the remaining input parameters of the prompt
     action.
 
-    ![](./media/image24.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image24.png)
 
 19. Next, we need to define the output variable of the prompt action.
     This is so that the response can be referenced downstream in the
     topic. Select the **\>** icon and in the **Custom** tab,
     select **Create new** and and name the variable as +++**VarQuizQuestionsResponse**+++. 
 
-    ![](./media/image25.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image25.png)
 
-    ![](./media/image26.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image26.png)
 
 20. Below the Prompt action, select the **+** icon to add a new node and
     select **Send a message**. Select the **{x}** variable icon.
 
-    ![](./media/image27.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image27.png)
 
 21. Select the variable **VarQuizQuestionsResponse.text**. This will add
     the text property of the prompt action response to the send a
     message node. Select **Save** to save your topic.
 
-    ![](./media/image28.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image28.png)
 
 22. The Topic details needs to be updated next which will be used by
     your agent to associate the topic with the user's intent when
@@ -199,20 +199,17 @@ parentheses.+++
 
     Select **Save** to save your topic.
 
-    ![](./media/image29.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image29.png)
 
-25. Now we are ready to test the agent. In the test pane, select
-    the **refresh** icon. Then enter the following question and observe
-    the output.
+25. Now we are ready to test the agent. In the test pane, select the **refresh** icon. Then enter the following question and observe the output.
 
     +++Create 5 questions for a quiz based on geography and format the quiz as multi choice+++
 
-    ![](./media/image32.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image32.png)
 
-    ![](./media/image33.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image33.png)
 
 ## Summary
 
 In this lab, we have learnt how to create a prompt action for a topic by
 creating a custom prompt and test it.
-
