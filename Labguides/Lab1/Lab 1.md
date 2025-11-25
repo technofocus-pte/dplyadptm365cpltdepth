@@ -2,10 +2,6 @@
 
 Duration **: 25 mins**
 
-![Get started with Analyst in Microsoft 365 Copilot - Microsoft
-Support] (https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab1/media/image1.png)
-
-
 # Objective
 
 This lab uses Microsoft 365 Copilot’s Analyst agent to analyse the
