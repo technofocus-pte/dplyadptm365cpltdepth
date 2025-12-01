@@ -4,6 +4,11 @@
 
 ***Version: 25 October,2025***
 
+## Introduction
+Working through lengthy documents, extracting key insights, and reshaping content can be time-consuming and error-prone. The Document Analyzer Agent in Microsoft 365 Copilot for Word simplifies this process by allowing you to ask questions, interpret complex information, and transform documents using natural language prompts.
+
+In this lab, you will learn how to leverage the Document Analyzer Agent to understand content faster, generate summaries, derive insights, and restructure documents with ease—turning Word into an intelligent, context-aware assistant that streamlines document analysis and creation.
+
 ## Objective
 
 In this lab, you will learn how to use Microsoft 365 Copilot to interact
