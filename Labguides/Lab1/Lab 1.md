@@ -1,6 +1,14 @@
 # Lab 1: Enhance data storytelling Using Microsoft 365 Copilot’s Analyst Agent
 
 Duration **: 25 mins**
+Version: **25 October,2025**
+
+# Introduction
+In today’s data-driven world, organizations struggle not with the lack of data, but with the ability to transform that data into meaningful insights that drive business decisions. While analytics tools have become increasingly powerful, the process of interpreting complex datasets, summarizing findings, and communicating insights in a compelling and accessible way still demands time, expertise, and creativity.
+
+Microsoft 365 Copilot’s Analyst Agent elevates this experience by combining generative AI with familiar productivity tools like Excel, PowerPoint, and Word. It empowers business users, analysts, and decision-makers to instantly explore datasets, uncover patterns, and generate clear, contextual narratives—turning analysis into actionable stories. With natural language prompts, the Analyst Agent can perform advanced analytics, create visual summaries, and craft presentations that bridge the gap between raw data and strategic outcomes.
+
+By enhancing data storytelling, the Analyst Agent enables organizations to democratize insights, accelerate decision-making, and bring clarity to every conversation—unlocking the true value of their data.
 
 # Objective
 
