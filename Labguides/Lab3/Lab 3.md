@@ -1,8 +1,14 @@
 # Lab 3 - Automating Knowledge Assistance through Microsoft 365 Copilot Agents
 
-**Duration: 20 minutes**
+***Duration: 20 minutes***
+***Version: 25 October, 2025***
 
-## Objective:
+## Introduction
+Organizations rely on timely, accurate answers to operate efficiently—but locating the right knowledge across documents, emails, and systems can slow everyone down. Microsoft 365 Copilot Agents streamline this process by automating knowledge assistance, enabling users to ask questions and instantly receive relevant, contextual responses.
+
+In this lab, you will explore how to create and configure Copilot Agents that understand organizational knowledge, respond intelligently, and reduce manual lookup time. By the end, you’ll know how to turn scattered information into an on-demand knowledge engine that improves productivity and empowers every user.
+
+## Objective
 
 In this lab you will create and configure a Copilot agent using the
 Describe and Configure tabs.
