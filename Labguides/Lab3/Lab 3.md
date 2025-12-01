@@ -1,6 +1,7 @@
 # Lab 3 - Automating Knowledge Assistance through Microsoft 365 Copilot Agents
 
 ***Duration: 20 minutes***
+
 ***Version: 25 October, 2025***
 
 ## Introduction
