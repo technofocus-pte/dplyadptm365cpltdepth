@@ -1,6 +1,8 @@
 # Lab 5: Create and Configure a Copilot Agent in SharePoint to Deliver Contextual Answers
 
-Lab Duration: 10-15 minutes
+***Duration: 10-15 minutes***
+
+***Version: 25 October, 2025***
 
 ## Introduction
 
