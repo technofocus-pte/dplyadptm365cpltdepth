@@ -1,6 +1,6 @@
 # Lab 1: Enhance data storytelling Using Microsoft 365 Copilot’s Analyst Agent
 
-Duration **: 25 mins**
+Duration **: 25 mins** <br>
 Version: **25 October,2025**
 
 # Introduction
