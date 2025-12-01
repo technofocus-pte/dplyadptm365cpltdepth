@@ -1,6 +1,6 @@
 # Lab 2: Use the Researcher agent to surface insights, organize content, and produce professional-quality outputs directly in Microsoft 365 Copilot
 
-***Duration: 25 mins***
+***Duration: 25 mins*** <br>
 ***Version: 25 October, 2025***
 
 ## Introduction
