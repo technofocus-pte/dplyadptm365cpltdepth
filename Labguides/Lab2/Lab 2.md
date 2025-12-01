@@ -1,6 +1,10 @@
 # Lab 2: Use the Researcher agent to surface insights, organize content, and produce professional-quality outputs directly in Microsoft 365 Copilot
 
-**Duration: 25 mins**
+***Duration: 25 mins***
+***Version: 25 October, 2025***
+
+## Introduction
+The Researcher Agent in Microsoft 365 Copilot simplifies how you find, organize, and present information. Instead of manually searching through documents and online sources, the agent gathers insights, structures content, and generates professional outputs such as reports and presentations—all from natural language prompts. In this lab, you’ll learn how to use the Researcher Agent to accelerate content creation, improve clarity, and deliver polished results with minimal effort.
 
 ## Overview
 
