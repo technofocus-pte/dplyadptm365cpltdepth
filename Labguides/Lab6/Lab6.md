@@ -215,7 +215,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image33.png)
 
 10. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles**
-    to be uploaded.
+    to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Copy link** and save the link in a **notepad**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image34.png)
@@ -230,70 +230,54 @@ you created.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img11.png)
 
-2. Select **SharePoint** and then select **Browse items** to add the document. 
+2. Select **SharePoint**, enter the url of the tracker uploaded in the earlier exercise and then select **Add**. 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img12.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img13.png)
-
-3. Select your site that you created earlier.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img14.png)
-
-4. Select the candidate list tracker and then Confirm selection.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img15.png)
-
-5. Select **Add to agent** in the next screen.
+3. Select **Add to agent** in the next screen.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img16.png)
 
-6. Select **Publish** to publish the agent.
+4. Select **Publish** to publish the agent.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image50.png)
 
-7. Select **Publish** again.
+5. Select **Publish** again.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image51.png)
 
-8. **Copy** the url and **open** it from a browser.
+6. **Copy** the url and **open** it from a browser.
 
     ![A screenshot of a computer program AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image52.png)
 
-9. This time, it will give an option to **Update now** since it is already added. Select it. If not prompted, go to settings and manually update.
+7. This time, it will give an option to **Update now** since it is already added. Select it. If not prompted, go to settings and manually update.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image53.png)
 
-10. Select **Open** once it is updated.
+8. Select **Open** once it is updated.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image54.png)
 
     >[!Alert] you may have to engage in the copilot conversation to get the expected results.
 
-11. In the Agentic HR agent screen, send the below message.
+9. In the Agentic HR agent screen, send the below message.
 
     +++Show me a list of candidates for HR with role "HR Director” or "HR Manager”+++
    
     ![A screenshot of a computer AI-generated content may be
    incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image55.png)
 
-12. In the Data to be shared with Agentic HR message, select **Allow
+10. In the Data to be shared with Agentic HR message, select **Allow
     once** (if prompted) option.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image56.png)
 
-13. If it asks you to sign in, select the **Sign in to Agentic HR**
+11. If it asks you to sign in, select the **Sign in to Agentic HR**
     option and then select **Connect** in the next screen.
 
     ![A screenshot of a computer AI-generated content may be
@@ -302,7 +286,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
    incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image58.png)
 
-14. Select **Submit** once connected.
+12. Select **Submit** once connected.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image59.png)
@@ -310,7 +294,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a chat AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image60.png)
 
-15. Now, resend the below message to the agent.
+13. Now, resend the below message to the agent.
 
     +++Show me a list of candidates for HR with role “HR Director” or ”HR
    Manager”+++
@@ -318,7 +302,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
    incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image61.png)
 
-21. You will then receive the requested list
+14. You will then receive the requested list
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image62.png)
 
