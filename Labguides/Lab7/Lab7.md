@@ -178,8 +178,8 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 In this exercise, you will add the ability to the agent to search the
 web content.
 
-1.  Open the **appPackage/declarativeAgent.json** file and add
-    the capabilities array with the following content.
+1.  Open the **appPackage/declarativeAgent.json** file, right after
+    the end of the conversation_Starters, add a **comma** press enter, and paste the below capabilities array.
 
     ```
     "capabilities": [
