@@ -131,8 +131,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 4.  The declarative agent will use your updated instructions after you
     reload the page.
 
-5.  Refresh the chat page, select **My Agent** and type +++Do we have
-    chocolate in our food catalog?+++
+5.  Refresh the chat page, select **My Agent** and type +++Do we have chocolate in our food catalog?+++
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image16.png)
