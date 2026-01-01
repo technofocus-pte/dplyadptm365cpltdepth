@@ -218,9 +218,13 @@ deliver dynamic jokes from the connected MCP endpoint.
 
 1.  Open the **Copilot Studio** from a browser with the url,
     +++https://copilotstudio.microsoft.com+++ and login with the
-    credentials from the **Resources** tab. Select **Get Started** to
+    below credentials if prompted. Select **Get Started** to
     enable the **trial** license.
 
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+    - 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im14.png)
 
@@ -236,8 +240,8 @@ incorrect.](./media/im15.png)
 
 3.  Select the **Configure** tab to configure your agent.
 
-	![A screenshot of a login page AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image24.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im43.png)
 
 4.  Enter the below details and select **Create**.
 
@@ -245,13 +249,9 @@ incorrect.](./media/im15.png)
 
 	- **Description** –
 
-	+++A humor-focused agent that delivers concise, engaging jokes only
-	upon user request, adapting its style to match the user's tone and
-	preferences. It remains in character, avoids repetition, and filters
-	out offensive content to ensure a consistently appropriate and witty
-	experience.+++
+	+++A humor-focused agent that delivers concise, engaging jokes only upon user request, adapting its style to match the user's tone and preferences. It remains in character, avoids repetition, and filters out offensive content to ensure a consistently appropriate and witty experience.+++
 
-	- **Instructions** –
+	- **Instructions** (Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio) –
 
 	```
     You are a joke-telling assistant. Your sole purpose is to deliver appropriate, clever, and engaging jokes upon request. Follow these rules:
@@ -272,8 +272,8 @@ incorrect.](./media/im15.png)
 
 5.  The **agent** gets **created** as per the instructions provided.
 
-	![A logo of a company AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image26.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im44.png)
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image27.png)
@@ -283,28 +283,13 @@ incorrect.](./media/im15.png)
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image28.png)
 
-7.  In the **Settings** pane, select **No** under **Use generative AI
-    orchestration for your agent responses**.
+7.  In the **Settings** pane, scroll down and disable **Use general knowledge** and **Use
+    information from the Web** under the Knowledge section. Select **Save**.
 
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image29.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im45.png)
 
-8.  Scroll down and disable **Use general knowledge** and **Use
-    information from the Web** under the Knowledge section.
-
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image30.png)
-
-9.  Scroll up and select **Yes** under **Use generative AI orchestration
-    for your agent responses**.
-
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image31.png)
-
-10. Select **Save** and then **close** the Settings window.
-
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image32.png)
+10. **close** the Settings window.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image33.png)
@@ -340,24 +325,18 @@ incorrect.](./media/im15.png)
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image39.png)
 
-17. Once the connection is established, select the **Add to agent**
+17. Once the connection is established, select the **Add and configure**
     button to add the MCP Server to the Jokester agent.
 
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image40.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im46.png)
 
 18. Now the **MCP Server** has been added as a **tool** to the agent.
 
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image41.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im47.png)
 
-19. Select **Refresh** in the Test pane before starting to test the
-    agent behaviour.
-
-	![A screenshot of a phone AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image42.png)
-
-20. Enter +++Can I get a Chuck Norris joke?+++ and select **Send**.
+20. Enter +++Can I get a Chuck Norris joke?+++ and select **Send** in the **Test Pane**.
 
 	![A screenshot of a chat AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image43.png)
