@@ -284,7 +284,7 @@ incorrect.](./media/im44.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im45.png)
 
-10. **close** the Settings window.
+10. **Close** the Settings window.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image33.png)
