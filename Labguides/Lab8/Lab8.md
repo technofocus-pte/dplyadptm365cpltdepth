@@ -173,7 +173,7 @@ incorrect.](./media/im42.png)
 
 	- **Branch – dev**
 
-	- **Connector - MCP-Streamable-HTTP **
+	- **Connector - MCP-Streamable-HTTP**
 
 	Select **Continue**.
 	
@@ -232,11 +232,6 @@ incorrect.](./media/im14.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im15.png)
-
-3.  Select **Create** -\> **+ New agent**.
-
-	![A screenshot of a phone AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image23.png)
 
 3.  Select the **Configure** tab to configure your agent.
 
