@@ -197,11 +197,11 @@ incorrect.](./media/im42.png)
 
 7.  **Close** the connector.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image20.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image21.png)
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image20.png)
+	>
+	> ![A screenshot of a computer AI-generated content may be
+	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image21.png)
 
 In this task, you imported the **MCP-Streamable-HTTP** connector from
 GitHub into Power Apps, renamed it to **Jokes MCP**, and configured it
