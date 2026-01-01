@@ -69,21 +69,24 @@ or other applications in later exercises.
 
 2.  Open the **Visual Studio Code** and select **OpenFolder**.
 
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im39.png)
+
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image2.png)
 
-3.  Select the **mcsmcp** folder from **C:\LabFiles** and click on
+4.  Select the **mcsmcp** folder from **C:\LabFiles\Labfiles** and click on
     **Select Folder**.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image3.png)
 
-4.  Select **Yes, I trust the authors** to continue.
+5.  Select **Yes, I trust the authors** to continue.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image4.png)
 
-5.  From the **VS Code**, select **View** -\> **Terminal** to open the
+6.  From the **VS Code**, select **View** -\> **Terminal** to open the
     terminal.
 
 	![A screenshot of a computer AI-generated content may be
@@ -92,59 +95,56 @@ or other applications in later exercises.
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image6.png)
 
-6.  Enter +++azd auth login+++ to login to **Azure**.
+7.  Enter +++azd auth login+++ to login to **Azure**.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image7.png)
 
-7.  **Login** using the credentials from the **Resources** tab.
+8.  **Login** using the below credentials.
 
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+      
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image8.png)
 
-8.  Enter +++azd up+++ and click Enter to scaffold the project into
+9.  Once logged in, back in the VS Code terminal, enter +++azd up+++ and click Enter to scaffold the project into
     Azure.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image9.png)
 
-9.  Enter the name as +++mcsmcp@lab.LabInstance.Id+++
+10.  Enter the **environment name** as +++mcsmcp@lab.LabInstance.Id+++
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image10.png)
 
-10. Select **Enter** to accept the listed subscription.
+11. For **Select an Azure Subscription to use**, select **Enter** to accept the listed subscription.
 
 	![A screen shot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image11.png)
 
-11. Use the arrow marks to scroll up and down the list of regions and select **East US 2**
+12. To select the **region**, Use the **arrow marks** to scroll up and down the list of regions and select **East US 2**
 
-12. This deploys the necessary resources in the Azure portal and outputs
+13. This deploys the necessary resources in the Azure portal and outputs
     a success message.
 
 	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image13.png)
 
-13. The output also provides an **Endpoint url**. **Save** it to a
+14. The output also provides an **Endpoint url**. **Save** it to a
     **notepad** to be used in the upcoming exercises.
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image14.png)
 
-14. Add **/mcp** to the end of that URL and open it in a browser. You
+15. Add **/mcp** to the end of that URL and open it in a browser. You
     will see an error inside a JSON message, which is ok. It means that
     you are reaching the MCP server.
 
-![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image15.png)
+	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image15.png)
 
-In this exercise, you opened the MCP Server project in Visual Studio
-Code, authenticated to Azure using the Azure Developer CLI, and deployed
-the solution to Azure using the azd up command. The deployment created
-the necessary Azure resources (such as a Container App and supporting
-infrastructure) and provided a public endpoint URL for the MCP Server.
-Verifying the endpoint in a browser confirmed successful deployment and
-connectivity, setting up the foundation for integrating the MCP Server
-with downstream components in the upcoming exercises.
+	In this exercise, you opened the MCP Server project in Visual Studio Code, authenticated to Azure using the Azure Developer CLI, and deployed the solution to Azure using the azd up command. The deployment created the necessary Azure resources (such as a Container App and supporting infrastructure) and provided a public endpoint URL for the MCP Server. Verifying the endpoint in a browser confirmed successful deployment and connectivity, setting up the foundation for integrating the MCP Server with downstream components in the upcoming exercises.
 
 ## Exercise 2: Use the Jokes MCP Server in Microsoft Copilot Studio
 
