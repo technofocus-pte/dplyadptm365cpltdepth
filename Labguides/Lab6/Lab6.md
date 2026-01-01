@@ -52,16 +52,23 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 In this exercise you are going to create a declarative agent with
 Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
 
-1.  Login to +++https://copilotstudio.microsoft.com+++ using the
-    login credentials from the **Resources** tab.
+1.  Login to +++https://copilotstudio.microsoft.com+++ using the login credentials below. (They are present in the  **Resources** tab as well).
 
-    - +++@lab.CloudPortalCredential(User1).Username+++
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
       
-    - +++@lab.CloudPortalCredential(User1).TAP+++
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
 
 2. Select **Get Started** in the **Welcome to Microsoft Copilot Studio** screen. 
 
-3.  Select the **Dev env** environment that we created in the previous
+   ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im14.png)
+
+3.  Select **Skip** in the Welcome sreen.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im15.png)
+
+5.  Select the **Dev env** environment that we created in the previous
     exercise.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image8.png)
@@ -76,31 +83,35 @@ Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
     >
     >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
     
-4.  To create a declarative agent for Microsoft 365 Copilot Chat you
+6.  To create a declarative agent for Microsoft 365 Copilot Chat you
     need to first browse the list of agents in Copilot Studio and then
-    select the agent with name **Microsoft 365 Copilot**.
+    select the agent with name **Microsoft 365 Copilot**. Select **Got it** in the version update pop up.
 
-5.  Select **Agents** from the left navigation bar and select **Microsoft 365 Copilot** from the list.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im16.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img0.png)
+8.  Select **Agents** from the left navigation bar and select **Microsoft 365 Copilot** from the list.
 
-6.  A new section of Microsoft Copilot Studio will open. From there,
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im17.png)
+
+9.  A new section of Microsoft Copilot Studio will open. From there,
     select the **+ Add** command to create a new agent for Microsoft 365
     Copilot Chat.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
 
-7.  Copilot Studio asks you to describe in natural language what is the
+10.  Copilot Studio asks you to describe in natural language what is the
     purpose of the agent. You can define your agent requirements. Paste
     the prompt below to do so
 
     +++You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.+++
 
-    ![A screenshot of a computer AI-generated content may be
+   ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image11.png)
 
-8.  When requested by Copilot Studio, give the name "Agentic HR" to your
+11.  When requested by Copilot Studio, give the name "Agentic HR" to your
     custom agent. Use the following prompt.
 
     +++Name it as Agentic HR+++
@@ -108,7 +119,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image12.png)
 
-9.  Then, instruct Copilot Studio to have specific tasks or goals with
+11.  Then, instruct Copilot Studio to have specific tasks or goals with
     the following instruction:
 
     +++Emphasize everything that helps team building, inclusion, and the growth mindset+++
@@ -116,7 +127,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a chat AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image13.png)
 
-10.  Then, define a professional tone for your agent, providing the
+11.  Then, define a professional tone for your agent, providing the
     following input:
 
     +++It should have a professional tone+++
@@ -136,7 +147,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 1.  Select **Publish** from the agent overview page.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image17.png)
+incorrect.](./media/im20.png)
 
 2.  Select **Publish** in the **Publish agent** screen.
 
@@ -163,10 +174,10 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image23.png)
 
-6.  The **Agentic HR** agent is now added.
+6.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image24.png)
+incorrect.](./media/im21.png)
 
 ## Exercise 4: Create SharePoint site
 
@@ -209,18 +220,24 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 8.  Once created, note down the **url** of this site.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image32.png)
+incorrect.](./media/im22.png)
 
-9.  Select **Documents** from the menu bar. Select **Upload -\> Files**
+9.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image33.png)
+incorrect.](./media/im23.png)
 
-10. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles**
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im24.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im25.png)
+
+11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles**
     to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Copy link** and save the link in a **notepad**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image34.png)
+incorrect.](./media/im26.png)
 
 ## Exercise 5: Adding knowledge to the agent
 
@@ -232,84 +249,80 @@ you created.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img11.png)
 
-2. Select **SharePoint**, enter the url of the tracker uploaded in the earlier exercise and then select **Add**. 
+2. Select **SharePoint**, enter the **url** of the tracker uploaded in the earlier exercise and then select **Add**. 
 
-3. Select **Add to agent** in the next screen.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im27.png)
+
+4. Select **Add to agent** in the next screen.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img16.png)
 
-4. Select **Publish** to publish the agent.
+5. Select **Publish** to publish the agent.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image50.png)
+incorrect.](./media/im28.png)
 
-5. Select **Publish** again.
+6. Select **Publish** again.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image51.png)
 
-6. **Copy** the url and **open** it from a browser.
+7. **Copy** the url and **open** it from a browser.
 
     ![A screenshot of a computer program AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image52.png)
 
-7. This time, it will give an option to **Update now** since it is already added. Select it. If not prompted, go to settings and manually update.
+8. This time, it will give an option to **Update now** since it is already added. Select it.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image53.png)
 
-8. Select **Open** once it is updated.
+9. Select **Open** once it is updated.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image54.png)
 
     >[!Alert] you may have to engage in the copilot conversation to get the expected results.
 
-9. In the Agentic HR agent screen, send the below message.
+10. In the **Agentic HR agent** screen, send the below message.
 
     +++Show me a list of candidates for HR with role "HR Director” or "HR Manager”+++
    
     ![A screenshot of a computer AI-generated content may be
    incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image55.png)
 
-10. In the Data to be shared with Agentic HR message, select **Allow
-    once** (if prompted) option.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image56.png)
-
-11. If it asks you to sign in, select the **Sign in to Agentic HR**
-    option and then select **Connect** in the next screen.
-
-    ![A screenshot of a computer AI-generated content may be
-   incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image57.png)
-   
-    ![A screenshot of a computer AI-generated content may be
-   incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image58.png)
-
-12. Select **Submit** once connected.
-
-    ![A screenshot of a computer AI-generated content may be
+    >[!Alert] **Important:** If you are asked for approval, perform the below steps. Else you can ignore these and check for the result as in the last step in this lab guide.
+    >
+    >In the Data to be shared with Agentic HR message, select **Allow once** (if prompted) option.
+    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image56.png)
+    >
+    >If it asks you to **sign in**, select the **Sign in to Agentic HR** option and then select **Connect** in the next screen.
+    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image57.png)
+    >
+    >    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image58.png)
+    >
+    >Select **Submit** once connected.
+    >![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image59.png)
-
-    ![A screenshot of a chat AI-generated content may be
+    >
+    >![A screenshot of a chat AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image60.png)
+    >
+    >Now, resend the below message to the agent.
+    >
+    >+++Show me a list of candidates for HR with role “HR Director” or ”HR Manager”+++
+    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image61.png)
 
-13. Now, resend the below message to the agent.
 
-    +++Show me a list of candidates for HR with role “HR Director” or ”HR
-   Manager”+++
-   
-    ![A screenshot of a computer AI-generated content may be
-   incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image61.png)
-
-14. You will then receive the requested list
+15. You will then receive the requested list
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image62.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image63.png)
+
 
 ## Summary
 
