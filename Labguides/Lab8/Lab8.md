@@ -157,14 +157,17 @@ incorrect.](./media/im39.png)
 To import and configure a **custom MCP connector** in **Power Apps** for
 integration with the deployed MCP Server.
 
-1.  Go to +++https://make.preview.powerapps.com/customconnectors+++
+1.  Go to +++https://make.preview.powerapps.com/customconnectors+++. Select **Get Started** in the **Welcome to PowerApps** dialog.
 
-2.  Select **+ New custom connector** -\> **Import from GitHub**.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im42.png)
+
+3.  Select **+ New custom connector** -\> **Import from GitHub**.
 
 	> ![A screenshot of a computer AI-generated content may be
 	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image16.png)
 
-3.  Select the below details.
+4.  Select the below details.
 
 	- **Connector Type – Custom**
 
@@ -177,12 +180,12 @@ integration with the deployed MCP Server.
 	> ![A screenshot of a computer AI-generated content may be
 	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image17.png)
 
-4.  Change the **Connector Name** to +++**Jokes MCP**+++.
+5.  Change the **Connector Name** to +++**Jokes MCP**+++.
 
 	> ![A screenshot of a computer AI-generated content may be
 	> incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image18.png)
 
-5.  Paste your root URL (the part after https://) from the url that you
+6.  Paste your root URL (the part after https://) from the url that you
     saved earlier, in the **Host** field select **Create connector**.
 
 	> ![A screenshot of a computer AI-generated content may be
@@ -193,7 +196,7 @@ integration with the deployed MCP Server.
 	> You may see a warning and an error upon creation – it should be
 	> resolved soon - but you can ignore it for now.
 
-6.  **Close** the connector.
+7.  **Close** the connector.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image20.png)
