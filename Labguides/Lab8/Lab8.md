@@ -224,7 +224,12 @@ deliver dynamic jokes from the connected MCP endpoint.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im14.png)
 
-2.  Select **Create** -\> **+ New agent**.
+2.  Select **Skip** in the Welcome sreen.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im15.png)
+
+3.  Select **Create** -\> **+ New agent**.
 
 	![A screenshot of a phone AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image23.png)
