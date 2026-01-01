@@ -74,7 +74,8 @@ incorrect.](./media/im15.png)
 5.  Select the **Dev env** environment that we created in the previous
     exercise.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image8.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im40.png)
 
     >[!Alert] **Important:** If the Copilot Studio and does not show up the option to select **Environment** as in the below screenshot, then follow the below steps.
     >
