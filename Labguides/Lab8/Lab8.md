@@ -130,6 +130,8 @@ incorrect.](./media/im39.png)
 13. This deploys the necessary resources in the Azure portal and outputs
     a success message.
 
+	>[!Note] **Note:** The deployment takes around 10 to 15 minutes to complete.
+ 
 	![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image13.png)
 
 14. The output also provides an **Endpoint url**. **Save** it to a
