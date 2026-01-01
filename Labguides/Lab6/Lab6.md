@@ -21,7 +21,7 @@ remaining exercises and tasks.
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
       
-    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
    
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image1.png)
@@ -59,7 +59,7 @@ Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
       
-    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
 
 2. Select **Get Started** in the **Welcome to Microsoft Copilot Studio** screen. 
 
