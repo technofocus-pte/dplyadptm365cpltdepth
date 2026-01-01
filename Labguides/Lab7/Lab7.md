@@ -1,4 +1,4 @@
-# Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
+<img width="472" height="370" alt="image" src="https://github.com/user-attachments/assets/fa1e053c-fd15-4a58-8176-5a24c2e07583" /># Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
 
 **Objective**
 
@@ -15,62 +15,73 @@ In this lab, you will build a poetic declarative agent.
 In this exercise, you will start with creating a basic declarative agent
 from the Visual Studio Code.
 
-1.  From the VM, open **Visual Studio Code**.
+1.  From the VM desktop, open **Visual Studio Code**.
 
-2.  Select **Extensions** from the left pane and type +++Microsoft 365
-    Agents Toolkit+++
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im39.png)
+
+3.  Select **Extensions** from the left pane and type +++Microsoft 365 Agents Toolkit+++
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image1.png)
 
-3.  Select the **Microsoft 365 Agents Toolkit** and select **Install**
+4.  Select the **Microsoft 365 Agents Toolkit** and select **Install**
     to install the extension.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image2.png)
 
-4.  Select **Create a New Agent/App** on the left panel, then select **Declarative Agent**.
+5.  Select **Create a New Agent/App** on the left panel, then select **Declarative Agent**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image3.png)
 
-5.  Select **No Action** to create a basic declarative agent.
+6.  Select **No Action** to create a basic declarative agent.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image4.png)
 
-6.  Select **Default folder** to store your project root folder in the
+7.  Select **Default folder** to store your project root folder in the
     default location.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image5.png)
 
-7.  Enter +++My Agent+++ as the **Application Name** and
-    press **Enter**.
+8.  Enter +++My Agent+++ as the **Application Name** and press **Enter**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image6.png)
 
-8.  In the new Visual Studio Code window that opens, select **Microsoft
-    365 Agents Toolkit**.
+9.  Select **Yes, I trust the authors** in the Do you trust the authors pop up.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im29.png)
+
+9.  In the new Visual Studio Code window that opens, select **Microsoft 365 Agents Toolkit**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image7.png)
 
-9.  Select **Provision** in the **Lifecycle** pane and then select **Sign in** in the pop up that appears, to sign in to the Microsoft 365 account.
-
-    >[!Alert] If provisioning fails and VSC gives an option to **resolve with @m365agents**, select to resolve. Provisioning should complete after selecting to resolve.
+10. Select **Provision** in the **Lifecycle** pane and then select **Sign in** in the pop up that appears, to sign in to the Microsoft 365 account.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image8.png)
 
-10. **Sign in** using the credentials from the Resources tab and close
-    the window once done.
+    >[!Alert] If provisioning fails and VSC gives an option to **resolve with @m365agents**, select to resolve. Provisioning should complete after selecting to resolve.
+
+11. **Sign in** using the below credentials and close the window once done.
+
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
 
     ![A black background with white text AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image9.png)
 
-11. Now, the basic declarative agent creation is done.
+12. Ensure that the provisioning is successful. You can see the success message at the bottom right corner of VS code. Now, the basic declarative agent creation is done.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im31.png)
 
 ### Task 1: Test the agent
 
@@ -83,13 +94,17 @@ In this task, we will test the declarative agent that we have created.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image10.png)
 
-3.  Select the declarative agent **My Agent**.
+3.  Select the declarative agent **My Agentdev** (It can also be **My Agent**. Select based on the name that gets listed.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image11.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im32.png)
 
 4.  Enter a question +++Hello! How can you help me?+++ for your
     declarative agent and ensure that it replies with "Thanks for using
     Microsoft 365 Agents Toolkit to create your declarative agent!"
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im33.png)
 
     ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image12.png)
 
@@ -131,15 +146,15 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 4.  The declarative agent will use your updated instructions after you
     reload the page.
 
-5.  Refresh the chat page, select **My Agent** and type +++Do we have chocolate in our food catalog?+++
+5.  Refresh the chat page, select **My Agentdev** and type +++Do we have chocolate in our food catalog?+++
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image16.png)
+incorrect.](./media/im34.png)
 
 6.  Observe that the agent gives a poetic answer.
 
-    ![A screenshot of a chat AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image17.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im35.png)
 
 7.  Now, add conversation starters to the agent.
 
@@ -171,7 +186,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 11. **Refresh** the chat page to check the same.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image19.png)
+incorrect.](./media/im36.png)
 
 ## Exercise 3: Add web content
 
@@ -202,7 +217,11 @@ web content.
 3.  Ask the agent, +++How can I build a declarative agent?+++ and
     observe that the agent replies from the web.
 
-    ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab7/media/image22.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im37.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im38.png)
 
 ## Summary
 
