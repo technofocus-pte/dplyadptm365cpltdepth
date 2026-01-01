@@ -55,7 +55,8 @@ Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
 1.  Login to +++https://copilotstudio.microsoft.com+++ using the
     login credentials from the **Resources** tab.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image7.png)
+      test
+    - @lab.CloudPortalCredential(User1).Username
 
 2. Select **Get Started** in the **Welcome to Microsoft Copilot Studio** screen. 
 
