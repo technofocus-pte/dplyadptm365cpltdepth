@@ -177,7 +177,7 @@ incorrect.](./media/im42.png)
 
 	Select **Continue**.
 	
-	![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image17.png)
+	>![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image17.png)
 
 5.  Change the **Connector Name** to +++**Jokes MCP**+++.
 
