@@ -17,9 +17,12 @@ completely isolated from any other environment. In this exercise, you
 will create a new dedicated environment in which you will perform the
 remaining exercises and tasks.
 
-1.  Open a browser and, using your login credentials from the
-    **Resources** tab, go to +++https://admin.powerplatform.com+++.
+1.  Open a browser, go to +++https://admin.powerplatform.com+++ and login using the below credentials.
 
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+   
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image1.png)
 
