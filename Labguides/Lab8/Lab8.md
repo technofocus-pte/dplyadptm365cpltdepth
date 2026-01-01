@@ -221,8 +221,8 @@ deliver dynamic jokes from the connected MCP endpoint.
     credentials from the **Resources** tab. Select **Get Started** to
     enable the **trial** license.
 
-	![A screenshot of a web page AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image22.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im14.png)
 
 2.  Select **Create** -\> **+ New agent**.
 
