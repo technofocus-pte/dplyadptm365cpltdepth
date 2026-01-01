@@ -1,4 +1,4 @@
-<img width="472" height="370" alt="image" src="https://github.com/user-attachments/assets/fa1e053c-fd15-4a58-8176-5a24c2e07583" /># Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
+# Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
 
 **Objective**
 
