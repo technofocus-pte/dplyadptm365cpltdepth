@@ -50,6 +50,8 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image6.png)
 
+    >[!Alert] **Important:** The **Environment creation** takes around **10 minutes** to a maximum of **15 minutes**. Wait for that time period and then **refresh** the screen to view the created environment in the **Admin Center**.
+    
 ## Exercise 2 : Creating an agent for Microsoft 365 Copilot Chat
 
 In this exercise you are going to create a declarative agent with
@@ -94,10 +96,15 @@ incorrect.](./media/im40.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im16.png)
 
-8.  Select **Agents** from the left navigation bar and select **Microsoft 365 Copilot** from the list.
+7.  Select **Agents** from the left navigation bar.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im17.png)
+
+8.  Now, select **Microsoft 365 Copilot** from the list.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im41.png)
 
 9.  A new section of Microsoft Copilot Studio will open. From there,
     select the **+ Add** command to create a new agent for Microsoft 365
@@ -107,8 +114,7 @@ incorrect.](./media/im17.png)
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
 
 10.  Copilot Studio asks you to describe in natural language what is the
-    purpose of the agent. You can define your agent requirements. Paste
-    the prompt below to do so
+    purpose of the agent. You can define your agent requirements. **Paste the prompt** below and hit **Send** to do so
 
     +++You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.+++
 
@@ -144,7 +150,8 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image15.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image16.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im19.png)
 
 ## Exercise 3: Publishing the agent in Microsoft 365 Copilot Chat
 
