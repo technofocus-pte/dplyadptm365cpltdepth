@@ -140,7 +140,7 @@ incorrect.](./media/im39.png)
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image14.png)
 
-15. Add **/mcp** to the end of that URL and open it in a browser. You
+15. Add **mcp** to the end of that URL and open it in a browser. You
     will see an error inside a JSON message, which is ok. It means that
     you are reaching the MCP server.
 
