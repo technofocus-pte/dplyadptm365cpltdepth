@@ -121,7 +121,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
    ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image11.png)
 
-11.  When requested by Copilot Studio, give the name "Agentic HR" to your
+11. When requested by Copilot Studio, give the name "Agentic HR" to your
     custom agent. Use the following prompt.
 
     +++Name it as Agentic HR+++
@@ -129,7 +129,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image12.png)
 
-11.  Then, instruct Copilot Studio to have specific tasks or goals with
+11. Then, instruct Copilot Studio to have specific tasks or goals with
     the following instruction:
 
     +++Emphasize everything that helps team building, inclusion, and the growth mindset+++
