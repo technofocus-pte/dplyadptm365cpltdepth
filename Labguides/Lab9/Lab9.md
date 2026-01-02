@@ -1,4 +1,4 @@
-# Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
+<img width="544" height="359" alt="image" src="https://github.com/user-attachments/assets/89456d42-d6ba-4221-bf1b-95cfa0ceb6de" /># Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
 
 **Estimate Time: 60 mins**
 
@@ -242,9 +242,15 @@ agent to streamline IT workflows.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im14.png)
 
+2.  Select **Skip** in the Welcome popup.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im15.png)
+
 3.  In Copilot Studio home section from top right, select the **environment** and choose **DevOne** environment.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image30.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im56.png)
 
     >[!Alert] **Important:** If the Copilot Studio and does not show up the option to select **Environment** as in the below screenshot, then follow the below steps.
     >
@@ -256,44 +262,56 @@ incorrect.](./media/im14.png)
     >
     >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
 
-4.  On welcome copilot studio tab, click on the **Skip** to move forward.
+4. Select **Create an agent**.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image31.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im57.png)
 
-1. Select **Create**, **+ new agent** and switch the toggle from describe to **Configure**.
+5. Select **Edit**.
 
-4.  Select the **Configure** tab.
+       ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im58.png)
 
-5.  Enter **Name, Description and Instruction** of the agent as given
-    below and click on **Create** button.
+6.  Enter **Name** and **Description** as below and select **Save**.
 
     **Name:** +++Contoso IT Support Agent+++
     
-    **Description**: +++Create a Contoso IT Support Agent which transforms IT support at Contoso Solutions by providing instant troubleshooting for common issues, automating ticket creation for unresolved problems, and storing all interactions in Dataverse. This solution enhances response times, reduces manual workloads, and boosts employee productivity.+++
-    
-    **Instruction**: +++Create the Copilot Agent and configure it to handle IT support operations. Add a knowledge source containing solutions for common IT issues like hardware troubleshooting, connectivity, and software glitches. Set up a trigger to detect updates to a OneDrive file describing unresolved issues. Create an action to save these technical issues into a Dataverse table, ensuring all details are stored for tracking and reporting. Test the agent to validate its troubleshooting accuracy and ticket automation workflow before deployment.+++
+    **Description** (Select the **Copy** option and **Paste** it in the **Description** field):
+    ```
+    Create a Contoso IT Support Agent which transforms IT support at Contoso Solutions by providing instant troubleshooting for common issues, automating ticket creation for unresolved problems, and storing all interactions in Dataverse. This solution enhances response times, reduces manual workloads, and boosts employee productivity.
+    ```
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image34.png)
+incorrect.](./media/im59.png)
 
-7.  On the overview page of Contoso IT Support Agent, **Enable** the
-    orchestrator for the agent.
+7. Select **Edit** against the Instructions to give the instructions for the agent.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image35.png)
+incorrect.](./media/im60.png)
 
-8.  From top right corner of the agent, click on
+8. Enter the **instruction** and select **Save**.
+
+   **Instruction**(Select the **Copy** option and **Paste** it in the **Instruction** field):
+	```
+    Create the Copilot Agent and configure it to handle IT support operations. Add a knowledge source containing solutions for common IT issues like hardware troubleshooting, connectivity, and software glitches. Set up a trigger to detect updates to a OneDrive file describing unresolved issues. Create an action to save these technical issues into a Dataverse table, ensuring all details are stored for tracking and reporting. Test the agent to validate its troubleshooting accuracy and ticket automation workflow before deployment.
+ 	```
+
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im61.png)
+
+9. From top right corner of the agent, click on
     the **Settings** button.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image36.png)
 
-9.  Then go to **Generative AI** section, ensure that **Yes** is selected under **Use generative AI orchestration for your agent's responses?** Scroll down and disable the **Use general knowledge** option and then click on **Save**.
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im1.png)
+10. Scroll down and disable the **Use general knowledge** option under the **Knowledge** section and then click on **Save**.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im2.png)
 
 11. Once **saved**, **close** the Settings pane.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im62.png)
 
     **Conclusion**
 
@@ -322,16 +340,18 @@ ensure it effectively assists users in troubleshooting and escalation.
     Knowledge** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image39.png)
+incorrect.](./media/im63.png)
+
 
 2.  Select **Upload file** to add the lab file **Contoso Common IT
-    Issue.docx** from **C:\Autonomous agent\LabFiles** folder and then click
-    on **Add** to save the file.
+    Issue.docx** from **C:\LabFiles\Labfiles\Autonomous agent** folder and then click
+    on **Add to agent** to save the file.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image40.png)
 
-    ![image](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image41.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im64.png)
 
 3.  Again, go to agent overview page, scroll down and click on **+ Add
     knowledge.**
@@ -339,19 +359,18 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image42.png)
 
-4.  Select **Dataverse (preview)** option as data source.
+4.  Select **Dataverse** option as data source.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image43.png)
+incorrect.](./media/im65.png)
 
-5.  In top right corner search bar, enter and search for +++Employee+++ and select **Employee Support Ticket** table. Then click on the **Next** and **Add** button to add the knowledge source.
+5.  Search for +++Employee+++, select **Employee Support Ticket** table. Then select **Add to agent** button to add the knowledge source.
 
     >[!Note] The **table name might be different** in your case since it is
 a Copilot generated one. Try searching for +++Support Ticket+++ if needed.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image44.png)
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image45.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im66.png)
 
     >[!Alert] **Important:** From the Knowledge page, ensure that the added knowledge source has been successfully uploaded. This will generally take 15 to 30 minutes to complete.
 
