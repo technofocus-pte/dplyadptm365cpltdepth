@@ -577,426 +577,157 @@ incorrect.](./media/im79.png)
 
 ## Exercise 6: Configuring a trigger for Automated Actions
 
-This continuation of automating support ticket creation focuses on
-setting up a trigger in the Contoso IT Support Agent to a file creation
-in the OneDrive with the automated Power Automate flow. Participants
-will configure triggers and finalize the agent for deployment.
+This continuation of automating support ticket creation focuses on setting up a trigger in the Contoso IT Support Agent.
+Create a **Team** and a **Support Channel** in the MS Teams. When there is a message posted in the Support Channel, the trigger should get invoked. Participants will configure triggers and finalize the agent for deployment.
 
-1.  Go to overview page of the agent, scroll down and click on **+ Add
-    trigger**.
+1.  Open a browser and open Teams +++https://teams.microsoft.com/+++ in it. Login if prompted.
 
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image83.png)
 
-2.  Select **When a file is created** trigger and click **Next**.
+2.  Select the **New items** icon and select **New Team**.
 
     ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image84.png)
+incorrect.](./media/im80.png)
+
+3.  Enter the  below details and select **Create**.
+
+	-	Team name - +++Support Team+++
+
+    -	Description - +++This is a team to post about support requests.+++
+
+    -	First channel name - +++Support Channel+++
+
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im81.png)
+
+5.  Select **Skip** in the Add members screen.
+
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im82.png)
+
+6.  From the Copilot Studio - overview page of the agent, scroll down and click on **+ Add
+    trigger**.
+
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im84.png)
+
+2.  Select **When a new channel message is added** trigger and click **Next**.
+
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im85.png)
 
 3.  Once the connection establishment is successful, select **Next**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image85.png)
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im86.png)
 
-4.  Select **Root** for **Folder**, **Yes** for **Include Subfolders**
-    and then click on **Create trigger**.
+4.  Select the below values and select Create trigger.
+	
+	-	Team - **Support Team**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image86.png)
+	-	Channel - **Support Channel**
 
-5.  **Close** the Time to test your trigger dialog.
+     ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im87.png)
+
+7.  **Close** the Time to test your trigger dialog.
 
     ![A screenshot of a computer error AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image87.png)
 
-6.  From the Overview page of the agent, select the three dots next to
-    the added trigger – **When a file is created** and select **Edit in
-    Power Automate**.
+8.  From the **Overview** page of the agent, select the three dots next to the added trigger - **When a new channel message is added** and select **Edit in Power Automate**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image88.png)
+incorrect.](./media/im88.png)
 
-7.  Select the + symbol below the When a file is created node to add an
-    action. In the Action pane, search for +++Get a row+++ and select
-    **Get a row** under **Excel Online (Business)**.
+9.  Select the + symbol below the **When a new channel message is added** node to add an action. In the Action pane, search for +++Get a row+++ and select **Get a row** under **Excel Online (Business)**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image89.png)
-
-8.  Once the action is added, add the below details in it.
-
-    - Location – Select OneDrive for Business
-
-    - Document Library – OneDrive
-
-    - File – ITSupport.xlsx
-
-    - Table – Table1
-
-    - Key Column – ID
-
-    - Key Value – +++ID1234+++
+incorrect.](./media/im91.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image90.png)
+incorrect.](./media/im92.png)
 
-9.  Select the **Sends a prompt to the specified copilot for
-    processing** node.
+10. Once the action is added, add the below details in it.
 
-    Under Body/message, enter +++Run the flow Create an Employee Support
-    Ticket+++ then add the dynamic values, Name, ID, Email ID, Description
-    and Status. Then add +++along with a message "New record added to the
-    Employee Support table"+++
-
-    It should look similar to the one in the screenshot below.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image91.png)
-
-10. Now, save the flow by clicking **Save Draft** and then **Publish**
-    it to Publish the flow.
+	- Location - Select OneDrive for Business
+	
+	- Document Library - OneDrive
+	
+	- File - ITSupport.xlsx
+	
+	- Table - Table1
+	
+	- Key Column - ID
+	
+	- Key Value - +++ID1234+++
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image92.png)
+incorrect.](./media/im93.png)
 
-11. Back in the Copilot Studio, **Publish** the agent.
+11. Select the **Sends a prompt to the specified copilot for processing** node.
+
+	Under Body/message, enter +++Run the flow Create an Employee Support Ticket+++ then add the dynamic values, Name, ID, Email ID, Description and Status. Then add +++along with a message "New record added to the Employee Support table"+++
+
+	It should look similar to the one in the screenshot below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image93.png)
+incorrect.](./media/im94.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image94.png)
+12. **Save** the flow.
+    
 
 ## Exercise 7: Test the agent
 
-1.  From the Power Automate flow, **When a file is created**, select
+1.  From the Power Automate flow, **When a new channel message is added**, select
     **Test**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image95.png)
+incorrect.](./media/im95.png)
 
 2.  Select the **Manually** option and select **Test**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image96.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im96.png)
 
-3.  Open your **OneDrive** page. Under **My files**, select **+ Add
-    new** and select **Word document**.
+3.  Open your **Teams** and select **Post in channel** in the **Support Channel** team.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image97.png)
+incorrect.](./media/im97.png)
+
+4.  Enter a message and select **Post**.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im98.png)
 
 4.  Back in the Power Automate page, you can see that the flow has
     started execution and has passed.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image98.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im99.png)
 
 5.  From the agent Overview page, select **Test Trigger** icon.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image99.png)
+incorrect.](./media/im100.png)
 
 6.  Select the latest trigger and select **Start testing**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image100.png)
+incorrect.](./media/im101.png)
 
 7.  It executes the flow, fetches the data from the Support tracker and
     update in the Dataverse table.
 
-    ![A screenshot of a computer screen AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image101.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im102.png)
 
-8.  In this case, there is one support ticket detail in the tracker,
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im103.png)
+
+9.  In this case, there is one support ticket detail in the tracker,
     which gets added to the Dataverse table hence creating a support
     ticket for the user.
 
-9.  An Email generation on receiving an email from a user regarding any
-    issue will be more appropriate. The email configuration part could
-    not be done here due to the tenant permission restrictions. Consider
-    the next Task, if you have a tenant with the permissions.
-
-## Task to be done in production environment
-
-In a production environment, the support ticket generation will be
-mainly mail based.
->[!Alert]
->
->This task is **not** meant to be performed in this test environment,
->since the tenant has restrictions on using the mail account. These steps
->can be added to the flow after the step 10 of the **Exercise 5:
->Automating Support Ticket Creation with Power Automate**, if you have a
->tenant which can send and receive mail.
->
->Ignore this task in this execution. This has been added purely for
->learning and understanding of the mail generation part and setting up
->the incoming mail as a trigger which will play a main part in the IT
->support operations and then testing the agent
-
-1.  Below Add a new row action click on (+) and select **Add an
-    action**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image102.png)
-
-2.  In add an action section, enter +++Send an email+++ in the
-    search bar and select **send an email (V2)** from office 365 outlook
-    section.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image103.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image104.png)
-
-3.  In send an email section, Enter the below given detail in the
-    respected section:
-
-    Replace the place holders for **Name**, **ID**, **Details** with the variables using dynamic content
-
-    **To**
-
-    ```
-    Enter support engineer email (Use any email ID - It will be to this id, the mail will be sent by the agent to when Support Ticket is raised)
-    ```
-    **Subject**
-
-    +++New Technical Support Ticket Raised+++
-
-    **Body**
-
-    ```
-    A new technical support ticket has been raised and requires your attention. Please find details below:
-
-    Employee Name: < Name >
-    Employee ID: < ID > 
-    Technical Issue: < Details >
-
-    Thank you for your prompt attention to this matter.'
-
-    Best Regards
-    ```
-
-    ![A screenshot of a email AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image105.png)
-
-4.  From top left corner rename the flow as +++Create an Employee
-    Support Ticket+++.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image106.png)
-
-5.  Save and publish the flow
-
-6.  Go to overview page of the agent, scroll down and click on **+ Add
-    trigger**.
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image83.png)
-
-7.  Then from Add trigger window, select **When a new email arrives
-    (V3)** trigger.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image107.png)
-
-8.  After successful connection of copilot and outlook and green tick
-    appears click on **Next** button.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image108.png)
-
-9.  In folder field select folder icon and select **Inbox** folder and
-    then select **Create trigger**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image109.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image110.png)
-
-10. Close the **Time to test your trigger** prompt. On Support agent
-    overview page scroll down, on trigger section click on three
-    dots **(…)** and select **Edit in Power Automate.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image111.png)
-
-11. Right click on When a new email arrives trigger and
-    select **Delete**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image112.png)
-
-12. Then click on Add a trigger, search for +++When new email
-    arrives+++ and select **When a new email arrives** trigger
-    from **Office 365 outlook** section.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image113.png)
-
-13. Click on **Send a prompt to the specified copilot for processing**,
-    in body/message section enter the prompt, +++Run Create an
-    Employee Support Ticket flow and use content from Body From.+++
-    Replace **Body** and **From** as dynamic content variable.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image114.png)
-
-14. **Save** and **Publish** the flow, close power automate window and
-    go back to copilot window.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image115.png)
-
-15. Go to overview section and from top right corner click
-    on **Publish** and again click **Publish** to publish the copilot.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image116.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image117.png)
-
-    **Conclusion**
-
-    By completing this exercise, participants will learn:
-
-    - Techniques to automate email notifications for technical issue
-    escalation.
-
-    - How to set up triggers in Copilot to automate workflows based on email
-    inputs.
-
-    - Steps to dynamically map email content to Power Automate flows.
-
-    - The process of publishing and finalizing the AI agent for operational
-    use.
-
-    - Practical skills in linking communication tools like Outlook with
-    automated workflows.
-
-    **Test the agent**
-
-    This exercise focuses on testing the integration of the Contoso IT
-    Support Agent with Power Automate and Outlook. Participants will verify
-    the agent's ability to process emails, create support tickets, and
-    trigger automated workflows effectively.
-
-1.  Go to overview page of agent, scroll down, click on **(…)** on
-    trigger and select **Edit in power automate**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image118.png)
-
-2.  It will navigate to power automate flow, from top bar click
-    on **Test** button and then select **Manually** and again click
-    on **Test**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image119.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image120.png)
-
-3.  **Send an email** to the 365 admin tenant mail id from any other
-    mail box in order to **trigger the action**. The mail should be
-    describing an issue and should have your details like employee id in
-    it, similar to the one in the below screenshot. Example content is
-    as below
-
-    ```
-    Hi Support Team,
-
-    I hope this message finds you well.
-    Iam Mark Brown, working as a Software Engineer at Contoso. My employee ID is CONTOSO099
-    Issue: Monitor is completely balank and not functioning.
-    Kindly raise a support ticket and assist in resolving this issue at the earlierst.
-    Thank you for your support.
-
-    Best Regards,
-    Mark Brown
-    ```
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image121.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image122.png)
-
-4.  Navigate to copilot agent overview page, scroll down and
-    select **Test trigger**.
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image123.png)
-
-5.  Click on **Start testing**, it will start testing.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image124.png)
-
-6.  In test section click on the **Connect**, it will open the
-    connection window.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image125.png)
-
-7.  Click on the **Connect** again and then select **Submit.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image126.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image127.png)
-
-8.  Navigate to copilot studio window and re run the **Test**.
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image123.png)
-
-9.  The support request is automatically generated.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image128.png)
-
-10. Navigate to power apps and go to Employee support ticket record
-    table, and check the details.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image129.png)
-
-11. Check the Support mail which we configure in power automate flow to
-    send an email. The email is automatically sent to the support team.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image130.png)
-
-12. Go to test window and writer query as user +++Mark Brown Ticket
-    Current Status+++ . It gives the status of the issue as
-    unresolved.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image131.png)
-
-13. As Support Engineer, write a prompt in the test section. +++I want
-    to know about all Unresolved ticket+++ .
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image132.png)
-
-    **Conclusion**
-
-    By completing this exercise, participants will learn:
-
-    - How to test the agent's functionality by simulating real-world
-    scenarios.
-
-    - Steps to validate email-triggered workflows and ticket generation in
-    Power Automate.
-
-    - How to review generated records in Dataverse and ensure notifications
-    are sent to the support team.
-
-    - Practical insights into debugging and finalizing automation workflows.
 
 **Final Conclusion of the Lab Guide**
 
