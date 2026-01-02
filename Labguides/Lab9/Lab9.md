@@ -38,7 +38,8 @@ applications.
 
 1.  Navigate to power apps website +++https://www.microsoft.com/en-us/power-platform/products/power-apps+++ and click on the **Try for Free** button.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im48.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im48.png)
 
 2.  Enter the **Username**, +++@lab.CloudPortalCredential(User1).Username+++. **select** the **checkbox** and click on the **Start free** button. Select country of origin.
 
