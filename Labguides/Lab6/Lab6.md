@@ -1,10 +1,30 @@
 # Lab 6 - Extend Microsoft 365 Copilot Chat with a HR Agent built using Microsoft Copilot Studio
 
+**Scenario**
+
+**Zava** Ltd. is a global professional services and technology solutions **company** with a **distributed workforce**. The organization uses Microsoft 365, SharePoint, and Power Platform to manage HR operations, employee learning, and recruitment data.
+
+Zava is looking to **enhance employee experience** by enabling quick, conversational access to **HR-related information** directly within **Microsoft 365 Copilot Chat**. **Employees** frequently ask questions about **HR policies**, career growth opportunities, learning pathways, and recruitment data stored across SharePoint sites.
+
+To address this, Zava’s IT and HR teams decide to build a **dedicated HR agen**t using **Microsoft Copilot Studio**. This agent will be declaratively defined, hosted inside Microsoft 365 Copilot Chat, and enriched with organizational knowledge stored in SharePoint. The solution must be built in a secure, isolated Power Platform environment and seamlessly integrated into the Microsoft 365 experience.
+
 **Objective**
 
-In this lab, you will learn how to extend Microsoft 365 Copilot Chat
-with a Declarative Agent made using Microsoft Copilot Studio.  You will
-also learn to add a custom action to the agent that you made.
+By completing this lab, you will learn how to:
+
+-    Create and manage a dedicated **Power Platform environment** for **agent development**.
+
+-    Build a **declarative agent** using **Microsoft Copilot Studio** for Microsoft 365 Copilot Chat.
+
+-    Define **agent** purpose, tone, and behavioral goals using **natural language prompts**.
+
+-    **Publish** and **deploy** the agent into Microsoft 365 Copilot Chat
+
+-    Create and configure a **SharePoint communication site** to host **HR-related data**.
+
+-    Add SharePoint-based **knowledge sources** to a **Copilot Studio agent**.
+
+-    **Test** the agent’s ability to retrieve and reason over structured organizational data within Copilot Chat.
 
 Estimated duration – 45 minutes
 
@@ -337,8 +357,11 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 
 ## Summary
 
-In this lab, you have successfully learnt, how to use custom connectors
-in Copilot Studio.
+In this lab, you successfully **extended Microsoft 365 Copilot Chat** by creating an **Agentic HR declarative agent** using Microsoft Copilot Studio. You set up a dedicated Power Platform environment, designed and published an HR-focused agent, and integrated it into the Microsoft 365 Copilot experience.
+
+You also created a SharePoint communication site, uploaded HR-related content, and connected it as a knowledge source for the agent. Finally, you validated the solution by querying the agent in Copilot Chat and receiving context-aware responses sourced from SharePoint.
+
+This lab **demonstrates** how **Copilot Studio** enables organizations to build domain-specific agents that securely leverage enterprise knowledge and enhance productivity through conversational AI within Microsoft 365.
 
 
 
