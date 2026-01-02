@@ -1,14 +1,28 @@
 # Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
 
+**Scenario**
+
+An organization wants to explore how **Microsoft 365 Copilot** can be customized using **declarative agents** to deliver unique, branded, and personality-driven experiences. As a proof of concept, the team decides to build a creative agent that responds to user questions in a **poetic form**, while still leveraging Microsoft 365 Copilot’s core intelligence and web knowledge.
+
+Using **Microsoft 365 Agents Toolkit** in Visual Studio Code, the team will create a declarative agent, **define** its **behavior** through **instructions**, enhance the user experience with **conversation starters**, and enable **web search** capabilities—all while testing the agent directly within **Microsoft 365 Copilot Chat**.
+
 **Objective**
 
-A declarative agent is a customized version of Microsoft 365 Copilot
-that allows users to create personalized experiences by declaring
-specific instructions, actions, and knowledge. This guide provides
-information about how to build a declarative agent by using Microsoft
-365 Agents Toolkit (an evolution of Teams Toolkit).
+By completing this lab, you will learn how to:
 
-In this lab, you will build a poetic declarative agent.
+-    **Create a declarative agent** using Microsoft 365 Agents Toolkit in Visual Studio Code.
+
+-    **Provision** and **test** the declarative agent within Microsoft 365 Copilot Chat.
+
+-    **Define agent behavior** using **instruction prompts** in the agent manifest.
+
+-    **Customize** the agent’s personality by enforcing poetic responses.
+
+-   **Add conversation starters** to guide user interaction.
+
+-    **Enable web search** capabilities for the agent.
+
+-    **Validate agent behavior** after each enhancement through live testing.
 
 ## Exercise 1: Create a declarative agent
 
@@ -225,9 +239,9 @@ incorrect.](./media/im38.png)
 
 ## Summary
 
-You've learnt to create the declarative agent for Microsoft 365 Copilot.
-You have also learnt to enhance the created agent with instructions and
-web content and test it at each stage.
+In this lab, you successfully **built** a **poetic declarative agent** using **Microsoft 365 Agents Toolkit**. You created and provisioned a basic declarative agent, tested its integration with Microsoft 365 Copilot Chat, and enhanced it by adding custom instructions that transform every response into a poem.
+
+You further improved the agent experience by adding conversation starters and enabling web search capabilities, allowing the agent to retrieve external information while maintaining its poetic style. This lab demonstrates how declarative agents can be customized through configuration and instructions—without writing code—to deliver creative, controlled, and engaging Copilot experiences within Microsoft 365.
 
 
 ===
