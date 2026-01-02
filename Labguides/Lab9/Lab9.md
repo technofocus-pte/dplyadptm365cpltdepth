@@ -451,7 +451,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image57.png)
 
-3.  Verify the **Designer** tab is selected. Select **Add a trigger** and then select **When an agent calls the
+3.  Ensure that the **Designer** tab is selected. Select **Add a trigger** and then select **When an agent calls the
     flow** trigger.
 
     ![A screenshot of a computer AI-generated content may be
