@@ -374,39 +374,17 @@ incorrect.](./media/im66.png)
 
     >[!Alert] **Important:** From the Knowledge page, ensure that the added knowledge source has been successfully uploaded. This will generally take 15 to 30 minutes to complete.
 
-### Task 2: Customize the Conversation Start Topic
+### Task 2: Customize the Fallback Topic
 
-1.  From the top bar option click on **Topics**, select **System** and then click and open **Conversation Start** topic.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image46.png)
-
-2.  Scroll down and go to message node. Update the message after bot
-    name as given below:
-
-    Hello. I’m Bot Name, a virtual assistant. +++How can I help you?+++
+1.  From the top bar option click on **Topics**, select **System** and then click and open **Fallback** topic.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image47.png)
-
-3.  From top click on the **Save** to save the topic.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image48.png)
-
-### Task 3: Update the Fallback Topic
-
-1.  From the top bar option click on **Topics** and then open
-    the **Fallback** topic.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image49.png)
+incorrect.](./media/im68.png)
 
 2.  Scroll down and go to message node. Update the message as given
     below:
 
-    +++I’m sorry. This information is not available in my system. You can
-raise the support ticket via mail for this issue.+++
+    +++I’m sorry. This information is not available in my system. You can raise the support ticket via mail for this issue.+++
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image50.png)
@@ -436,11 +414,10 @@ Agent to validate its functionality. Participants will check how the bot
 handles prompts using the knowledge base and fallback topics to ensure
 seamless interaction and escalation.
 
-1.  From top right corner click on the **Test** button. Then in test
-    section click on **Map** turn it **On** and then click **Refresh**.
+1.  From top right corner click on the **Test** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image52.png)
+incorrect.](./media/im69.png)
 
 2.  Enter the prompt +++My printer is not working how to fix it+++ .
     It gives the solution as per knowledge source.
@@ -448,18 +425,6 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image53.png)
 
-3.  Again, give the prompt +++Two factor Authentication (2FA)
-    issue+++ .
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image54.png)
-
-4.  The 2FA issue and solution is not available in the knowledge source
-    so it will go to fallback topic and return prompt related to Raise
-    Ticket.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image55.png)
 
 **Conclusion**
 
@@ -468,9 +433,6 @@ By completing this exercise, participants will learn:
 - How to test and activate an AI agent for troubleshooting.
 
 - Validation of the bot’s ability to respond using its knowledge base.
-
-- How fallback topics handle unsupported queries and redirect users
-  effectively.
 
 ## Exercise 5: Automating Support Ticket Creation with Power Automate
 
