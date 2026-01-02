@@ -38,12 +38,23 @@ applications.
 
 1.  Navigate to power apps website +++https://www.microsoft.com/en-us/power-platform/products/power-apps+++ and click on the **Try for Free** button.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im1.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im48.png)
 
 2.  Enter the **Username**, +++@lab.CloudPortalCredential(User1).Username+++. **select** the **checkbox** and click on the **Start free** button. Select country of origin.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image2.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image49.png)
 
+3. Enter the Temporary Access Pass - +++@lab.CloudPortalCredential(User1).TAP+++
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im50.png)
+
+4.  Select **Get Started**.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im42.png)
+
+6.  
 ### Task 2: Update the Developer environment settings
 
 1.  Login to the Power Platform admin center at
