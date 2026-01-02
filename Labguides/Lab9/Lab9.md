@@ -1,4 +1,4 @@
-<img width="608" height="344" alt="image" src="https://github.com/user-attachments/assets/a9e82cf1-18e6-4ef9-b170-18c6173e3145" /># Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
+# Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
 
 **Estimate Time: 60 mins**
 
