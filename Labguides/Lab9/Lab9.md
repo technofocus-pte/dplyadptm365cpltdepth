@@ -56,12 +56,12 @@ incorrect.](./media/im50.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im42.png)
 
-6.  
+
 ### Task 2: Update the Developer environment settings
 
-1.  Login to the Power Platform admin center at
-    +++https://admin.powerplatform.microsoft.com/home+++ using your
-    login credentials.
+1.  From a new tab in the browser, open Power Platform admin center - 
+    +++https://admin.powerplatform.microsoft.com/home+++ and sign in using your
+    login credentials if prompted.
 	
 	- +++@lab.CloudPortalCredential(User1).Username+++
 	- +++@lab.CloudPortalCredential(User1).AccessToken+++
@@ -121,13 +121,17 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 10. Under the **Features**, toggle on **Dataverse search**, select **save**, then toggle **Single table search** option to On and select **Save**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image14.png)
+incorrect.](./media/im51.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im52.png)
 
 ### Task 3: Setting Up a Dataverse Table
 
-1.  From the Admin PowerPlatform page, select the **Manage** on the left side panel, **Environments**, **Dev One** environment and open the **Environment URL**. 
+1.  Navigate back to the **PowerApps page** and select the **DevOne** environment from the list of environments.
 
-1. Select the **Power Platform Environment**. Under **Customizations** select **Solutions**. 
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im53.png)
 
 2.  From the left navigation bar select **Tables.** In the tables
     section top bar click on the **+ New table** and then
@@ -136,21 +140,21 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image16.png)
 
-3.  Select **Import an Excel file or CSV** option to create a new table.
+4.  Select **Import an Excel file or CSV** option to create a new table.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image17.png)
 
-4.  Click on the **Select form device** option and select **Support
-    Ticket** excel file from **C:\Autonomous agent\LabFiles** folder.
+5.  Click on the **Select form device** option and select **Support
+    Ticket** excel file from **C:\LabFiles\Labfiles\Autonomous agent** folder.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image18.png)
 
-5.  Select **Import** in the next screen.
+6.  Select **Import** in the next screen.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image19.png)
 
-6.  Select the table and click on **View data** to see the table.
+7.  Select the table and click on **View data** to see the data.
 
     >[!Note] **Note:** In this case, the table is named *Employee Support Ticket*. The name may vary with each execution. Please save the
 table name for future reference. The column name may also vary in the execution. 
@@ -158,7 +162,7 @@ table name for future reference. The column name may also vary in the execution.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image20.png)
 
-7.  Go to table data, select the drop down next to the **Issue
+8.  Go to table data, select the drop down next to the **Issue
     Description** field, select **Edit column**, Set the data type
     as **Text** 🡪 **Multiple line** 🡪 **Plain Text** and click on
     the **Update**. The column name may be different in each case.
@@ -171,7 +175,7 @@ Copilot generated.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image22.png)
 
-8.  Select drop down next to the **Ticket Status** field, select **Edit
+9.  Select drop down next to the **Ticket Status** field, select **Edit
     column**, Set the Choices as +++Unresolved+++,
     +++Resolved+++, +++Processing+++. Set Default choice
     as **Unresolved** and click on the **Update**.
@@ -179,7 +183,7 @@ Copilot generated.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image23.png)
 
-9.  From top right side click on **Save and exit** to save the table.
+10.  From top right side click on **Save and exit** to save the table.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image24.png)
@@ -187,26 +191,27 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 ### Task 4: Add a file to the OneDrive
 
 1.  From the top left of the Power Apps page, select the menu and select
-    OneDrive.
+    **OneDrive**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image25.png)
 
-2.  Select **My files** - **+ Add new**.
+2.  Select **My files** - **+ Create or upload**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image26.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im54.png)
 
 3.  Select **Files upload**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image27.png)
+incorrect.](./media/im55.png)
 
-4.  Choose **IT Support.xlsx** from **C:\LabFiles**.
+5.  Choose **IT Support.xlsx** from **C:\LabFiles\Labfiles**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image28.png)
 
-5.  This file will be used in a later exercise.
+6.  This file will be used in a later exercise.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image29.png)
 
@@ -232,9 +237,12 @@ agent to streamline IT workflows.
 
 ### Task 1: Creating and Configuring Contoso IT Support Agent
 
-1.  Login to +++https://copilotstudio.microsoft.com+++ using your loding credentials.
+1.  From a new tab, login to +++https://copilotstudio.microsoft.com+++ using your login credentials. Select **Get Started**.
 
-2.  In Copilot Studio home section from top right, select the **environment** and choose **DevOne** environment.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im14.png)
+
+3.  In Copilot Studio home section from top right, select the **environment** and choose **DevOne** environment.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image30.png)
 
@@ -248,7 +256,7 @@ agent to streamline IT workflows.
     >
     >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
 
-3.  On welcome copilot studio tab, click on the **Skip** to move forward.
+4.  On welcome copilot studio tab, click on the **Skip** to move forward.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image31.png)
 
