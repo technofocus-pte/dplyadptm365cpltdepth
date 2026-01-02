@@ -43,7 +43,8 @@ incorrect.](./media/im48.png)
 
 2.  Enter the **Username**, +++@lab.CloudPortalCredential(User1).Username+++. **select** the **checkbox** and click on the **Start free** button. Select country of origin.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image49.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im49.png)
 
 3. Enter the Temporary Access Pass - +++@lab.CloudPortalCredential(User1).TAP+++
 
