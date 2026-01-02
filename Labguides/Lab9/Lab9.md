@@ -1,4 +1,4 @@
-# Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
+<img width="608" height="344" alt="image" src="https://github.com/user-attachments/assets/a9e82cf1-18e6-4ef9-b170-18c6173e3145" /># Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
 
 **Estimate Time: 60 mins**
 
@@ -353,8 +353,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im64.png)
 
-3.  Again, go to agent overview page, scroll down and click on **+ Add
-    knowledge.**
+3.  Again, go to agent overview page, scroll down and click on **+ Add knowledge.**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image42.png)
@@ -372,7 +371,7 @@ a Copilot generated one. Try searching for +++Support Ticket+++ if needed.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im66.png)
 
-    >[!Alert] **Important:** From the Knowledge page, ensure that the added knowledge source has been successfully uploaded. This will generally take 15 to 30 minutes to complete.
+    >[!Alert] **Important:** From the Knowledge page, ensure that the added knowledge source has been successfully uploaded. This will generally take 10 to 15 30 minutes to complete.
 
 ### Task 2: Customize the Fallback Topic
 
@@ -444,29 +443,24 @@ data in Dataverse.
 1.  Select **Flows** from the left menu bar of the agent.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image56.png)
+incorrect.](./media/im70.png))
 
 2.  Select **+ New agent flow**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image57.png)
+incorrect.](./media/im71.png)
 
-3.  Ensure that the **Designer** tab is selected. Select **Add a trigger** and then select **When an agent calls the
-    flow** trigger.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image58.png)
+3.  Search for and select +++**When an agent calls the flow**+++ trigger under **Skills**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image59.png)
+incorrect.](./media/im72.png)
 
-4.  Select the added trigger, **When an agent calls the flow** and then
-    select **Add an Input**.
+4.  Select **Add an Input**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image60.png)
+incorrect.](./media/im73.png)
 
-5.  Select **Text** as data type of input and rename the input as
+6.  Select **Text** as data type of input and rename the input as
     +++Name+++.
 
     ![A screenshot of a computer AI-generated content may be
@@ -475,7 +469,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image62.png)
 
-6.  With same procedure create more input as per given below details.
+7.  With same procedure create more input as per given below details.
 
     | **Input Name**  |  **Data Type** |
     |:------|:---------|
@@ -485,12 +479,11 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image63.png)
 
-7.  Below **When an agent calls the flow**, click on **(+)** sign and
-    select **Add an action**.
+8.  Below **When an agent calls the flow**, click on **(+)** sign to **Add an action**.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image64.png)
 
-8.  In Add an action search bar, enter +++Add a new row+++ . Then select **Add a new row** from Microsoft Dataverse section.
+9.  In Add an action search bar, enter +++Add a new row+++ . Then select **Add a new row** from Microsoft Dataverse section.
 
     ![A screenshot of a computer program AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image65.png)
@@ -501,12 +494,12 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image66.png)
 
-9.  In **Table Name** section search and select +++Employee Support Ticket+++ (or your corresponding table name created).
+10.  In **Table Name** section search and select +++Employee Support Ticket+++ (or your corresponding table name created).
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image67.png)
 
-10. Below table name select **Show all**, then click on the particular field and add **input** with the help of **dynamic content** button
+11. Below table name select **Show all**, then click on the particular field and add **input** with the help of **dynamic content** button
  (**Thunder bolt**) as per the below table.
 
     Set the **Current Status** field to **Unresolved**.
@@ -522,27 +515,23 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image69.png)
 
-11. From the top bar click on **Save draft** and then
+12. From the top bar click on **Save draft** and then
     click **Publish**. **Close** the Power automate tab.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image70.png)
 
-12. Select **Flows** from the left menu bar and then select the
-    **Untitled** flow(the one that we just created).
+13. Select tha **Overview** tab.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image71.png)
+incorrect.](./media/im74.png)
+
+15. Select **Edit** under **Details**, in the flow.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image72.png)
+incorrect.](./media/im75.png)
 
-13. Select **Edit** in the flow.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image73.png)
-
-14. Name the flow as +++Create an Employee Support Ticket+++ and
+16. Name the flow as +++Create an Employee Support Ticket+++ and
     select **Save**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -551,42 +540,27 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image75.png)
 
-15. From the **Contoso IT Support Agent** **Overview** page, select **+ Add tool**, search for **employee**.
-
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image76.png)
-
-16. Select the **Create an Employee Support Ticket** Agent flow.
+17. From the **Contoso IT Support Agent** **Overview** page, select **+ Add tool**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image77.png)
+incorrect.](./media/im76.png)
 
-17. Click on **Add tool** button to add a flow.
-
-    ![A screenshot of a computer screen AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image78.png)
-
-18. From the **Overview** page of the agent, select **inputs** to Edit the **Inputs** section.
+18. Select the **Flows** tab and select **Create an Employee Support Ticket** Agent flow.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image79.png)
+incorrect.](./media/im77.png)
 
-    ![A screenshot of a support ticket AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image80.png)
+19. Select **Add and configure** button to add the flow.
 
-19. Enter the given description in the respected input field by selecting **customize** next to each field, after entering the description click on **Save** button.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im78.png)
 
-    | **Section**  | **Details**  |
-    |:------|:-------|
-    | Name -- Description  | +++Enter the name of the employee.+++  |
-    | ID -- Description  | +++Enter the employee ID in the field.+++  |
-    | Email -- Description  | +++Enter the email address of the employee from whom the email is received.+++  |
-    |  Details -- Description |  +++Enter the email details of the employee.+++ |
+20. Ensure that the **tool** is **added** to the agent.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image81.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im79.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image82.png)
-
-    *Conclusion**
+    **Conclusion**
     
     By completing this exercise, participants will learn:
 
