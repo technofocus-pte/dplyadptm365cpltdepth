@@ -1,7 +1,5 @@
 # **Get Started with Workflows in Microsoft 365 Copilot**
 
-![](./media/9b34bf87f97fc475837451a0b0bc7e06a8beebaf.png)
-
 ## **What is Workflows Agent?**
 
 Workflows is an agent in Microsoft 365 Copilot that helps you automate
@@ -64,7 +62,8 @@ summarize content.
 ## Exercise 1: Add Workflows Agent to Copilot
 
 1.  Open **Microsoft 365 Copilot**
-    www.micorsoft
+
+> <https://www.microsoft365.com/>
 
 1.  **Sign in with your Microsoft 365 Copilot account**
 
