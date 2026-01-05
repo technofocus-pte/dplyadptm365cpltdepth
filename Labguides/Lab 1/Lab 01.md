@@ -63,9 +63,8 @@ summarize content.
 
 ## Exercise 1: Add Workflows Agent to Copilot
 
-1.  Sign in to **Microsoft 365 Copilot**
-
-&nbsp;
+1.  Open **Microsoft 365 Copilot**
+    www.micorsoft
 
 1.  **Sign in with your Microsoft 365 Copilot account**
 
