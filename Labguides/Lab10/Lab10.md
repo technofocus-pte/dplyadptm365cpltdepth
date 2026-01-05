@@ -16,46 +16,42 @@ Estimated duration - 40 minutes
       
     - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
 
-2.  If you are already on the Copilot Studio page, click on **Home** to
-    go to the Home page.
+2.  From the **Home page**, in the text area - Start building by describing what your agent needs to do, enter +++I want you to be a question and answering assistant that can answer common questions from users using the content of a website+++ and click on **Send**.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image2.png)
-
-3.  On the Home page, in the text area under Describe your agent to
-    create it, enter +++I want you to be a question and answering assistant that can answer common  questions from users using the content of a website+++ and click on **Send**.
-
-   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image3.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im104.png)
     
-5.  It might suggest a name for the agent. Either accept it or provide
-    your own name.
+4.  The agent gets created as per the requirements
     
-   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img19.png)
-    
-7.  Give other details regarding the functions of the agent like below.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im105.png)
+ 
+5.  Scroll down and select** + Add knowledge** under the Knowledge section.
 
-    +++help answer common product and support questions using the content of a website, and help answer HR questions from an uploaded file+++
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im106.png)
 
-   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img20.png)
-    
-9.  Provide +++www.microsoft.com+++ for the website that will be used a
-    sknowledge source.
+7.  Select the **Public websites** option.
 
-   ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image4.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im107.png)
 
-10. Once done with giving instructions, click on **Create** to create
-     your agent.
-  **Note**: Setting up the agent may take a few minutes. Once the setup is complete, click Skip to continue.
-  ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img21.png)
+7.  Enter +++www.microsoft.com+++ and select **Add**.
 
-11.  Select the agent gets created to view the agent details. Scroll through
-    the page to understand that the agent has been created with the
-    instructions you have provided for it.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im108.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image6.png)
+8.  Select Add to agent.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image7.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im109.png)
 
-11.  Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio+++ and hit **Enter**.
+10.  The website is added as a knowledge source to the agent.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im110.png)
+
+11.  Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio?+++ and hit **Enter**.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image8.png)
 
@@ -63,58 +59,38 @@ Estimated duration - 40 minutes
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image9.png)
 
-For both the above steps, you will get an answer from the agent which
-will be a generic one since the agent will be using its general
-knowledge.
+    For both the above questions, you will get an answer from the agent which will be a generic one since the agent will be using its general knowledge.
 
 ## Exercise 2: Create a Prompt action for a Topic for generative answers
 
-Actions can be used to extend the capabilities of agents. You can add
-multiple types of actions to your agents in Microsoft Copilot Studio:
+Use **prompt** in **Copilot Studio** to natural language actions as copilot extensions. These actions use the generative AI models from AI Builder and natural language understanding to address specific scenarios for your copilots. This means you can extend the capabilities of your copilots by simply creating natural language based prompt actions.
 
-- **Prebuilt connector action**, which use Power Platform connectors to
-  access data from other systems, such as popular enterprise products
-  like Salesforce, Zendesk, MailChimp, and GitHub.
-
-- **Custom connector action**, where a connector can be built to access
-  data from public or private APIs.
-
-- **Power Automate cloud flow**, which use Power Automate cloud flows to
-  perform actions, retrieve and work with data.
-
-- **AI Builder prompts**, which use AI Builder and natural language
-  understanding to target the specific scenarios and workflows within
-  your business.
-
-- **Bot Framework skill**, which use the skill manifest that outlines
-  the actions the skill can perform, including its input and output
-  parameters, the skill's endpoints, and dispatch models for the skill.
-
-In this exercise, you will learn how to add a prompt to action to a
-topic node
+In this exercise, you will learn how to add a prompt to action to a topic node
 
 1.  In your agent select the **Topics** tab, select **+ Add a
     topic** and select **From blank**.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image10.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im111.png)
 
-2.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**.
+3.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**.
 
-    +++create a number of questions for a quiz based on a topic and format the quiz based on the instruction provided+++
+    ```
+    create a number of questions for a quiz based on a topic and format the quiz based on the instruction provided
 
-    +++creates a quiz with a number of questions based on the topic provided and formats the quiz+++
+    creates a quiz with a number of questions based on the topic provided and formats the quiz
 
-    +++generate a quiz with a number of questions using the topic provide and format the questions+++
+    +enerate a quiz with a number of questions using the topic provide and format the questions
 
-    +++creates questions for a quiz on a specific topic and format+++
+    creates questions for a quiz on a specific topic and format
 
-    +++format a quiz by a number of questions based on the topic provided+++
-
+    format a quiz by a number of questions based on the topic provided
+    ```
     Select **Save** on the top right to save the topic.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img22.png)
 
-3.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
+4.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img23.png)
 
