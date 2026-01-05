@@ -10,11 +10,11 @@ Estimated duration - 40 minutes
 
 ## Exercise 1: Use natural language to create an agent
 
-1.  Open a browser and login to +++https://copilotstudio.microsoft.com/+++ and login with the
-    credentials from the Resources tab if you are not in that page
-    already.
+1.  Open a browser and login to +++https://copilotstudio.microsoft.com/+++ and login with the below credentials.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image1.png)
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
 
 2.  If you are already on the Copilot Studio page, click on **Home** to
     go to the Home page.
