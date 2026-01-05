@@ -1,7 +1,5 @@
 # Lab 4: Create Visual Content Using the Create Experience in Microsoft 365 Copilot
 
-![](./media/image1.png)
-
 ## Lab Objective
 
 In this lab, you will learn how to use the **Create experience in
