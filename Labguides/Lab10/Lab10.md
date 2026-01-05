@@ -41,17 +41,17 @@ incorrect.](./media/im107.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im108.png)
 
-8.  Select Add to agent.
+8. Select Add to agent.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im109.png)
 
-10.  The website is added as a knowledge source to the agent.
+10. The website is added as a knowledge source to the agent.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im110.png)
 
-11.  Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio?+++ and hit **Enter**.
+11. Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio?+++ and hit **Enter**.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image8.png)
 
