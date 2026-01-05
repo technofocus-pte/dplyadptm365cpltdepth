@@ -1,7 +1,5 @@
 # Lab 3: Personalized Upskilling with Learning Agent in Microsoft 365 Copilot
 
-![](./media/10f2f3249f323c074e9eb17d374c1cbf325e93b0.png)
-
 ## Introduction
 
 Learning agent empowers people to continuously grow and achieve more by
