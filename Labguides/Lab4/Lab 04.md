@@ -2,7 +2,7 @@
 
 ![](./media/image1.png)
 
-## Lab Objective (Executive Context)
+## Lab Objective
 
 In this lab, you will learn how to use the **Create experience in
 Microsoft 365 Copilot** to quickly generate **executive-grade visual
@@ -28,7 +28,7 @@ By the end of this lab, you will be able to:
 
 - Reuse content across leadership communications
 
-## Real-Time Executive Scenario (Used Throughout the Lab)
+## Real-Time Executive Scenario 
 
 You are a **senior business leader** (CXO / VP / Director).
 
@@ -100,7 +100,7 @@ switching tools.
 - The **Create dashboard** opens, showing content types such as images,
   banners, and videos.
 
-## Exercise 2: Create an Executive Announcement Image (Leadership Communication)
+## Exercise 2: Create an Executive Announcement Image 
 
 **Executive Scenario:**
 
