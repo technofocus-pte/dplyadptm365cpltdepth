@@ -73,14 +73,14 @@ In this exercise, you will learn how to add a prompt to action to a topic node
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im111.png)
 
-3.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**.
+3.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**(Select **Copy** option and paste it in the **Description** area).
 
     ```
     create a number of questions for a quiz based on a topic and format the quiz based on the instruction provided
 
     creates a quiz with a number of questions based on the topic provided and formats the quiz
 
-    +enerate a quiz with a number of questions using the topic provide and format the questions
+    generate a quiz with a number of questions using the topic provide and format the questions
 
     creates questions for a quiz on a specific topic and format
 
@@ -88,7 +88,8 @@ incorrect.](./media/im111.png)
     ```
     Select **Save** on the top right to save the topic.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img22.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im62.png)
 
 4.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
 
@@ -103,10 +104,7 @@ incorrect.](./media/im111.png)
 
 7.  Paste the below content in the Prompt field.
 
-    +++Generate a quiz with [number] questions to cover this [topic].
-Decide on the format, such as multiple-choice questions or true/false
-statements. Use this [format]. Designate the correct answer within
-parentheses.+++
+    +++Generate a quiz with [number] questions to cover this [topic]. Decide on the format, such as multiple-choice questions or true/false statements. Use this [format]. Designate the correct answer within parentheses.+++
 
     Select [number], expand **+ Add context** section and select **Text**.
 
@@ -130,7 +128,7 @@ parentheses.+++
 16. The prompt action node will now appear in the authoring canvas of
     the Topic. Next, the values of the input parameter need to be
     defined in order for the agent to populate them. Select
-    the **\>** icon
+    the **...** icon
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image22.png)
 
@@ -148,7 +146,7 @@ parentheses.+++
 19. Next, we need to define the output variable of the prompt action.
     This is so that the response can be referenced downstream in the
     topic. Select the **\>** icon and in the **Custom** tab,
-    select **Create new** and and name the variable as +++**VarQuizQuestionsResponse**+++. 
+    select **Create new** and name the variable as +++**VarQuizQuestionsResponse**+++. 
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image25.png)
 
@@ -177,7 +175,7 @@ parentheses.+++
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image29.png)
 
-25. Now we are ready to test the agent. In the test pane, select the **refresh** icon. Then enter the following question and observe the output.
+25. Now we are ready to test the agent. Open the Test pane, and enter the following question and observe the output.
 
     +++Create 5 questions for a quiz based on geography and format the quiz as multi choice+++
 
