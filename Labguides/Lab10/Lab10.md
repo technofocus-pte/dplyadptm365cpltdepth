@@ -26,7 +26,7 @@ incorrect.](./media/im104.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im105.png)
  
-5.  Scroll down and select** + Add knowledge** under the Knowledge section.
+5.  Scroll down and select **+ Add knowledge** under the Knowledge section.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im106.png)
