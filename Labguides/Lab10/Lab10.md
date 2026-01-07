@@ -88,9 +88,6 @@ incorrect.](./media/im111.png)
     ```
     Select **Save** on the top right to save the topic.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im62.png)
-
 4.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img23.png)
