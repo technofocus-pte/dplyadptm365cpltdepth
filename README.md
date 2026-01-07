@@ -1,2 +1,2 @@
 # dplyadptm365cpltdepth
-Deploy and Adopt M365 Copilot + Agents
+Next-Gen Productivity: Copilot + Agents for the Modern Enterprise
