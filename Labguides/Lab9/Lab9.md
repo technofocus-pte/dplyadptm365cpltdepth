@@ -494,7 +494,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image66.png)
 
-10.  In **Table Name** section search and select +++Employee Support Ticket+++ (or your corresponding table name created).
+10. In **Table Name** section search and select +++Employee Support Ticket+++ (or your corresponding table name created).
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image67.png)
