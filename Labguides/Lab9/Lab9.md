@@ -634,7 +634,9 @@ incorrect.](./media/im87.png)
     ![A screenshot of a computer error AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image87.png)
 
-8.  From the **Overview** page of the agent, select the three dots next to the added trigger - **When a new channel message is added** and select **Edit in Power Automate**.
+8.  **Publish** the agent by selecting the **Publish** button from the top right.
+
+9.  From the **Overview** page of the agent, select the three dots next to the added trigger - **When a new channel message is added** and select **Edit in Power Automate**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im88.png)
