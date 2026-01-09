@@ -115,7 +115,7 @@ incorrect.](./media/im39.png)
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image9.png)
 
-10.  Enter the **environment name** as +++mcsmcp@lab.LabInstance.Id+++
+10. Enter the **environment name** as +++mcsmcp@lab.LabInstance.Id+++
 
 	![A screenshot of a computer AI-generated content may be
 	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image10.png)
