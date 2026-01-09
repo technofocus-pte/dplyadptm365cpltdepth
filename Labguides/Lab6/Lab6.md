@@ -6,7 +6,7 @@
 
 Zava is looking to **enhance employee experience** by enabling quick, conversational access to **HR-related information** directly within **Microsoft 365 Copilot Chat**. **Employees** frequently ask questions about **HR policies**, career growth opportunities, learning pathways, and recruitment data stored across SharePoint sites.
 
-To address this, Zava’s IT and HR teams decide to build a **dedicated HR agen**t using **Microsoft Copilot Studio**. This agent will be declaratively defined, hosted inside Microsoft 365 Copilot Chat, and enriched with organizational knowledge stored in SharePoint. The solution must be built in a secure, isolated Power Platform environment and seamlessly integrated into the Microsoft 365 experience.
+To address this, Zava’s IT and HR teams decide to build a **dedicated HR agent** using **Microsoft Copilot Studio**. This agent will be declaratively defined, hosted inside Microsoft 365 Copilot Chat, and enriched with organizational knowledge stored in SharePoint. The solution must be built in a secure, isolated Power Platform environment and seamlessly integrated into the Microsoft 365 experience.
 
 **Objective**
 
