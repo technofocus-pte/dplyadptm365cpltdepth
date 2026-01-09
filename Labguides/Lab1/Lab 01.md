@@ -61,37 +61,37 @@ summarize content.
 
 ## Exercise 1: Add Workflows Agent to Copilot
 
-1.  Sign in to **Microsoft 365 Copilot**
+1.  Open **Microsoft 365 Copilot**
 
-&nbsp;
+> https://m365.cloud.microsoft/chat/
 
-1.  **Sign in with your Microsoft 365 Copilot account**
+2.  **Sign in with your Microsoft 365 Copilot account**
 
 ![](./media/4ad5a4ad6d6c6b84f471ea900a689ba5e1ea248d.png)
 
-2.  Click **Yes,** to stay signed in.
+3.  Click **Yes,** to stay signed in.
 
 ![](./media/a610296599c1f2181c95a5860d341f03f18aa4eb.png)
 
-3.  After successful login, you will see **Copilot Chat** home page.
+4.  After successful login, you will see **Copilot Chat** home page.
 
 ![](./media/92400451e9de39ccd7f544f4beab4ca5e43f4207.png)
 
-2.  In the **left navigation**, select **All Agents**
+5.  In the **left navigation**, select **All Agents**
 
 ![](./media/b0e69ae705d99ce8880aa9719a128e48bad23cb0.png)
 
-3.  Explore **Agent Store**
+6.  Explore **Agent Store**
 
 ![](./media/9afcbf76689888f49e8d52daa80c11eda6d41459.png)
 
-4.  Search for **Workflows (Frontier),** Select **Add**
+7.  Search for **Workflows (Frontier),** Select **Add**
 
 ![](./media/85d11ee9343169932c044530d7e6400ad10e738c.png)
 
 ![](./media/f25bd0390a5059a456584d38ee5f76f0bfad5bf4.png)
 
-5.  You should now see **Workflows** (Frontier) under **Agents** in the
+8.  You should now see **Workflows** (Frontier) under **Agents** in the
     left pane.
 
 ![](./media/6cc7c2bd9406f4973e9829e14c365370d300301f.png)
@@ -205,18 +205,18 @@ the workflow.
 
 > ![](./media/49d9c762134b6eccc18052cf9d0a33d5d437ba91.png)
 
-2.  Categorization accuracy
+3.  Categorization accuracy
 
 > ![](./media/2d10b0e295ba13f9a33f753c1c9106f37fc01304.png)
 
-3.  Teams message format:
+4.  Teams message format:
 
 - Ensure that the Teams message format is matching the Outlook email
   details.
 
 ![](./media/92c28748c59c3ed14ab872bf7c6815c0830855f0.png)
 
-3.  If something looks wrong:
+5.  If something looks wrong:
 
     1.  Update the prompt
 
@@ -224,7 +224,7 @@ the workflow.
 
 **Note**: You can iterate just like chatting—no rebuild required.
 
-4.  Simple **SharePoint Document Review Workflow** for user to explore
+6.  Simple **SharePoint Document Review Workflow** for user to explore
     more
 
 **Example prompt:**
