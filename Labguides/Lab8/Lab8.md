@@ -224,7 +224,7 @@ deliver dynamic jokes from the connected MCP endpoint.
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
       
     - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
-    - 
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im14.png)
 
