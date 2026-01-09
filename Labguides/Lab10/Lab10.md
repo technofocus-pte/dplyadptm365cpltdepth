@@ -1,186 +1,279 @@
-# Lab 10: Implement prompt action for a quiz generation agent’s topic
+# Laboratorio 9 – Implementar una acción de prompt para un tema de agente de generación de cuestionarios
 
-**Objective :** 
+**Objetivo:**
 
-Prompt actions are one of the ways to extend Microsoft Copilots. They do this by creating business specific natural language actions. The actions are interpreted by the GPT model to perform the necessary action as instructed. These actions are wrapped within a AI plugin definition, which copilots can invoke at runtime when a matching intent or utterance is encountered.
+Los prompt Actions son una de las formas de ampliar Microsoft Copilot.
+Permiten crear acciones en lenguaje natural específicas para negocios.
+Estas acciones son interpretadas por el modelo GPT para ejecutar la
+acción necesaria según las instrucciones proporcionadas.
 
-In this lab, you will learn to create a prompt action for a quiz generation topic which will generate quiz questions based on a given topic.
+Estas acciones se encapsulan dentro de un AI plugin definition, que
+Copilots puede invocar en tiempo de ejecución cuando se detecta un
+intento o enunciado coincidente.
 
-Estimated duration - 40 minutes
+En este laboratorio, aprenderá a crear una Prompt Action para un tema de
+generación de cuestionarios, la cual generará preguntas de un quiz
+basadas en un tema proporcionado.
 
-## Exercise 1: Use natural language to create an agent
+**Duración estimada:** 40 minutos
 
-1.  Open a browser and login to +++https://copilotstudio.microsoft.com/+++ and login with the below credentials.
+## Ejercicio 1: Crear un agente utilizando lenguaje natural
 
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-      
-    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++
+1.  Haga clic en **Home** para ir a la página principal de Copilot
+    Studio. Si no se encuentra en la página de Copilot Studio, inicie
+    sesión en+++https://copilotstudio.microsoft.com+++.
 
-2.  From the **Home page**, in the text area - Start building by describing what your agent needs to do, enter +++I want you to be a question and answering assistant that can answer common questions from users using the content of a website+++ and click on **Send**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image1.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im104.png)
-    
-4.  The agent gets created as per the requirements
-    
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im105.png)
- 
-5.  Scroll down and select **+ Add knowledge** under the Knowledge section.
+2.  En la página principal, en el área de texto bajo **Describe your
+    agent to create it**, ingrese: +++I want you to be a question and
+    answering assistant that can answer common questions from users
+    using the content of a website+++ y haga clic en **Send**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im106.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image2.png)
 
-7.  Select the **Public websites** option.
+5.  Seleccione la pestaña **Describe**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im107.png)
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image3.png)
 
-7.  Enter +++www.microsoft.com+++ and select **Add**.
+6.  El sistema podría sugerir un nombre para el agente. Acepte la
+    sugerencia o proporcione un nombre propio.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im108.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image4.png)
 
-8. Select Add to agent.
+7.  Ingrese otros detalles sobre las funciones del agente, por ejemplo:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im109.png)
+> +++help answer common product and support questions using the content
+> of a website, and help answer HR questions from an uploaded file+++
 
-10. The website is added as a knowledge source to the agent.
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image5.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im110.png)
+9.  Proporcione
+    +++[www.microsoft.com+++](http://www.microsoft.com+++/) como la
+    página web que se usará como fuente de conocimiento.
 
-11. Click on **Test** icon to Test the agent. Enter +++What is Copilot Studio?+++ and hit **Enter**.
+![](./media/image6.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image8.png)
+10. Una vez ingresadas las instrucciones, haga clic en **Create** para
+    crear el agente.
 
-11. Enter +++What is the latest xbox model?+++
+> **Nota:** La configuración del agente puede tardar unos minutos.
+> Cuando finalice, haga clic en **Skip** para continuar. ![A screenshot
+> of a computer screen AI-generated content may be
+> incorrect.](./media/image7.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image9.png)
+11. Una vez creado el agente, desplácese por la página para verificar
+    que se haya creado con las instrucciones proporcionadas.
 
-    For both the above questions, you will get an answer from the agent which will be a generic one since the agent will be using its general knowledge.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image8.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image9.png)
 
-## Exercise 2: Create a Prompt action for a Topic for generative answers
+12. En el panel de **Test**, ingrese: +++What is Copilot Studio?+++ y
+    presione **Enter**.
 
-Use **prompt** in **Copilot Studio** to natural language actions as copilot extensions. These actions use the generative AI models from AI Builder and natural language understanding to address specific scenarios for your copilots. This means you can extend the capabilities of your copilots by simply creating natural language based prompt actions.
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image10.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image11.png)
 
-In this exercise, you will learn how to add a prompt to action to a topic node
+13. Ingrese +++What is the latest xbox model?+++
 
-1.  In your agent select the **Topics** tab, select **+ Add a
-    topic** and select **From blank**.
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image12.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im111.png)
+Para ambos pasos, el agente proporcionará una respuesta genérica, ya que
+utilizará su conocimiento general.
 
-3.  Enter the name for the Topic as +++Generate questions for a quiz+++. Enter the below details in the **Description**(Select **Copy** option and paste it in the **Description** area).
+## Ejercicio 2: Crear un Prompt Action para un tema de respuestas generativas
 
-    ```
-    create a number of questions for a quiz based on a topic and format the quiz based on the instruction provided
+Las acciones permiten ampliar las capacidades de los agentes. En Copilot
+Studio puede agregar varios tipos de acciones a sus agentes:
 
-    creates a quiz with a number of questions based on the topic provided and formats the quiz
+- **Prebuilt connector action:** utiliza conectores de Power Platform
+  para acceder a datos de otros sistemas, como Salesforce, Zendesk,
+  MailChimp o GitHub.
 
-    generate a quiz with a number of questions using the topic provide and format the questions
+- **Custom connector action:** permite construir un conector para
+  acceder a APIs públicas o privadas.
 
-    creates questions for a quiz on a specific topic and format
+- **Power Automate cloud flow:** ejecuta flujos en la nube para realizar
+  acciones y procesar datos.
 
-    format a quiz by a number of questions based on the topic provided
-    ```
-    Select **Save** on the top right to save the topic.
+- **AI Builder prompts:** emplea AI Builder y comprensión del lenguaje
+  natural para escenarios específicos de negocio.
 
-4.  Click on the **+** symbol below the Trigger node. Select the **Add a tool** option and select **New prompt** option under that.
+- **Bot Framework skill:** utiliza un manifiesto de skill que describe
+  las acciones, entradas y salidas, endpoints y modelos de despacho.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img23.png)
+En este ejercicio, aprenderá a agregar un **prompt** a un nodo de
+**Topic.**
 
-5.  The Prompt dialog will appear, and you may see a flyout appear that
-    will guide you on how to create your prompt. Select **Next** to go
-    through the guide.
+1.  En su agente, seleccione la pestaña **Topics**, haga clic en **+ Add
+    a topic** y seleccione **From blank**.
 
-6.  We'll create prompt that will generate questions for a quiz. Enter
-    the name for the prompt as +++Quiz Generator+++.
+![](./media/image13.png)
 
-7.  Paste the below content in the Prompt field.
+2.  Ingrese el nombre del tema como: +++Generate questions for a
+    quiz+++. En **Description**, agregue los siguientes detalles:
 
-    +++Generate a quiz with [number] questions to cover this [topic]. Decide on the format, such as multiple-choice questions or true/false statements. Use this [format]. Designate the correct answer within parentheses.+++
++++create a number of questions for a quiz based on a topic and format
+the quiz based on the instruction provided+++
 
-    Select [number], expand **+ Add context** section and select **Text**.
++++creates a quiz with a number of questions based on the topic provided
+and formats the quiz+++
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img26.png)
++++generate a quiz with a number of questions using the topic provide
+and format the questions+++
 
-9.  Enter the name as +++number+++ and enter sample data such as
-    +++5+++. Select **Close**.
++++creates questions for a quiz on a specific topic and format+++
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img27.png)
++++format a quiz by a number of questions based on the topic provided+++
 
-10. Select **[topic]**, expand **+ Add context** section and select **Text**. Enter the name as +++topic+++ and enter sample data such as
-    +++Science+++.
+Seleccione **Save** en la esquina superior derecha para guardar el tema.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img28.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image14.png)
 
-11. Select **[format]**, expand **+ Add context** section and select **Text**.Enter the name as +++format+++ and enter sample data such as
-    +++bullet points+++. Select **Save** in the Prompt window
+3.  Haga clic en el **+** debajo del nodo Trigger, seleccione **Add a
+    tool** y luego **New prompt.**
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/img30.png)
+![Screens screenshot of a quiz AI-generated content may be
+incorrect.](./media/image15.png)
 
-16. The prompt action node will now appear in the authoring canvas of
-    the Topic. Next, the values of the input parameter need to be
-    defined in order for the agent to populate them. Select
-    the **...** icon
+4.  Aparecerá el cuadro de diálogo **Prompt**, y es posible que se
+    muestre un flyout que le guiará sobre cómo crear su prompt.
+    Seleccione **Next** para avanzar por la guía.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image22.png)
+5.  Crearemos un prompt que generará preguntas para un cuestionario.
+    Ingrese el nombre del prompt como +++Quiz Generator+++.
 
-17. Select the **System** tab and select the **Acivity.Text** as the
-    input value for the action to use the user’s entire response and
-    identify the format value.
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image16.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image23.png)
+6.  Pegue el siguiente contenido en la sección **Instructions**:
 
-18. Repeat the same for the remaining input parameters of the prompt
-    action.
++++Generate a quiz with \[number\] questions to cover this \[topic\].
+Decide on the format, such as multiple-choice questions or true/false
+statements. Use this \[format\]. Designate the correct answer within
+parentheses.+++
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image24.png)
+Seleccione \[**number**\], expanda **+ Add context** y seleccione
+**Text**.
 
-19. Next, we need to define the output variable of the prompt action.
-    This is so that the response can be referenced downstream in the
-    topic. Select the **\>** icon and in the **Custom** tab,
-    select **Create new** and name the variable as +++**VarQuizQuestionsResponse**+++. 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image17.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image25.png)
+7.  Ingrese el nombre como +++number+++ e introduzca datos de ejemplo,
+    por ejemplo +++5+++. Seleccione **Close.**
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image26.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image18.png)
 
-20. Below the Prompt action, select the **+** icon to add a new node and
-    select **Send a message**. Select the **{x}** variable icon.
+8.  Seleccione \[**topic**\], expanda **+ Add context** y seleccione
+    **Text.** Ingrese el nombre como +++topic+++ e introduzca datos de
+    ejemplo, por ejemplo +++Science+++.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image27.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image19.png)
 
-21. Select the variable **VarQuizQuestionsResponse.text**. This will add
-    the text property of the prompt action response to the send a
-    message node. Select **Save** to save your topic.
+9.  Seleccione \[**format**\], expanda **+ Add context** y seleccione
+    **Text**. Ingrese el nombre como +++format+++ e introduzca datos de
+    ejemplo, por ejemplo +++bullet points+++. Seleccione **Save** en la
+    ventana de Prompt.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image28.png)
+![A screenshot of a test AI-generated content may be
+incorrect.](./media/image20.png)
 
-22. The Topic details needs to be updated next which will be used by
-    your agent to associate the topic with the user's intent when
-    Generative mode is enabled. Select **Details** and enter the following.
+10. El nodo de acción del prompt aparecerá ahora en el lienzo de
+    creación del tema. A continuación, se deben definir los valores de
+    los parámetros de entrada para que el agente pueda completarlos.
+    Seleccione el ícono …
 
-    - Display name - +++generate questions for a quiz+++
+![A screenshot of a quiz AI-generated content may be
+incorrect.](./media/image21.png)
 
-    - Description - +++This topic creates questions for a quiz based on the number of questions, the topic and format provided by the user+++
+11. Seleccione la pestaña **System** y elija **Acivity.Text** como valor
+    de entrada para que la acción use la respuesta completa del usuario
+    e identifique el valor de **format.**
 
-    Select **Save** to save your topic.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image22.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image29.png)
+12. Repita lo mismo para los demás parámetros de entrada de la acción
+    del prompt.
 
-25. Now we are ready to test the agent. Open the Test pane, and enter the following question and observe the output.
+![A screenshot of a quiz AI-generated content may be
+incorrect.](./media/image23.png)
 
-    +++Create 5 questions for a quiz based on geography and format the quiz as multi choice+++
+13. A continuación, se debe definir la variable de salida de la acción
+    del prompt, de modo que la respuesta pueda ser referenciada
+    posteriormente en el tema. Seleccione el ícono \>, vaya a la pestaña
+    **Custom**, seleccione **Create new** y nombre la variable como
+    +++**VarQuizQuestionsResponse**+++.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image32.png)
+![A screenshot of a quiz AI-generated content may be
+incorrect.](./media/image24.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab10/media/image33.png)
+![A screenshot of a browser window AI-generated content may be
+incorrect.](./media/image25.png)
 
-## Summary
+![A screenshot of a quiz AI-generated content may be
+incorrect.](./media/image26.png)
 
-In this lab, we have learnt how to create a prompt action for a topic by
-creating a custom prompt and test it.
+14. Debajo de la acción del prompt, seleccione el ícono **+** para
+    agregar un nuevo nodo y seleccione **Send a message**. Luego,
+    seleccione el ícono de variable **{x}.**
+
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image27.png)
+
+15. Seleccione la variable **VarQuizQuestionsResponse.text**. Esto
+    añadirá la propiedad de texto de la respuesta de la acción del
+    prompt al nodo **Send a message**. Seleccione **Save** para guardar
+    el tema.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image28.png)
+
+16. A continuación, se deben actualizar los detalles del tema, que serán
+    utilizados por el agente para asociar el tema con la intención del
+    usuario cuando el modo **Generative** esté habilitado.  
+    Seleccione **Details** e ingrese lo siguiente:
+
+    - **Display name** - +++generate questions for a quiz+++
+
+    - **Description** - +++This topic creates questions for a quiz based
+      on the number of questions, the topic and format provided by the
+      user+++
+
+Seleccione **Save** para guardar el tema.
+
+![A screenshot of a quiz AI-generated content may be
+incorrect.](./media/image29.png)
+
+17. Ahora estamos listos para probar el agente. En el panel de **test**,
+    ingrese la siguiente pregunta y observe la salida:
+
++++Create 5 questions for a quiz based on geography and format the quiz
+as multi choice+++
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image30.png)
+
+![A screenshot of a cell phone AI-generated content may be
+incorrect.](./media/image31.png)
+
+**Resumen**
+
+En este laboratorio, hemos aprendido a crear una acción de prompt para
+un tema mediante la creación de un prompt personalizado y a probar su
+funcionamiento.

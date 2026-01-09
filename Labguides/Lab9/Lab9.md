@@ -1,24 +1,26 @@
-# Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
+# Laboratorio 8 – Optimización de las operaciones de soporte técnico de IT con un agente autónomo mediante Copilot Studio
 
-**Estimate Time: 60 mins**
+**Tiempo estimado: 60 minutos**
 
-**Objective**
+## Objetivo
 
-The objective of this lab is to enable participants to streamline IT
-support operations at Contoso Solutions by creating an autonomous
-Copilot agent. Participants will learn to set up Microsoft Copilot
-Studio, configure the IT Support Agent, integrate Power Apps and
-Dataverse, enhance the bot’s capabilities with a knowledge base, and
-automate ticket creation using Power Automate. This hands-on lab will
-equip users with the skills to improve IT workflows, reduce manual
-effort, and enhance support efficiency.
+El objetivo de este laboratorio es permitir que los participantes
+optimicen las operaciones de soporte técnico de TI en Contoso Solutions
+mediante la creación de un agente autónomo. Los participantes aprenderán
+a configurar Microsoft Copilot Studio, a establecer el Agente de Soporte
+de TI, a integrar Power Apps y Dataverse, a mejorar las capacidades del
+agente mediante una base de conocimientos, y a automatizar la creación
+de tickets utilizando Power Automate. Este laboratorio práctico
+proporcionará a los usuarios las habilidades necesarias para mejorar los
+flujos de trabajo de IT, reducir el esfuerzo manual y aumentar la
+eficiencia del soporte técnico.
 
-**Solution**
+## Solución
 
 Participants will create a customized Contoso IT Support Agent using
 Microsoft Copilot Studio, configure it to handle common IT issues, and
 integrate it with Dataverse for storing support data. They will set up a
-development environment, add knowledge sources, and refine the bot's
+development environment, add knowledge sources, and refine the agent's
 conversation flows for better user interaction. By leveraging Power
 Apps, participants will create a Dataverse table to manage IT support
 records. Using Power Automate, they will automate ticket creation and
@@ -26,748 +28,1103 @@ email notifications for unresolved issues. Finally, participants will
 test the agent to validate its troubleshooting accuracy and workflow
 automation, ensuring seamless IT support operations.
 
-## Exercise 1: Getting Started with Power Apps
+## Ejercicio 1: Introducción a Power Apps
 
-This exercise introduces participants to Power Apps and Dataverse. The
-goal is to log in to Power Apps, set up a working environment, and
-create a Dataverse table by importing data from an Excel file.
-Participants will learn essential skills for working with data-driven
-applications.
+Este ejercicio introduce a los participantes en Power Apps y Dataverse.
+El objetivo es iniciar sesión en Power Apps, configurar un entorno de
+trabajo y crear una tabla de Dataverse importando datos desde un archivo
+de Excel. Los participantes aprenderán habilidades esenciales para
+trabajar con aplicaciones basadas en datos.
 
-### Task 1: Logging into Power Apps
+### Tarea 1: Iniciar sesión en Power Apps
 
-1.  Navigate to power apps website +++https://www.microsoft.com/en-us/power-platform/products/power-apps+++ and click on the **Try for Free** button.
+1.  Vaya al sitio web de Power Apps en
+    +++<https://www.microsoft.com/en-us/power-platform/products/power-apps+++%C2%A0and> y
+    haga clic en el botón **Try for Free**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im48.png)
+![](./media/image1.png)
 
-2.  Enter the **Username**, +++@lab.CloudPortalCredential(User1).Username+++. **select** the **checkbox** and click on the **Start free** button. Select country of origin.
+2.  Ingrese el **nombre de usuario** proporcionado en la pestaña
+    **Resources** en el campo de correo electrónico, seleccione la
+    **casilla de verificación** y haga clic en el botón **Start free**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im49.png)
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image2.png)
 
-3. Enter the Temporary Access Pass - +++@lab.CloudPortalCredential(User1).TAP+++
+3.  Seleccione **Get Started**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im50.png)
+### Tarea 2: Crear un grupo de seguridad en Entra ID y configurar a los autores de Copilot Studio
 
-4.  Select **Get Started**.
+1.  Vaya al portal de Azure en
+    +++<https://portal.azure.com/+++%C2%A0and> e inicie sesión con las
+    credenciales del tenant que se encuentran en la pestaña Resources.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im42.png)
+![A screenshot of a computer login AI-generated content may be
+incorrect.](./media/image3.jpeg)
 
+> ![A screenshot of a computer login AI-generated content may be
+> incorrect.](./media/image4.jpeg)
 
-### Task 2: Update the Developer environment settings
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image5.png)
 
-1.  From a new tab in the browser, open Power Platform admin center - 
-    +++https://admin.powerplatform.microsoft.com/home+++ and sign in using your
-    login credentials if prompted.
-	
-	- +++@lab.CloudPortalCredential(User1).Username+++
-	- +++@lab.CloudPortalCredential(User1).AccessToken+++
+2.  Seleccione **Next** en la ventana **Keep your account secure** y
+    siga los **prompts** que aparecen en pantalla.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image3.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image6.png)
 
-2.  Select **Manage** from the left pane and select **+ New** under
-    **Environments**.
+3.  Descargue la aplicación Authenticator en su teléfono si aún no la
+    tiene instalada.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image4.png)
+![A screenshot of a computer screen AI-generated content may be
+incorrect.](./media/image7.png)
 
-3.  Provide the environment name as +++Dev One+++ and select the
-    Type as **Developer** and select **Next**.
+4.  Siga los prompts y complete la configuración.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image5.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image8.png)
 
-4.  Select **Save** in the **Add Dataverse** dialog.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image9.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image6.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image10.png)
 
-5.  Once the environment is **Ready**, select the created **Dev One**
-    environment.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image11.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image7.png)
+5.  En la pantalla de bienvenida de Azure, seleccione **Get Started**.
 
-6.  Click on **Edit** to edit the Settings.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image12.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image8.png)
+6.  Busque y seleccione +++Microsoft EntraID+++.
 
-7.  In the Edit pane, toggle **Administration mode** to **ON** and
-    select **Save**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image13.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image9.png)
+7.  En el panel izquierdo, seleccione **Manage** -\> **Groups**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image10.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image14.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image11.png)
+8.  Seleccione **New group** para crear un nuevo grupo de seguridad.
 
-8.  Once the edited changes are saved, select **Settings**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image15.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image12.png)
+9.  Ingrese los siguientes detalles:
 
-9.  Select **Product - Features**.
+    - Group type – Select **Security**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image13.png)
+    - Group name – Enter +++**copilotagentsecurity**+++
 
-10. Under the **Features**, toggle on **Dataverse search**, select **save**, then toggle **Single table search** option to On and select **Save**.
+    - Microsoft Entra roles can be assigned to the group –
+      Seleccione **Yes** (Si esta opción no está visible, ignore este
+      paso)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im51.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image16.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im52.png)
+10. Seleccione **No owners selected**, luego seleccione **MOD
+    Administrator** desde la página **Add owners** y haga clic
+    en **Select**.
 
-### Task 3: Setting Up a Dataverse Table
+![A screenshot of a group AI-generated content may be
+incorrect.](./media/image17.png)
 
-1.  Navigate back to the **PowerApps page** and select the **DevOne** environment from the list of environments.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image18.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im53.png)
+11. Del mismo modo, seleccione **No members selected**, agregue **MOD
+    Administrator** desde la lista y haga clic en **Select**.
 
-2.  From the left navigation bar select **Tables.** In the tables
-    section top bar click on the **+ New table** and then
-    select **Create new tables**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image19.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image16.png)
+12. Seleccione **No roles selected**. Si esta opción no aparece, ignore
+    este paso y el siguiente.
 
-4.  Select **Import an Excel file or CSV** option to create a new table.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image20.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image17.png)
+13. Busque y seleccione +++**Global admin**+++ y seleccione **Select**.
 
-5.  Click on the **Select form device** option and select **Support
-    Ticket** excel file from **C:\LabFiles\Labfiles\Autonomous agent** folder.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image21.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image18.png)
+14. Seleccione **Create** una vez que se hayan agregado todos los
+    detalles y, en el cuadro de confirmación, seleccione **Yes**.
 
-6.  Select **Import** in the next screen.
+![A screenshot of a group AI-generated content may be
+incorrect.](./media/image22.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image19.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image23.png)
 
-7.  Select the table and click on **View data** to see the data.
+15. Verifique que aparezca un **mensaje de éxito** confirmando que el
+    grupo se ha creado correctamente.
 
-    >[!Note] **Note:** In this case, the table is named *Employee Support Ticket*. The name may vary with each execution. Please save the
-table name for future reference. The column name may also vary in the execution. 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image24.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image20.png)
+16. Seleccione Contoso|Groups en la esquina superior izquierda.
 
-8.  Go to table data, select the drop down next to the **Issue
-    Description** field, select **Edit column**, Set the data type
-    as **Text** 🡪 **Multiple line** 🡪 **Plain Text** and click on
-    the **Update**. The column name may be different in each case.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image25.png)
 
-    >[!Note] The **column name might be slightly different**, but
-it will be something similar to the issue description since it is
-Copilot generated.
+17. En el panel izquierdo, debajo de **Manage**, seleccione
+    **Properties**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image21.png)
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image26.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image22.png)
+18. Active la opción Yes en **Can manage access to all Azure
+    subscriptions and management groups in this tenant** y luego
+    seleccione **Save**.
 
-9.  Select drop down next to the **Ticket Status** field, select **Edit
-    column**, Set the Choices as +++Unresolved+++,
-    +++Resolved+++, +++Processing+++. Set Default choice
-    as **Unresolved** and click on the **Update**.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image27.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image23.png)
+19. En el panel izquierdo, debajo de **Manage**, seleccione **Roles and
+    administrators**.
 
-10.  From top right side click on **Save and exit** to save the table.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image28.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image24.png)
+20. Busque +++privileged role admin+++ y seleccione el rol **Privileged
+    Role Administrator**.
 
-### Task 4: Add a file to the OneDrive
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image29.png)
 
-1.  From the top left of the Power Apps page, select the menu and select
-    **OneDrive**.
+21. Seleccione **+ Add assignments**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image25.png)
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image30.png)
 
-2.  Select **My files** - **+ Create or upload**.
+22. Seleccione el **ID** **MOD Administrator** y seleccione **Add**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im54.png)
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image31.png)
 
-3.  Select **Files upload**.
+23. En una nueva pestaña, navegue a
+    +++<https://admin.powerplatform.microsoft.com/+++>. En el panel
+    izquierdo, seleccione **Manage** y luego haga clic en **Tenant
+    Settings**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im55.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image32.png)
 
-5.  Choose **IT Support.xlsx** from **C:\LabFiles\Labfiles**.
+24. Seleccione **Copilot Studio Authors** de la lista disponible.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image28.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image33.png)
 
-6.  This file will be used in a later exercise.
+25. Haga clic en el **icono de edición (Edit)** para modificar la
+    configuración.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image29.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image34.png)
 
-    **Conclusion**
+26. Busque y seleccione el grupo **+++copilotagentsecurity+++** que creó
+    anteriormente.
 
-    By completing this exercise, participants will learn:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image35.png)
 
-    - How to access and navigate Power Apps using office 365 admin tenant
-    credentials.
+27. Seleccione **Save** para guardar la configuración.
 
-    - Steps to create and configure a Dataverse table by importing data.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image36.png)
 
-    - Practical knowledge of setting up an environment to support app
-    development workflows.
+### Tarea 3: Actualizar la configuración del entorno de desarrollo
 
-## Exercise 2: Creating the Contoso IT Support Agent
+1.  Inicie sesión en el centro de administración de Power Platform en
+    +++<https://admin.powerplatform.microsoft.com/home+++> utilizando
+    sus credenciales de inicio de sesión.
 
-This exercise focuses on logging into Microsoft Copilot Studio and
-creating a customized Copilot agent tailored for IT support operations
-at Contoso. Participants will gain hands-on experience navigating
-Copilot Studio, configuring environments, and building an AI-powered
-agent to streamline IT workflows.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image37.png)
 
-### Task 1: Creating and Configuring Contoso IT Support Agent
+2.  Seleccione **Manage** -\> **Environments** -\> **Dev One**.
 
-1.  From a new tab, login to +++https://copilotstudio.microsoft.com+++ using your login credentials. Select **Get Started**.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image38.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im14.png)
+3.  Seleccione **Settings**.
 
-2.  Select **Skip** in the Welcome popup.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image39.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im15.png)
+4.  Seleccione **Product -\> Features**.
 
-3.  In Copilot Studio home section from top right, select the **environment** and choose **DevOne** environment.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image40.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im56.png)
+5.  En la sección **Features**, asegúrese de que **Dataverse
+    search** esté establecido en On. De lo contrario, actívelo.
 
-    >[!Alert] **Important:** If the Copilot Studio and does not show up the option to select **Environment** as in the below screenshot, then follow the below steps.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im5.png)
-    >
-    >Open +++https://admin.powerplatform.microsoft.com/+++. Select **Manage** -> **Environments** -> **Dev env** and select the value of the **Environment ID**.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im6.png)
-    >
-    >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image41.png)
 
-4. Select **Create an agent**.
+6.  Desplácese hacia abajo, habilite la opción **Single table search** y
+    luego seleccione **Save**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im57.png)
+![A screenshot of a search engine AI-generated content may be
+incorrect.](./media/image42.png)
 
-5. Select **Edit**.
+### Tarea 4: Configurar una tabla de Dataverse
 
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im58.png)
+1.  En la página de Power Apps, seleccione el entorno **Dev One** desde
+    la esquina superior derecha.
 
-6.  Enter **Name** and **Description** as below and select **Save**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image43.png)
 
-    **Name:** +++Contoso IT Support Agent+++
-    
-    **Description** (Select the **Copy** option and **Paste** it in the **Description** field):
-    ```
-    Create a Contoso IT Support Agent which transforms IT support at Contoso Solutions by providing instant troubleshooting for common issues, automating ticket creation for unresolved problems, and storing all interactions in Dataverse. This solution enhances response times, reduces manual workloads, and boosts employee productivity.
-    ```
+2.  En la barra de navegación izquierda, seleccione **Tables.** En la
+    barra superior de la sección de tablas, haga clic en **+ New
+    table** y luego seleccione **Create new tables**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im59.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image44.png)
 
-7. Select **Edit** against the Instructions to give the instructions for the agent.
+3.  Seleccione la opción **Import an Excel file or CSV** para crear una
+    nueva tabla.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im60.png)
+![](./media/image45.png)
 
-8. Enter the **instruction** and select **Save**.
+4.  Haga clic en la opción **Select form device** y seleccione el
+    archive de Excel **Support Ticket** ubicado en la
+    carpeta **C:\Autonomous agent\LabFiles**.
 
-   **Instruction**(Select the **Copy** option and **Paste** it in the **Instruction** field):
-	```
-    Create the Copilot Agent and configure it to handle IT support operations. Add a knowledge source containing solutions for common IT issues like hardware troubleshooting, connectivity, and software glitches. Set up a trigger to detect updates to a OneDrive file describing unresolved issues. Create an action to save these technical issues into a Dataverse table, ensuring all details are stored for tracking and reporting. Test the agent to validate its troubleshooting accuracy and ticket automation workflow before deployment.
- 	```
+![](./media/image46.png)
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im61.png)
+5.  Seleccione **Import** en la siguiente pantalla.
 
-9. From top right corner of the agent, click on
-    the **Settings** button.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image47.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image36.png)
+6.  Seleccione la tabla y haga clic en **View data** para visualizar el
+    contenido de la tabla.
 
-10. Scroll down and disable the **Use general knowledge** option under the **Knowledge** section and then click on **Save**.
+\[!Nota\] **Nota:** En este caso, la tabla se llama *Employee Technical
+Support Record*. El nombre puede variar en cada ejecución. Guarde el
+nombre de la tabla para futuras referencias. Los nombres de las columnas
+también pueden variar según la ejecución.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/im2.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image48.png)
 
-11. Once **saved**, **close** the Settings pane.
+7.  Vaya a los datos de la tabla, seleccione el menú desplegable junto
+    al campo **Technical Issue Description**, seleccione **Edit
+    column**, establezca el tipo de datos como **Text → Multiple line →
+    Plain Text**, y haga clic en **Update**. El nombre de la columna
+    puede variar en cada caso.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im62.png)
+\[!Nota\] **Nota:** El **nombre de la columna puede variar
+ligeramente**, pero será algo similar a issue description, ya que fue
+generado por Copilot.
 
-    **Conclusion**
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image49.png)
 
-    By completing this exercise, participants will learn:
+![](./media/image50.png)
 
-    - How to access and set up Microsoft Copilot Studio.
+8.  Seleccione el menú desplegable junto al campo **Current Status**,
+    seleccione **Edit column** y configure las opciones (choices) como:
+    +++**Unresolved**+++, +++**Resolved**+++, +++**Processing**+++.
+    Establezca la opción predeterminada (Default choice) como
+    **Unresolved** y haga clic en **Update**.
 
-    - Steps to create and configure a custom Copilot agent.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image51.png)
 
-    - Practical skills in enabling generative AI and orchestrator settings
-    for the agent.
+9.  En la parte superior derecha, haga clic en **Save and exit** para
+    guardar la tabla.
 
-    - Ways to enhance IT operations by automating ticket creation and
-    leveraging AI for troubleshooting.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image52.png)
 
-## Exercise 3: Enhancing Bot Capabilities
+### Tarea 5: Agregar un archive a OneDrive
 
-This exercise focuses on enhancing the capabilities of the Contoso IT
-Support Agent by adding a knowledge base and customizing bot topics for
-improved interaction. Participants will refine the bot's responses and
-ensure it effectively assists users in troubleshooting and escalation.
+1.  En la parte superior izquierda de la página de Power Apps,
+    seleccione el menú y luego seleccione OneDrive.
 
-### Task 1: Add Knowledge Base
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image53.png)
 
-1.  On the Contoso agent overview page, scroll down and click on **+ Add
-    Knowledge** button.
+2.  Haga clic en el botón **-\>** para continuar.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im63.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image54.png)
 
+3.  Seleccione **My files** -\> **+ create or upload**.
 
-2.  Select **Upload file** to add the lab file **Contoso Common IT
-    Issue.docx** from **C:\LabFiles\Labfiles\Autonomous agent** folder and then click
-    on **Add to agent** to save the file.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image55.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image40.png)
+4.  Seleccione **Files upload**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im64.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image56.png)
 
-3.  Again, go to agent overview page, scroll down and click on **+ Add knowledge.**
+5.  Seleccione **IT Support.xlsx** desde **C:\LabFiles**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image42.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image57.png)
 
-4.  Select **Dataverse** option as data source.
+6.  Este archivo se utilizará en un ejercicio posterior.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im65.png)
+![](./media/image58.png)
 
-5.  Search for +++Employee+++, select **Employee Support Ticket** table. Then select **Add to agent** button to add the knowledge source.
+**Conclusión**
 
-    >[!Note] The **table name might be different** in your case since it is
-a Copilot generated one. Try searching for +++Support Ticket+++ if needed.
+Al completar este ejercicio, los participantes aprenderán:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im66.png)
+- Cómo acceder y navegar por Power Apps utilizando las credenciales del
+  tenant de administrador de Office 365.
 
-    >[!Alert] **Important:** From the Knowledge page, ensure that the added knowledge source has been successfully uploaded. This will generally take 10 to 15 30 minutes to complete.
+- Los pasos para crear y configurar una tabla de Dataverse mediante la
+  importación de datos.
 
-### Task 2: Customize the Fallback Topic
+- Conocimientos prácticos sobre cómo configurar un entorno que respalde
+  los flujos de trabajo de desarrollo de aplicaciones.
 
-1.  From the top bar option click on **Topics**, select **System** and then click and open **Fallback** topic.
+## Ejercicio 2: Creación del agente de soporte técnico de Contoso
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im68.png)
+Este ejercicio se centra en iniciar sesión en Microsoft Copilot Studio y
+crear un agente personalizado diseñado para las operaciones de soporte
+técnico de Contoso. Los participantes obtendrán experiencia práctica
+navegando en Copilot Studio, configurando entornos y creando un agente
+con inteligencia artificial que optimice los flujos de trabajo de IT.
 
-2.  Scroll down and go to message node. Update the message as given
-    below:
+### Tarea 1: Creación y configuración del agente de soporte técnico de Contoso
 
-    +++I’m sorry. This information is not available in my system. You can raise the support ticket via mail for this issue.+++
+1.  Inicie sesión en
+    +++[https://copilotstudio.microsoft.com+++](https://copilotstudio.microsoft.com+++/) utilizando
+    sus credenciales de inicio de sesión.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image50.png)
+2.  En la sección de inicio de Copilot Studio, desde la parte superior
+    derecha, seleccione el **entorno** y seleccione el entorno
+    **DevOne**.
 
-3.  From top right side click on the **Save** button to save the topic.
+![](./media/image59.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image51.png)
+\[!Alerta\] **Importante:** Si en **Copilot Studio** no aparece la
+opción para seleccionar un **entorno**, como se muestra en la captura de
+pantalla a continuación, siga los pasos indicados a continuación.
 
-    **Conclusion**
+![](./media/image60.png)
 
-    By completing this exercise, participants will learn:
+Abra +++<https://admin.powerplatform.microsoft.com/+++>.
+Seleccione **Manage** -\> **Environments** -\> **Dev env** y seleccione
+el valor del **Environment ID**.
 
-    - How to upload and integrate a knowledge base to enhance the bot's
-    functionality.
+![](./media/image61.png)
 
-    - Steps to customize conversation start messages for a more engaging
-    user experience.
+Regrese a la pestaña de **Copilot Studio** y abra el siguiente enlace:
++++<https://copilotstudio.microsoft.com/environments/>\< EnvironmentID
+\>+++ (Reemplace **\< EnvironmentID \>** con el valor obtenido en el
+paso anterior)
 
-    - Techniques to update fallback responses for better handling of
-    unsupported queries.
+3.  En la pestaña de bienvenida de Copilot Studio, haga clic en **Skip**
+    para continuar.
 
-## Exercise 4: Test the agent
+![](./media/image62.png)
 
-This exercise guides participants through testing the Contoso IT Support
-Agent to validate its functionality. Participants will check how the bot
-handles prompts using the knowledge base and fallback topics to ensure
-seamless interaction and escalation.
+4.  Seleccione Agents -\> + New agent.
 
-1.  From top right corner click on the **Test** button.
+> ![](./media/image63.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im69.png)
+5.  Seleccione la pestaña **Configure**.
 
-2.  Enter the prompt +++My printer is not working how to fix it+++ .
-    It gives the solution as per knowledge source.
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image64.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image53.png)
+6.  Ingrese el **nombre**, **descripción** e **instrucciones** del
+    agente según se indican a continuación y haga clic en el botón
+    **Create**.
 
+> **Name:** +++Contoso IT Support Agent+++
+>
+> **Description**: +++Create a Contoso IT Support Agent which transforms
+> IT support at Contoso Solutions by providing instant troubleshooting
+> for common issues, automating ticket creation for unresolved problems,
+> and storing all interactions in Dataverse. This solution enhances
+> response times, reduces manual workloads, and boosts employee
+> productivity.+++
+>
+> **Instruction**: +++Create the agent and configure it to handle IT
+> support operations. Add a knowledge source containing solutions for
+> common IT issues like hardware troubleshooting, connectivity, and
+> software glitches. Set up a trigger to detect updates to a OneDrive
+> file describing unresolved issues. Create an action to save these
+> technical issues into a Dataverse table, ensuring all details are
+> stored for tracking and reporting. Test the agent to validate its
+> troubleshooting accuracy and ticket automation workflow before
+> deployment.+++
 
-**Conclusion**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image65.png)
 
-By completing this exercise, participants will learn:
+7.  En la página de Overview del Contoso IT Support Agent, **habilite**
+    la opción Orchestrator para el agente.
 
-- How to test and activate an AI agent for troubleshooting.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image66.png)
 
-- Validation of the bot’s ability to respond using its knowledge base.
+8.  Desde la esquina superior derecha del agente, haga clic en el botón
+    **Settings**.
 
-## Exercise 5: Automating Support Ticket Creation with Power Automate
+![](./media/image67.png)
 
-This exercise demonstrates how to automate support ticket creation using
-AgentFlow and integrate it with the Contoso IT Support Agent.
-Participants will create a flow to streamline issue reporting and record
-data in Dataverse.
+9.  Luego, vaya a la sección **Generative AI**, asegúrese de que la
+    opción **Yes** esté seleccionada en **Use generative AI
+    orchestration for your agent’s responses?**. Desplácese hacia abajo,
+    **deshabilite** la opción **Use general knowledge** y haga clic en
+    **Save**.
 
-1.  Select **Flows** from the left menu bar of the agent.
+![](./media/image68.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im70.png)
+![](./media/image69.png)
 
-2.  Select **+ New agent flow**.
+10. Una vez **guardados** los cambios, **cierre** el panel de Settings.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im71.png)
+**Conclusión**
 
-3.  Search for and select +++**When an agent calls the flow**+++ trigger under **Skills**.
+Al completar este ejercicio, los participantes aprenderán:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im72.png)
+- Cómo acceder y configurar Microsoft Copilot Studio.
 
-4.  Select **Add an Input**.
+- Los pasos para crear y configurar un agente personalizado.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im73.png)
+- Habilidades prácticas para habilitar la orquestación y la inteligencia
+  artificial generativa del agente.
 
-6.  Select **Text** as data type of input and rename the input as
-    +++Name+++.
+- Formas de mejorar las operaciones de IT automatizando la creación de
+  tickets y aprovechando la IA para la resolución de problemas.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image61.png)
+## Ejercicio 3: Mejora de las capacidades del agente
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image62.png)
+Este ejercicio se centra en mejorar las capacidades del Contoso IT
+Support Agent mediante la adición de una base de conocimiento y la
+personalización de los temas del agente para optimizar la interacción.
+Los participantes refinarán las respuestas del agente y asegurarán que
+este brinde asistencia efectiva a los usuarios en tareas de resolución
+de problemas y escalamiento.
 
-7.  With same procedure create more input as per given below details.
+### Tarea 1: Agregar base de conocimiento
 
-    | **Input Name**  |  **Data Type** |
-    |:------|:---------|
-    |  +++ID+++ | Text  |
-    |  +++Email+++ |  Text |
-    |  +++Details+++ |  Text |
+1.  En la página de resumen del agente Contoso, desplácese hacia abajo y
+    haga clic en el botón **+ Add Knowledge**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image63.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image70.png)
 
-8.  Below **When an agent calls the flow**, click on **(+)** sign to **Add an action**.
+2.  Seleccione **Upload file** para agregar el archivo del
+    laboratorio **Contoso Common IT Issue.docx** desde la
+    carpeta **C:\Autonomous agent\LabFiles**, y luego haga clic
+    en **Add** para guardar el archivo.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image64.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image71.png)
 
-9.  In Add an action search bar, enter +++Add a new row+++ . Then select **Add a new row** from Microsoft Dataverse section.
+![image](./media/image72.png)
 
-    ![A screenshot of a computer program AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image65.png)
+3.  Nuevamente, vaya a la página de resumen del agente, desplácese hacia
+    abajo y haga clic en **+ Add knowledge.**
 
-    >[!note] **Note:** Sometimes, a Dataverse connection is not created automatically. You may need to **sign in** again with your
- credentials **OAuth** authentication. If a connection name is required, name it +++connect1+++. The browser may also block the initial pop up window, please allow it in the right corner of the URL bar.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image73.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image66.png)
+4.  Seleccione la opción **Dataverse (preview)** como origen de datos.
 
-10. In **Table Name** section search and select +++Employee Support Ticket+++ (or your corresponding table name created).
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image74.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image67.png)
+5.  En la barra de búsqueda ubicada en la esquina superior derecha,
+    escriba y busque **Employee**, luego seleccione la tabla **Employee
+    Technical Support Record**. Después, haga clic en **Next**,
+    nuevamente en **Next**, y finalmente en **Add** para añadir la
+    fuente de conocimiento.
 
-11. Below table name select **Show all**, then click on the particular field and add **input** with the help of **dynamic content** button
- (**Thunder bolt**) as per the below table.
+\[!Nota\] **Nota:** El **nombre de la tabla puede ser diferente** en su
+caso, ya que fue generado por Copilot.
 
-    Set the **Current Status** field to **Unresolved**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image75.png)
 
-    |  **Section** |  **Input Variable** |
-    |:------|:-------|
-    | Employee Name  | Name (Dynamic Input)  |
-    | Email Address | Email (Dynamic Input)  |
-    | Employee ID  | ID (Dynamic Input)  |
-    |  Technical Issue Description | Details (Dynamic Input)  |
+![](./media/image76.png)
 
-    ![A blue line on a white background AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image68.png)
+\>\[!Alert\] \*\*Importante:\*\* Desde la página Knowledge, asegúrese de
+que la fuente de conocimiento agregada se haya cargado correctamente.
+Este proceso suele tardar entre **10 y 15 minutos** en completarse.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image69.png)
+### Tarea 2: Personalizar el tema de inicio de conversación
 
-12. From the top bar click on **Save draft** and then
-    click **Publish**. **Close** the Power automate tab.
+1.  En la barra superior, haga clic en **Topics**, seleccione **System**
+    y luego haga clic para abrir el tema **Conversation Start**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image70.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image77.png)
 
-13. Select tha **Overview** tab.
+2.  Desplácese hacia abajo hasta el nodo de mensaje. Actualice el
+    mensaje después del nombre del agente según se indica a
+    continuación:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im74.png)
+Hello. I’m Bot Name, a virtual assistant. +++How can I help you?+++
 
-15. Select **Edit** under **Details**, in the flow.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image78.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im75.png)
+3.  En la parte superior, haga clic en **Save** para guardar el tema.
 
-16. Name the flow as +++Create an Employee Support Ticket+++ and
-    select **Save**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image79.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image74.png)
+### Tarea 3: Actualizar el tema de respaldo (Fallback Topic)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image75.png)
+1.  En la barra superior, haga clic en **Topics** y luego abra el tema
+    **Fallback**.
 
-17. From the **Contoso IT Support Agent** **Overview** page, select **+ Add tool**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image80.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im76.png)
+2.  Desplácese hacia abajo hasta el nodo de mensaje y actualice el
+    mensaje según se indica a continuación:
 
-18. Select the **Flows** tab and select **Create an Employee Support Ticket** Agent flow.
++++I’m sorry. This information is not available in my system. You can
+raise the support ticket via mail for this issue.+++
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im77.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image81.png)
 
-19. Select **Add and configure** button to add the flow.
+3.  En la parte superior derecha, haga clic en el botón **Save** para
+    guardar el tema.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im78.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image82.png)
 
-20. Ensure that the **tool** is **added** to the agent.
+**Conclusión**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im79.png)
+Al completar este ejercicio, los participantes aprenderán:
 
-    **Conclusion**
-    
-    By completing this exercise, participants will learn:
+- Cómo cargar e integrar una base de conocimiento para mejorar la
+  funcionalidad del agente.
 
-    - How to integrate Agent flows with a Copilot agent for ticket creation.
+- Los pasos para personalizar los mensajes de inicio de conversación y
+  ofrecer una experiencia de usuario más atractiva.
 
-    - Steps to collect and map input data dynamically from user
-    interactions.
+- Técnicas para actualizar las respuestas de respaldo y gestionar de
+  mejor manera las consultas no compatibles.
 
-    - Techniques to automate email notifications for technical issue
-    escalation.
+## Ejercicio 4: Probar el agente
 
-    - The ability to configure workflows for efficient support ticket
-    management.
+Este ejercicio guía a los participantes en la prueba del agente de
+soporte de IT de Contoso para validar su funcionalidad. Los
+participantes comprobarán cómo el agente maneja los prompts utilizando
+la base de conocimiento y los temas de respaldo, asegurando una
+interacción y una escalación sin inconvenientes.
 
-## Exercise 6: Configuring a trigger for Automated Actions
+1.  En la esquina superior derecha, haga clic en el botón **Test**.
 
-This continuation of automating support ticket creation focuses on setting up a trigger in the Contoso IT Support Agent.
-Create a **Team** and a **Support Channel** in the MS Teams. When there is a message posted in the Support Channel, the trigger should get invoked. Participants will configure triggers and finalize the agent for deployment.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image83.png)
 
-1.  Open a browser and open Teams +++https://teams.microsoft.com/+++ in it. Login if prompted.
+2.  Ingrese el prompt +++**My printer is not working how to fix it**+++.
+    El agente proporcionará la solución según la fuente de conocimiento.
 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image84.png)
 
-2.  Select the **New items** icon and select **New Team**.
+3.  Nuevamente, ingrese el prompt +++**Two factor Authentication (2FA)
+    issue**+++ .
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im80.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image85.png)
 
-3.  Enter the  below details and select **Create**.
+4.  El problema de 2FA y su solución no están disponibles en la fuente
+    de conocimiento, por lo que el agente pasará al tema de respaldo
+    (fallback topic) y mostrará un prompt relacionado con Raise Ticket
+    (Generar un ticket*)*.
 
-	-	Team name - +++Support Team+++
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image86.png)
 
-    -	Description - +++This is a team to post about support requests.+++
+**Conclusión**
 
-    -	First channel name - +++Support Channel+++
+Al completar este ejercicio, los participantes aprenderán:
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im81.png)
+- Cómo probar y activar un agente de IA para la resolución de problemas.
 
-5.  Select **Skip** in the Add members screen.
+- Cómo validar la capacidad del agente para responder utilizando su base
+  de conocimiento.
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im82.png)
+- Cómo los temas de respaldo gestionan consultas no compatibles y
+  redirigen eficazmente a los usuarios.
 
-6.  From the Copilot Studio - overview page of the agent, scroll down and click on **+ Add
-    trigger**.
+## Ejercicio 5: Automatización de la creación de tickets de soporte con Power Automate
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im84.png)
+Este ejercicio demuestra cómo automatizar la creación de tickets de
+soporte mediante AgentFlow e integrarlo con el IT Support Agent de
+Contoso.  
+Los participantes crearán un flujo que optimiza el proceso de registro
+de incidencias y guarda los datos en Dataverse.
 
-2.  Select **When a new channel message is added** trigger and click **Next**.
+1.  Desde la barra de menú izquierda del agente, seleccione **Flows**.
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im85.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image87.png)
 
-3.  Once the connection establishment is successful, select **Next**.
+2.  Seleccione **+ New agent flow**.
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im86.png)
+![A screenshot of a chat box AI-generated content may be
+incorrect.](./media/image88.png)
 
-4.  Select the below values and select Create trigger.
-	
-	-	Team - **Support Team**
+3.  Seleccione **Add a trigger** y luego seleccione el
+    desencadenador **When an agent calls the flow**.
 
-	-	Channel - **Support Channel**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image89.png)
 
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im87.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image90.png)
 
-7.  **Close** the Time to test your trigger dialog.
+4.  Seleccione el desencadenador agregado, **When an agent calls the
+    flow** y luego seleccione **Add an Input**.
 
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab9/media/image87.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image91.png)
 
-8.  **Publish** the agent by selecting the **Publish** button from the top right.
+5.  Seleccione **Text** como tipo de dato de la entrada y cambie el
+    nombre de la entrada a +++**Name**+++.
 
-9.  From the **Overview** page of the agent, select the three dots next to the added trigger - **When a new channel message is added** and select **Edit in Power Automate**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image92.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im88.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image93.png)
 
-9.  Select the + symbol below the **When a new channel message is added** node to add an action. In the Action pane, search for +++Get a row+++ and select **Get a row** under **Excel Online (Business)**.
+6.  Siga el mismo procedimiento para crear más entradas según los
+    siguientes detalles:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im91.png)
+[TABLE]
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im92.png)
+7.  El nodo ahora debería verse de la siguiente manera.![A screenshot of
+    a computer AI-generated content may be
+    incorrect.](./media/image94.png)
 
-10. Once the action is added, add the below details in it.
+8.  Debajo de **When an agent calls the flow**, haga clic en el
+    signo **(+)** y seleccione **Add an action**.
 
-	- Location - Select OneDrive for Business
-	
-	- Document Library - OneDrive
-	
-	- File - ITSupport.xlsx
-	
-	- Table - Table1
-	
-	- Key Column - ID
-	
-	- Key Value - +++ID1234+++
+![](./media/image95.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im93.png)
+9.  En la barra de búsqueda de Add an action, escriba +++**Add a new
+    row**+++ . Luego seleccione **Add a new row** en la sección
+    Microsoft Dataverse.
 
-11. Select the **Sends a prompt to the specified copilot for processing** node.
+![A screenshot of a computer program AI-generated content may be
+incorrect.](./media/image96.png)
 
-	Under Body/message, enter +++Run the flow Create an Employee Support Ticket+++ then add the dynamic values, Name, ID, Email ID, Description and Status. Then add +++along with a message "New record added to the Employee Support table"+++
+\[!nota\] **Nota:** En algunos casos, la conexión con **Dataverse** no
+se crea automáticamente. Es posible que deba **iniciar sesión**
+nuevamente con sus credenciales mediante autenticación **OAuth**,
+ingrese el nombre de la conexión (Connection name) como +++Dataverse+++.
 
-	It should look similar to the one in the screenshot below.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image97.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im94.png)
+10. En la sección **Table Name**, busque y seleccione +++**Employee
+    Support Ticket**+++ (o el nombre correspondiente de la tabla que
+    creó).
 
-12. **Save** the flow.
-    
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image98.png)
 
-## Exercise 7: Test the agent
+11. Debajo del nombre de la tabla, seleccione **Show all**, luego haga
+    clic en el campo correspondiente y agregue la **entrada** utilizando
+    el botón de **contenido dinámico (icono de rayo)** según la
+    siguiente tabla.
 
-1.  From the Power Automate flow, **When a new channel message is added**, select
-    **Test**.
+Establezca el campo **Current Status** en **Unresolved**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im95.png)
+[TABLE]
 
-2.  Select the **Manually** option and select **Test**.
+![A blue line on a white background AI-generated content may be
+incorrect.](./media/image99.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im96.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image100.png)
 
-3.  Open your **Teams** and select **Post in channel** in the **Support Channel** team.
+12. Debajo de la acción Add a new row, haga clic en el signo (+) y
+    seleccione **Add an action**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im97.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image101.png)
 
-4.  Enter a message and select **Post**.
+13. En la sección Add an action, escriba +++**Send an email**+++ en la
+    barra de búsqueda y seleccione **Send an email (V2)** de la sección
+    Office 365 Outlook.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im98.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image102.png)
 
-4.  Back in the Power Automate page, you can see that the flow has
-    started execution and has passed.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image103.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im99.png)
+14. En la sección Send an email, ingrese los siguientes detalles en los
+    campos correspondientes:
 
-5.  From the agent Overview page, select **Test Trigger** icon.
+> Reemplace los marcadores para **Name**, **ID**, **Details** con las
+> variables correspondientes utilizando contenido dinámico
+>
+> **To**
+>
+> Ingrese el correo electrónico del ingeniero de soporte (puede usar
+> cualquier dirección de correo; el agente enviará el correo allí cuando
+> se genere un ticket de soporte)
+>
+> **Subject**
+>
+> +++New Technical Support Ticket Raised +++
+>
+> **Body**
+>
+> A new technical support ticket has been raised and requires your
+> attention. Please find details below:
+>
+> Employee Name: \< Name \>
+>
+> Employee ID: \< ID \>
+>
+> Technical Issue: \< Details \>
+>
+> Thank you for your prompt attention to this matter.'
+>
+> Best Regards
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im100.png)
+![A screenshot of a email AI-generated content may be
+incorrect.](./media/image104.png)
 
-6.  Select the latest trigger and select **Start testing**.
+15. Guarde y publique el flujo seleccionando **Save** y luego
+    **Publish**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im101.png)
+16. En la barra superior, haga clic en **Save draft** y luego seleccione
+    **Publish**.
 
-7.  It executes the flow, fetches the data from the Support tracker and
-    update in the Dataverse table.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image105.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im102.png)
+17. Seleccione la pestaña **Overview** y luego haga clic en **Edit**
+    dentro del flujo.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im103.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image106.png)
 
-9.  In this case, there is one support ticket detail in the tracker,
-    which gets added to the Dataverse table hence creating a support
-    ticket for the user.
+18. Asigne al flujo el nombre como +++**Create an Employee Support
+    Ticket**+++ y seleccione **Save**.
 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image107.png)
 
-**Final Conclusion of the Lab Guide**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image108.png)
 
-This lab guide provided participants with a hands-on experience in
-deploying an Autonomous Copilot Agent for Contoso Solutions' IT support
-service desk. By following the step-by-step exercises, participants were
-able to:
+19. Desde la página **Contoso IT Support Agent** **Overview**,
+    seleccione **+ Add tool**.
 
-1.  **Set Up Copilot Studio**: Participants learned how to log into
-    Copilot Studio, create and configure the IT support agent, and
-    enable essential settings like generative AI and orchestrator for
-    effective troubleshooting and ticket automation.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image109.png)
 
-2.  **Navigate Power Apps**: Participants gained practical knowledge in
-    logging into Power Apps, setting up a Dataverse table, and importing
-    data from Excel to track and manage support tickets efficiently.
+20. Seleccione **Flow** -\> **Create an Employee Support Ticket** Agent
+    flow.
 
-3.  **Enhance Bot Capabilities**: The exercises focused on adding a
-    knowledge base to the bot, customizing the conversation start and
-    fallback topics to improve user interaction, and ensuring the bot
-    could handle a wide range of IT support scenarios.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image110.png)
 
-4.  **Automate IT Support Tasks**: Participants also learned how to
-    automate the creation of support tickets using Power Automate,
-    enhancing the bot's capability to manage unresolved issues and
-    improve IT team workflows.
+21. Haga clic en **Add and configure**.
 
-By completing these exercises, participants were able to implement a
-robust autonomous support system that improves response times, reduces
-manual workload, and enhances overall productivity for IT support
-operations. The integration of Copilot Studio, Power Apps, and Dataverse
-ensures a seamless flow of information, automates routine tasks, and
-optimizes support workflows, providing immediate troubleshooting
-solutions to employees and automated ticket management for unresolved
-issues.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image111.png)
 
+22. Seleccione la sección **Inputs**.
 
+![A screenshot of a support ticket AI-generated content may be
+incorrect.](./media/image112.png)
 
+23. Seleccione **Custom value** en **Fill using**.
 
+24. Ingrese el valor para cada campo según la siguiente tabla y haga
+    clic en el botón **Save**.
 
-===
+[TABLE]
+
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image113.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image114.png)
+>
+> **Conclusión**
+>
+> Al completar este ejercicio, los participantes aprenderán:
+
+- Cómo integrar Agent Flows con un agente para la creación de tickets.
+
+- Los pasos para recopilar y asignar datos de entrada dinámicamente a
+  partir de interacciones del usuario.
+
+- Técnicas para automatizar notificaciones por correo electrónico en la
+  escalación de incidencias técnicas.
+
+- La capacidad de configurar flujos de trabajo eficientes para la
+  gestión de tickets de soporte.
+
+## Ejercicio 6: Configuración de un desencadenador basado en correo electrónico para acciones automatizadas
+
+Esta continuación de la automatización de la creación de tickets de
+soporte se centra en configurar un desencadenador en el IT Support Agent
+de Contoso para vincular las entradas de correo electrónico con el flujo
+automatizado de Power Automate. Los participantes configurarán los
+desencadenadores (triggers) y finalizarán la preparación del agente para
+su implementación.
+
+1.  Vaya a la página **Overview** del agente, desplácese hacia abajo y
+    haga clic en **+ Add** en la sección **Triggers and Channels**.
+
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image115.png)
+
+2.  En la ventana Add trigger, seleccione el desencadenador **When a new
+    email arrives (V3)**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image116.png)
+
+3.  Después de que se establezca correctamente la conexión entre Copilot
+    y Outlook, y aparezca una marca verde, haga clic en el botón
+    **Next**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image117.png)
+
+4.  En el campo Folder**,** seleccione el icono de carpeta, seleccione
+    la carpeta **Inbox** y luego haga clic en **Create trigger**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image118.png)
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image119.png)
+
+5.  Cierre la ventana emergente **Time to test your trigger**. En la
+    página de Overview del agente, desplácese hacia abajo hasta la
+    sección Triggers, haga clic en los tres puntos **(…)** y seleccione
+    **Edit in Power Automate**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image120.png)
+
+6.  Haga clic derecho en el desencadenador When a new email arrives y
+    seleccione **Delete**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image121.png)
+
+7.  Luego haga clic en Add a trigger, busque +++**When new email
+    arrives**+++ y seleccione el desencadenador **When a new email
+    arrives** de la sección **Office 365 outlook**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image122.png)
+
+8.  Haga clic en **Send a prompt to the specified copilot for
+    processing**, en el campo Body/Message, ingrese el siguiente prompt:
+    +++**Run Create an Employee Support Ticket flow and use content from
+    Body From.**+++ Reemplace **Body** y **From** por las variables de
+    contenido dinámico correspondientes.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image123.png)
+
+9.  Guarde el flujo y publíquelo seleccionando **Save** y luego
+    **Publish**, cierre la ventana de Power Automate y regrese a Copilot
+    Studio.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image124.png)
+
+10. Vaya a la sección Overview y, en la esquina superior derecha, haga
+    clic en **Publish**. Luego, vuelva a hacer clic en **Publish** para
+    publicar el Copilot.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image125.png)
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image126.png)
+
+## Ejercicio 7: Probar el agente
+
+Este ejercicio se centra en probar la integración del IT Support Agent
+de Contoso con Power Automate y Outlook. Los participantes verificarán
+la capacidad del agente para procesar correos electrónicos, crear
+tickets de soporte y activar flujos de trabajo automatizados de manera
+efectiva.
+
+1.  Vaya a la página **Overview** del agente, desplácese hacia abajo,
+    haga clic en los tres puntos **(…)** del desencadenador (trigger) y
+    seleccione **Edit in Power Automate**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image127.png)
+
+2.  Esto lo redirigirá al flujo de Power Automate. En la barra superior,
+    haga clic en el botón **Test**, seleccione **Manually** y luego
+    vuelva a hacer clic en **Test**.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image128.png)
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image129.png)
+
+3.  **Envíe un correo electrónico** al mail id del tenant de
+    administrador de 365 desde cualquier otro buzón para **desencadenar
+    la acción**. El correo debe describir un problema y debe incluir sus
+    datos, como el ID de empleado, similar al de la captura de pantalla
+    a continuación. El contenido de ejemplo es el siguiente.
+
+> Hi Support Team,
+>
+> I hope this message finds you well.
+>
+> Iam Mark Brown, working as a Software Engineer at Contoso. My employee
+> ID is CONTOSO099
+>
+> Issue: Monitor is completely balank and not functioning.
+>
+> Kindly raise a support ticket and assist in resolving this issue at
+> the earlierst.
+>
+> Thank you for your support.
+>
+> Best Regards,
+>
+> Mark Brown
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image130.png)
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image131.png)
+
+4.  Vaya a la página de Overview del agente, desplácese hacia abajo y
+    seleccione **Test trigger**.
+
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image132.png)
+
+5.  Haga clic en **Start testing**, esto comenzará el proceso de prueba.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image133.png)
+
+6.  En la sección de prueba, haga clic en **Allow**; esto abrirá la
+    ventana de conexión.
+
+![](./media/image134.png)
+
+7.  Desde la ventana de Copilot Studio, vuelva a ejecutar la **prueba
+    (Test)**.
+
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image132.png)
+
+8.  La solicitud de soporte se genera automáticamente.
+
+![A screenshot of a contact us AI-generated content may be
+incorrect.](./media/image135.png)
+
+9.  Vaya a Power Apps, abra la tabla Employee Support Ticket Record y
+    verifique los detalles.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image136.png)
+
+10. Revise el correo de soporte que configuró en el flujo de Power
+    Automate para enviar el mensaje. El correo se envía automáticamente
+    al equipo de soporte.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image137.png)
+
+11. Vaya a la ventana de prueba y escriba la consulta como usuario:
+    +++**Mark Brown Ticket Current Status**+++. El agente devolverá el
+    estado del ticket, que aparecerá como Unresolved.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image138.png)
+
+12. Como ingeniero de soporte, escriba un prompt en la sección de
+    prueba. +++**I want to know about all Unresolved ticket**+++.
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image139.png)
+
+**Conclusión**
+
+Al completar este ejercicio, los participantes aprenderán:
+
+- Cómo probar la funcionalidad del agente simulando escenarios reales.
+
+- Pasos para validar flujos de trabajo desencadenados por correo
+  electrónico y la generación automática de tickets en Power Automate.
+
+- Cómo revisar los registros generados en Dataverse y confirmar que se
+  enviaron las notificaciones al equipo de soporte.
+
+- Conocimientos prácticos para depurar y finalizar flujos de
+  automatización.
+
+## Conclusión final de la guía de laboratorio
+
+Esta guía de laboratorio proporcionó a los participantes una experiencia
+práctica en la implementación de un Agente Autónomo para la mesa de
+servicio de soporte de IT de Contoso Solutions. Al seguir los ejercicios
+paso a paso, los participantes pudieron:
+
+1.  **Configurar Copilot Studio**: Los participantes aprendieron a
+    iniciar sesión en Copilot Studio, crear y configurar el agente de
+    soporte de IT, y habilitar configuraciones esenciales como la IA
+    generativa y el orquestador para lograr un soporte efectivo en la
+    resolución de problemas y la automatización de tickets.
+
+2.  **Navegar Power Apps**: Los participantes obtuvieron conocimientos
+    prácticos sobre cómo iniciar sesión en Power Apps, configurar una
+    tabla de Dataverse e importar datos desde Excel para registrar y
+    administrar tickets de soporte de manera eficiente.
+
+3.  **Mejorar las capacidades del agente**: Los ejercicios se enfocaron
+    en agregar una base de conocimientos al agente, personalizar el
+    mensaje de inicio de conversación y el tema de fallback para mejorar
+    la interacción con el usuario, y asegurar que el agente pudiera
+    manejar una amplia variedad de escenarios de soporte de IT.
+
+4.  **Automatizar tareas de soporte de IT**: Los participantes también
+    aprendieron a automatizar la creación de tickets de soporte
+    utilizando Power Automate, mejorando la capacidad del agente para
+    gestionar problemas no resueltos y optimizar los flujos de trabajo
+    del equipo de IT.
+
+Al completar estos ejercicios, los participantes pudieron implementar un
+sólido sistema autónomo de soporte que mejora los tiempos de respuesta,
+reduce la carga de trabajo manual y aumenta la productividad general de
+las operaciones de soporte de IT. La integración de Copilot Studio,
+Power Apps y Dataverse garantiza un flujo de información sin
+interrupciones, automatiza tareas rutinarias y optimiza los flujos de
+trabajo de soporte, proporcionando soluciones inmediatas de resolución
+de problemas a los empleados y una gestión automatizada de tickets para
+los incidentes no resueltos.

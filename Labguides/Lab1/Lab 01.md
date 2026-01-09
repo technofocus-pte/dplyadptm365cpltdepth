@@ -1,322 +1,519 @@
-# **Get Started with Workflows in Microsoft 365 Copilot**
+# Laboratorio 1: Mejorar la narrativa de datos utilizando el agente Analyst de Microsoft 365 Copilot
 
-## **What is Workflows Agent?**
+**Duración:** 25 minutos
 
-Workflows is an agent in Microsoft 365 Copilot that helps you automate
-work across Microsoft 365 using natural language. Instead of manually
-configuring steps or connectors, you simply describe what you want, and
-Workflows generates a working workflow using supported Microsoft 365
-services. 
+![Get started with Analyst in Microsoft 365 Copilot - Microsoft
+Support](./media/image1.png)
 
-## **What you will build in this exercise**
+# Objetivo
 
-You will create a workflow that:
+Este laboratorio utiliza el agente **Analyst** de Microsoft 365 Copilot
+para analizar la hoja de cálculo **Project Nexus Survey Results**.
+Cargue el archivo en el agente Analyst, ejecute los starter prompts para
+extraer las principales tendencias, profundice en los promedios y cree
+visualizaciones (gráficos, mapas de calor, etc.).
 
-- Runs **every weekday morning**
+# Requisitos previos
 
-- Reviews **unread emails from the last 24 hours**
+1.  Acceso a una cuenta de Microsoft 365 con Copilot y Agents
+    habilitados (agente Analyst disponible).
 
-- Identifies **important or actionable emails**
+2.  Navegador: se recomienda Microsoft Edge (el módulo utiliza Edge en
+    las instrucciones).
 
-- Organizes them into clear sections
+3.  Archivo Project Nexus Survey Results en formato CSV o XLSX (la
+    página de Learn incluye un enlace de descarga desde GitHub).
 
-- Sends a **summary to you in Microsoft Teams**
+## Ejercicio 1: Configurar y cargar el conjunto de datos
 
-## **Prerequisites (Important – Check Before You Start)**
+1.  **Abra una nueva pestaña en** **Microsoft Edge** y navegue a
+    https://M365copilot.com. **Inicie sesión** utilizando el **nombre de
+    usuario** y la contraseña proporcionados en la pestaña **Resources**
+    del panel derecho del entorno de laboratorio.
 
-### **Licensing & Access**
+![](./media/image2.png)
 
-Make sure:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image3.png)
 
-- You have a **Microsoft 365 Copilot license**
+![A screenshot of a computer error AI-generated content may be
+incorrect.](./media/image4.png)
 
-- You are part of the **Frontier program**
+2.  En **Microsoft 365**, abra el **Analyst agent**.
 
-- Workflows Agent (Frontier) is available in your tenant
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image5.png)
 
-**Note**: Workflows is **English-only** at the moment.
+3.  Si no es visible, seleccione el ícono **Expand navigation**, elija
+    **Agents** → seleccione **Analyst Agent**.
 
-### **DLP & Connector Requirements (Admin setup)**
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image6.png)
 
-Your organization’s **DLP policy must allow**:
+4.  Haga clic en el ícono **Add content and agents (+)** del campo de
+    prompt → seleccione **Upload images and files** → elija el archivo
+    del laboratorio **Project Nexus survey results** desde **C:\Lab
+    File**.
 
-- **AI actions** (Power Platform connector)
+![](./media/image7.png)
 
-- **Dataverse (AI prompt)**
+![](./media/image8.png)
 
-- Microsoft 365 connectors:
+> **Nota:** Después de cargar el archivo, estará listo para comenzar a
+> explorar e interactuar con el **agente *Analyst*.**
 
-  - Outlook
+## Ejercicio 2: Ejecutar los prompts iniciales
 
-  - Teams
+1.  En el campo de prompt, escriba:  
+    +++**Analyse this spreadsheet and tell me the top three
+    trends**.+++  
+    Luego haga clic en el botón **Execute**.  
+    Espere a que el agente Analyst complete su análisis y valide la
+    respuesta.
 
-  - SharePoint
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image9.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image10.png)
+>
+> **Nota:** La página puede mostrar un gran espacio en blanco en la
+> interfaz. Si esto ocurre, desplácese hacia arriba para visualizar los
+> resultados.
+>
+> ![A screenshot of a survey AI-generated content may be
+> incorrect.](./media/image11.png)
 
-  - Planner
+2.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute:  
+    +++What is the average rating for each survey category?+++**
 
-  - Approvals
+> ![](./media/image12.png)
+>
+> ![A screenshot of a survey AI-generated content may be
+> incorrect.](./media/image13.png)
 
-These are required so Workflows can read emails, post to Teams, and
-summarize content.
+## Ejercicio 3: Probar prompts adicionales (cuantitativos, cualitativos y de visualización)
 
-## Exercise 1: Add Workflows Agent to Copilot
+Este ejercicio permite explorar diferentes tipos de prompts de análisis
+más allá de los ejemplos predefinidos y comprender cómo cada categoría
+(cuantitativa, cualitativa y de visualización) puede generar insights
+distintos a partir del mismo conjunto de datos.
 
-1.  Sign in to **Microsoft 365 Copilot**
+### Prompts de análisis cuantitativo: 
 
-&nbsp;
+El agente busca obtener información numérica o medible a partir de los
+datos.
 
-1.  **Sign in with your Microsoft 365 Copilot account**
+1.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute.**
 
-![](./media/4ad5a4ad6d6c6b84f471ea900a689ba5e1ea248d.png)
++++How many participants rated the project satisfaction as 4 or
+higher?+++
 
-2.  Click **Yes,** to stay signed in.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image14.png)
 
-![](./media/a610296599c1f2181c95a5860d341f03f18aa4eb.png)
+**Resumen de la respuesta:**
 
-3.  After successful login, you will see **Copilot Chat** home page.
+- Un total de **22 participantes** calificaron la satisfacción del
+  proyecto con **4 (Good)** o **5 (Excellent)** en la encuesta Project
+  Nexus.
 
-![](./media/92400451e9de39ccd7f544f4beab4ca5e43f4207.png)
+- Desglose detallado de calificaciones:
 
-2.  In the **left navigation**, select **All Agents**
+  - (Poor): 11 respuestas
 
-![](./media/b0e69ae705d99ce8880aa9719a128e48bad23cb0.png)
+  - (Fair): 7 respuestas
 
-3.  Explore **Agent Store**
+  - (Neutral): 10 respuestas
 
-![](./media/9afcbf76689888f49e8d52daa80c11eda6d41459.png)
+  - (Good): 14 respuestas
 
-4.  Search for **Workflows (Frontier),** Select **Add**
+  - (Excellent): 8 respuestas
 
-![](./media/85d11ee9343169932c044530d7e6400ad10e738c.png)
+- Cálculo: **14 (Good) + 8 (Excellent) = 22 participantes** expresaron
+  una satisfacción positiva.
 
-![](./media/f25bd0390a5059a456584d38ee5f76f0bfad5bf4.png)
+![A screenshot of a survey AI-generated content may be
+incorrect.](./media/image15.png)
 
-5.  You should now see **Workflows** (Frontier) under **Agents** in the
-    left pane.
+2.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**.
 
-![](./media/6cc7c2bd9406f4973e9829e14c365370d300301f.png)
++++Which category received the highest average rating, and which
+received the lowest**?+++**
 
-## **Exercise 2: Step-by-Step: Build Your First Workflow**
+![](./media/image16.png)
 
-### Step 1: Open Workflows Agent
+**Resumen de la respuesta:**
 
-1.  Go to **Microsoft 365 Copilot**
+- El agente **Analyst** analizó los datos del archivo
+  **Project_Nexus_survey_results.xlsx** y proporcionó los **promedios de
+  calificación** en cuatro categorías principales.
 
-2.  In the left navigation, select:  
-    **Agents → Workflows Agent (Frontier)**
+- 📊 *Resumen de calificaciones promedio*
 
-![](./media/6cc7c2bd9406f4973e9829e14c365370d300301f.png)
+[TABLE]
 
-- You will see a chat interface of **Workflows (Frontier).**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image17.png)
 
-![](./media/38872484c68cf1f6168270424a10308d7bc1e599.png)
+### Prompts de análisis cualitativo**:** 
 
-### Step 2: Describe Your Workflow in Natural Language
+El agente busca explorar **opiniones, experiencias, percepciones o
+*insights* descriptivos** de los datos, en lugar de valores numéricos.
 
-1.  Copy and paste the following **example prompt in the prompt box of
-    Workflows Frontier,** and click **Send**
+1.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**:
 
-*“Each weekday morning, review all unread emails from default inbox from
-the last 24 hours, and identify anything important I may have missed.
-Focus on messages that are high priority, time-sensitive, or require
-action. Organize the results into three sections: Needs Response, For
-Your Information, and Other Important Emails. For each message, include
-the sender, subject, a brief summary, any due dates or deadlines, and
-next steps. Send to myself on Teams”*
++++Summarize the most common themes in the comments section.+++
 
-![](./media/5789886267f0293f8c3ae3dad534be3b0fcccd51.png "A prompt for workflows")
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image18.png)
 
-### Step 3: Understand What Copilot Just Did
+**Resumen de la respuesta:**
 
-Behind the scenes, Workflows automatically:
+- El agente **Analyst** identificó los **temas** **principales**
+  mencionados por los participantes en los comentarios relacionados con
+  la satisfacción del proyecto.
 
-- Creates a **time-based trigger** (weekday mornings)
+- Cada tema incluye el **número de menciones** y **ejemplos de
+  comentarios** que representan la retroalimentación de los
+  participantes.
 
-- Connects to:
+![](./media/image19.png)
 
-  - **Outlook** (read unread emails)
+2.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**.
 
-  - **Dataverse AI prompt** (summarization & grouping)
++++Are there any recurring concerns or suggestions mentioned in the
+comments**?+++**
 
-  - **Teams** (send the output)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image20.png)
 
-- Builds the workflow logic for you
+**Resumen de la respuesta:**
 
-You **did not** configure connectors manually—Copilot did it.
+- El agente **Analyst** identificó **preocupaciones y sugerencias
+  recurrentes** en los comentarios de la encuesta Project Nexus.
 
-![](./media/ab601e06b9b95dd112325aa4a867ea79deac644e.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image21.png)
 
-![](./media/55dbce3d1f52f0cbaba8af9bb1a4a4283cbc1961.png)
+### Prompts de insights y recomendaciones
 
-### Step 4: Review the Generated Workflow
+El agente Analyst **interpreta los hallazgos de los datos, formula
+conclusiones significativas** y **sugiere próximos pasos accionables**
+basados en el análisis.
 
-1.  After processing your prompt, you’ll see:
+1.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**.
 
-- Trigger (Schedule)
++++Based on the survey data, what are the top three strengths of Project
+Nexus?+++
 
-- Actions (Read emails → AI summarize → Send Teams message)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image22.png)
 
-- A **visual workflow designer**
+**Resumen de la respuesta:**
 
-![](./media/55dbce3d1f52f0cbaba8af9bb1a4a4283cbc1961.png)
+- El agente **Analyst** identificó las **principales fortalezas** a
+  partir de los datos y comentarios de la encuesta Project Nexus.
 
-2.  Take a moment to:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image23.png)
 
-- Review steps
+2.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**.
 
-- Confirm inbox and Teams destination
++++What are the key areas for improvement suggested by the
+participants?+++
 
-- Rename the workflow (optional)
+![](./media/image24.png)
 
-### Step 5: Save the Workflow
+**Resumen de la respuesta:**
 
-1.  Select **Save** on the top right corner of **Workflow** window
+- El agente **Analyst** destacó la **comunicación** como el **área
+  principal de mejora**, basándose en la retroalimentación de los
+  participantes de la encuesta Project Nexus.
 
-- Your workflow is now created and ready to test
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image25.png)
 
-![](./media/fa4a0bd83f7b6cdc1a89febcc0419e165922ff77.png)
+### Prompts de visualización cuantitativa
 
-### Step 6: Test the Workflow 
+**El agente Analyst presenta los datos numéricos** **de forma visual**
+—mediante gráficos, tablas o diagramas— para facilitar su interpretación
+y comparación.
 
-After saving the workflow, you’ll be prompted to test.
+1.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**.
 
-1.  Select **Test** from the top menu.
+**+++**Generate a pie chart of overall ratings distribution**.+++**
 
-![](./media/ed5f19ae1620e92a2e662d80c05f56c643c174de.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image26.png)
 
-- Observe the test run generated in the Workflow window.
+**Resumen de la respuesta:**
 
-![](./media/e7cc1fa407a851b773427df48cdfa07f8051b57d.png)
+- El agente **Analyst** generó un **gráfico circular** que representa
+  visualmente la **distribución de las calificaciones de Overall
+  Experience** en la encuesta Project Nexus.
 
-### Step 7: Review Test Results
+![](./media/image27.png)
 
-1.  After the test runs:
+2.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute**:
 
-![](./media/7f059525a53555b58a03b433e71e3f97b6523a37.png)
++++Create a bar chart comparing the average ratings for Project
+Satisfaction, Communication Effectiveness, Timeline Adherence, and
+Overall Experience.+++
 
-2.  Check:
+![](./media/image28.png)
 
-    1.  Emails detected
+**Resumen de la respuesta:**
 
-**Note:** I manually sent an email to my ODL account to verify that the
-workflow triggers a notification in Microsoft Teams. If you don’t have
-any new unread emails in your inbox, you’ll need to do the same to test
-the workflow.
+- El agente **Analyst** creó un **gráfico de barras** que visualiza los
+  **promedios de calificación** en las cuatro categorías principales de
+  la encuesta Project Nexus y proporcionó un resumen numérico.
 
-> ![](./media/49d9c762134b6eccc18052cf9d0a33d5d437ba91.png)
+![A screenshot of a graph AI-generated content may be
+incorrect.](./media/image29.png)
 
-2.  Categorization accuracy
+## Ejercicio 4: Instrucciones para el elemento accionable del usuario final
 
-> ![](./media/2d10b0e295ba13f9a33f753c1c9106f37fc01304.png)
+Realice un análisis de datos integral de los resultados de la encuesta
+Project Nexus utilizando diferentes tipos de prompts analíticos. Cada
+tipo de prompt se centra en extraer insights o visualizaciones
+específicas del conjunto de datos.
 
-3.  Teams message format:
+### Prompts de análisis cuantitativo
 
-- Ensure that the Teams message format is matching the Outlook email
-  details.
+Utilice estos prompts para analizar **datos numéricos** e identificar
+patrones o relaciones medibles.
 
-![](./media/92c28748c59c3ed14ab872bf7c6815c0830855f0.png)
+1.  En el campo de prompt, escriba el siguiente prompt, valide la
+    respuesta del agente y luego haga clic en el botón **Execute.**
 
-3.  If something looks wrong:
++++What percentage of participants rated timeline adherence below 3?+++
 
-    1.  Update the prompt
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image30.png)
 
-    2.  Re-test
+> Esto calculará la proporción de participantes que otorgaron
+> calificaciones bajas en el cumplimiento del cronograma.
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image31.png)
 
-**Note**: You can iterate just like chatting—no rebuild required.
+2.  En el campo prompt, introduzca el siguiente prompt y valide la
+    respuesta del agente, luego haga clic en el botón **Execute**.
 
-4.  Simple **SharePoint Document Review Workflow** for user to explore
-    more
++++Can you identify any correlations between communication effectiveness
+and overall experience?+++
 
-**Example prompt:**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image32.png)
 
-*“When a new document is uploaded to the “Project Documents” library in
-my SharePoint site, review the document and generate a short summary.
-Highlight key points, action items, and any risks or missing
-information. Send the summary to me in Microsoft Teams for review.”*
+El Analyst calculará el coeficiente de correlación e interpretará qué
+tan estrechamente están relacionadas estas dos categorías.
 
-### Step 8: Monitor Workflow Runs
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image33.png)
 
-To see how your workflow performs over time:
+> **Resultado esperado:**
+>
+> Un resumen numérico que muestre porcentajes, promedios o valores de
+> correlación que revelen patrones en las calificaciones de los
+> participantes.
 
-1.  Go to the **Activity** tab located at the centre of the workflow
-    window.
+### Prompts de análisis cualitativo
 
-![](./media/28df1b8574f50221f82bda6e54e9542160a8acd8.png)
+Utilice estos *prompts* para **extraer e interpretar comentarios
+descriptivos** **o textuales** de las respuestas abiertas de la
+encuesta.
 
-2.  Select the workflow you want to manage. You may choose your most
-    recent workflow or any other workflow as required.
+1.  En el campo prompt, introduzca el siguiente prompt y valide la
+    respuesta del agente, luego haga clic en el botón **Execute**.
 
-![](./media/d63c998e91c799dbde31566e613ef0133d457588.png)
++++Identify any comments that mention issues with communication or
+timeline.+++
 
-3.  View the following details:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image34.png)
 
-&nbsp;
+Esto filtrará los comentarios que contengan palabras clave o
+preocupaciones relacionadas. Revise los comentarios extraídos para
+identificar frases o temas recurrentes.
 
-1.  **Trigger Time**  
-    The exact date and time when the workflow was initiated.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image35.png)
 
-2.  **Action Status (Success / Failed)**  
-    The execution result of each action within the workflow, indicating
-    whether the action completed successfully or encountered an error.
+**Resultado esperado:**  
+Una lista categorizada de insights cualitativos que resalten patrones de
+retroalimentación relacionados con la comunicación y el cronograma del
+proyecto.
 
-3.  **Output Details**  
-    The response or data generated by each action, including inputs,
-    outputs, and any error messages for troubleshooting.
+### Prompts de insight y recomendaciones
 
-![](./media/ef6da3f0774d811104763b1c6f5b8c24cad89922.png)
+Utilice estos *prompts* para **resumir los hallazgos** y **generar
+recomendaciones** procesables basadas tanto en datos cuantitativos como
+cualitativos.
 
-4.  Click any run to see **step-by-step execution details**.
+1.  En el campo prompt, introduzca el siguiente prompt y valide la
+    respuesta del agente, luego haga clic en el botón **Execute**.
 
-&nbsp;
++++Provide a summary report of the survey findings with actionable
+recommendations.+++
 
-1.  **Review the execution status**
+![](./media/image36.png)
 
-    1.  A green banner such as “Your workflow ran successfully”
-        indicates the run completed without errors.
+El Analyst compilará los hallazgos clave, destacará fortalezas y
+debilidades, y sugerirá acciones de mejora.
 
-    2.  If the run failed, error indicators will be shown instead.
+![](./media/image37.png)
 
-2.  **View trigger details**
+**Resultado esperado:**  
+Un informe resumido que contenga insights estratégicos y recomendaciones
+para mejorar el desempeño de proyectos futuros.
 
-    1.  At the top of the run details, expand the Trigger section (for
-        example, Get Unread Emails).
+### Prompts de visualización cuantitativa
 
-    2.  This shows when and how the workflow was triggered.
+Utilice estos prompts para crear **visualizaciones de datos** que hagan
+que los resultados numéricos sean más interpretables y estén listos para
+su presentación.
 
-### Step 9: Manage Your Workflows
+1.  En el campo prompt, introduzca el siguiente prompt y valide la
+    respuesta del agente, luego haga clic en el botón **Execute**.
 
-From the **Workflows (Frontier) home page**, you can:
++++Plot a histogram of the satisfaction ratings to see the distribution
+of ratings.+++
 
-1.  **View** all workflows you created under **My workflows** section of
-    **Workflows (Frontier)** page.
+![](./media/image38.png)
 
-![](./media/cdbac86ac3f34777e0077b74d3a369c946d33403.png)
+![A screenshot of a graph AI-generated content may be
+incorrect.](./media/image39.png)
 
-2.  Turn workflows on or off using the **ellipses (...).** Turning off a
-    workflow pauses its automation.
+2.  Ejecute los siguientes prompts como se muestra en los pasos
+    anteriores:
 
-&nbsp;
+    - +++Generate a scatter plot to analyze the relationship between
+      Communication Effectiveness and Overall Experience.+++
 
-1.  Navigate to the **ellipsis** (three dots) on the right-hand side of
-    the selected workflow, then click **Turn off** to pause the
-    automation.
+    - +++Create a correlation heatmap for all numeric rating
+      categories.+++
 
-![](./media/95723f84cdeb60baf970814170af6379601570f2.png)![](./aa88133a0c2c55a8dfce07d4a825cecbd142e2b4.png)
+    - +++Make a box plot for each rating category to show the range and
+      quartiles.+++
 
-2.  Click on **Delete** to delete workflows permanently.
+    - +++Plot a line graph showing timeline adherence ratings over
+      participants ordered by Participant ID.+++
 
-**Note**: Deleting a workflow removes it entirely and can’t be undone.
+> Revise cada visualización para identificar tendencias, relaciones y
+> valores atípicos en los datos.
 
-![](./media/862df5f928b9c982256f86629542fa87c130230f.png)
+- **Resultado esperado:**  
+  Una serie de gráficos (*histogram*, *scatter plot*, *heatmap*, *box
+  plot* y *line graph*) que representen visualmente los datos de la
+  encuesta, facilitando la comparación y la obtención de insights.
 
-## **What You Learned in This Exercise**
+## Ejercicio 5: Exportar y reutilizar la respuesta del agente Analyst
 
-By completing this beginner workflow, you learned how to:
+### ¿Qué se puede hacer con la respuesta?
 
-- Use natural language to automate tasks
+A continuación, se presenta una descripción general de las tareas
+asociadas con cada ícono mostrado en su captura de pantalla:
 
-- Connect Outlook, Teams, and AI summarization automatically
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image40.png)
 
-- Test and monitor workflows
+1.  **Ícono Clipboard** – Probablemente utilizado para **copiar o
+    pegar** contenido.
 
-- Manage automations without Power Automate knowledge
+2.  **Ícono Thumbs-Up** – Generalmente indica que se **aprueba o gusta**
+    una acción o elemento.
+
+3.  **Ícono Thumbs-Down** – Indica **desaprobación o disgusto** hacia un
+    elemento o acción.
+
+4.  **Ícono Speaker** – Representa **configuraciones o control de
+    volumen**.
+
+5.  **Ícono Pencil** – Generalmente utilizado para tareas de **edición o
+    redacción**.
+
+6.  **Ícono Clock with Arrow** – El texto informativo (***tooltip***)
+    indica *“**Add to recent page**”*, lo que significa que agrega el
+    elemento actual a sus páginas visitadas recientemente para
+    referencia rápida.
+
+### Botón Copy
+
+- **Propósito:** Permite al usuario **copiar** directamente **el texto
+  del resumen, explicación o datos** del Analyst desde la respuesta.
+
+- **Uso:** Al hacer clic, copia la **parte de texto** de la respuesta
+  del Analyst (no la imagen del gráfico) al portapapeles.  
+  Es útil si se desea **pegar los datos o el resumen** **en un
+  informe**, documento o presentación.
+
+- **Ejemplo de uso:**  
+  Se puede copiar “22 participants rated the project satisfaction as 4
+  or higher” para incluirlo en el archivo resumen del proyecto.
+
+> ![](./media/image41.png)
+>
+> ![](./media/image42.png)
+
+### Botón Download
+
+- **Propósito:** Permite al usuario **descargar la visualización** (por
+  ejemplo, un **gráfico circular**) como **archivo de imagen (por
+  ejemplo, PNG).**
+
+- **Uso:** Al hacer clic, guarda la **imagen del gráfico** en el sistema
+  local.  
+  Luego puede insertarse en **presentaciones de PowerPoint**,
+  **documentos de Word o informes** como representación visual.
+
+- **Ejemplo de uso:**  
+  Se puede descargar el gráfico circular ***“Distribution of Overall
+  Experience Ratings”*** para incluirlo en la presentación de análisis
+  de la encuesta.  
+    
+  ![](./media/image43.png)
+
+### Consejos de resolución de problemas y validación
+
+- Si la interfaz del agente muestra un gran espacio en blanco:
+  desplácese hacia arriba o hacia abajo; el contenido suele estar
+  presente (el módulo señala esto como un problema conocido).
+
+- Si las columnas numéricas se tratan como texto: abra la hoja de
+  cálculo, asegúrese de que las columnas de calificación sean numéricas
+  y vuelva a cargar el archivo.
+
+- Si los gráficos no aparecen, solicite explícitamente al agente:
+
+Please generate a bar chart comparing average ratings for \[list
+categories\].
+
+## Conclusión:
+
+En este laboratorio, los participantes exploraron cómo el **Analyst
+Agent** de Microsoft 365 Copilot mejora la narrativa de datos al
+transformar información de encuestas sin procesar en insights
+procesables y visualizaciones efectivas.  
+Al analizar los resultados de la encuesta Project Nexus, los usuarios
+aprendieron a aplicar **prompts cuantitativos, cualitativos y de
+visualización** para descubrir tendencias, calcular promedios,
+identificar temas clave y resaltar fortalezas y áreas de mejora.  
+El laboratorio demostró cómo el Analyst Agent puede interpretar datos,
+generar gráficos como circulares, de barras y mapas de calor, y resumir
+hallazgos en recomendaciones significativas.  
+Finalmente, los participantes practicaron la exportación y reutilización
+de los resultados analíticos, reforzando cómo Copilot puede optimizar
+las tareas de análisis de datos, elaboración de informes y
+presentaciones, haciendo que los insights empresariales sean más
+rápidos, claros y accesibles.

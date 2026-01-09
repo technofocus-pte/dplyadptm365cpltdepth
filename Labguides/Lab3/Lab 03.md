@@ -1,300 +1,333 @@
-# Lab 3: Personalized Upskilling with Learning Agent in Microsoft 365 Copilot
+# Laboratorio 3 - Automatizar la asistencia de conocimiento mediante Microsoft 365 Copilot Agents
 
-## Introduction
+**Duración: 20 minutos**
 
-Learning agent empowers people to continuously grow and achieve more by
-delivering **personalized, just-in-time learning** directly within
-Microsoft 365 Copilot. It helps users build **technical and soft
-skills**, improve competencies, and learn how to use Copilot more
-effectively in everyday work.
+Objetivo:
 
-Learning agent uses AI to provide:
+En este laboratorio se creará y configurará un agente de Copilot
+utilizando las pestañas **Describe** y **Configure**.
 
-- Tailored learning recommendations
+Se utilizará **Copilot Studio Agent Builder** para:
 
-- Curated learning paths
+- Crear un agente mediante las pestañas **Describe** y **Configure** en
+  **Copilot Studio Agent Builder**.
 
-- Interactive role-play practice
+**Nota:** La disponibilidad de la pestaña **Describe** depende de la
+**región geográfica y del idioma**. Si la pestaña **Describe** no está
+disponible en su región o idioma preferido, puede crear el agente
+manualmente mediante la pestaña **Configure**
 
-- Enterprise and third-party learning content (including LinkedIn
-  Learning)
+- Personalizar las instrucciones del agente, la fuente de conocimiento y
+  los starter prompts.
 
-## Lab Objectives
+- Probar y editar el agente.
 
-By the end of this guide, you will be able to:
+- Administrar y compartir el agente dentro de la organización.
 
-- Access and launch the Learning agent
+Ejercicio 1: Crear un agente de Copilot usando la pestaña Describe  
+En este ejercicio se utilizará la pestaña **Describe** en **Copilot
+Studio** para crear un agente básico.
 
-- Discover personalized learning recommendations
+1.  Abra el navegador **Edge** y navegue a
+    <https://m365.cloud.microsoft> para acceder a la página principal de
+    **Microsoft 365 Copilot**, y luego haga clic en el botón **Sign
+    in**.
 
-- Practice skills using role-play
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image1.png)
+>
+> **Nota:** Debe iniciar sesión (si se le solicita) utilizando las
+> **credenciales** proporcionadas en la pestaña **Resources** ubicada en
+> el lado derecho de la pantalla.
 
-- Use Learning agent prompts for continuous upskilling
-
-**Note:** Learning agent recommendations are personalized based on user
-role, skills, and activity. In preview environments, results may vary
-depending on available profile and tenant data.
-
-## Prerequisites
-
-- Microsoft 365 Copilot license
-
-- Access to Learning agent (Frontier – Private Preview)
-
-- User enabled for Frontier by admin
-
-- Optional: Viva Learning / Viva Suite (enhances learning experience but
-  not mandatory)
-
-## Supported Platforms
-
-- Microsoft 365 Copilot Web
-
-- Microsoft 365 Copilot Chat (Native App)
-
-- Microsoft Teams (Web & App – Preview)
-
-### Not supported (current preview):
-
-- Word Copilot
-
-- Excel Copilot
-
-- PowerPoint Copilot
-
-------------------------------------------------------------------------
-
-## Step-by-Step Execution
-
-## Step 1: Access the Learning agent
-
-1.  Open **Microsoft 365 Copilot** (Web or Teams).
-
-- Sign-in with your ODL credentials
-
-![](./media/03565757305398d3e082b6d631657917c4c72e75.png)
-
-- Click Yes to continue
-
-![](./media/58e23cbb4979279bc5242d8e1205c7c428281233.png)
-
-- Once you’ve logged in successfully, the Copilot Chat welcome screen
-  will appear.
-
-![](./media/f084d05b125c9fe5c4cc177836575f9310e4ba4c.png)
-
-2.  In the M365 Copilot left navigation pane, go to **New chat**, select
-    **All agents**.
-
-![](./media/588c45eae0df01065ff444233074f8169d536f63.png)
-
-3.  Explore Agent store
-
-![](./media/529cd3d9bc77a699e64ed7dad1198b2f412fdf4f.png)
-
-4.  Search for **Learning** in the Agent store, select **Learning
-    (Frontier)**.
-
-![](./media/image1.png)
-
-5.  Click on **Add** button to enable the agent.
+2.  Ingrese el **nombre de usuario** y la **contraseña** para abrir la
+    página **Copilot Chat**.
 
 ![](./media/image2.png)
 
-6.  View the **Learning (Frontier)** enabled under **Agents** section in
-    the **M365 Copilot left** navigation pane.
+3.  La interfaz de **Copilot Chat** se abrirá.
 
-![](./media/image3.png)
+> ![](./media/image3.png)
+>
+> **Nota:** Si aparece el mensaje **Something went wrong**, haga clic en
+> **Refresh** para volver a abrir la aplicación **Copilot**
 
-### Expected outcome
+4.  Haga clic en **Create an agent** en el panel de navegación izquierdo
+    de la página principal de **Copilot Chat**.
 
-- The Learning agent opens and is ready to use.
+> ![A screenshot of a chat AI-generated content may be
+> incorrect.](./media/image4.png)
 
-## Step 2: Explore the Learning agent home experience
+5.  **Interfaz de Copilot Studio Agent Builder:**  
+    Al abrir **Copilot Studio Agent Builder**, aparecerán **tres
+    pestañas** en la parte superior de la pantalla:
 
-1.  Review the **welcome screen** and suggested prompts.
+- **Describe** – Define el propósito y la funcionalidad del agente.
 
-![](./media/image3.png)
+- **Configure** – Personaliza el comportamiento, los desencadenadores
+  (*triggers*) y las acciones del agente.
 
-2.  Observe recommended learning based on:
+- **Try it** – Permite probar las respuestas del agente y refinar su
+  rendimiento.
 
-    - Your role
+> **Nota:** Use estas pestañas de forma secuencial para diseñar,
+> configurar y validar su agente de Copilot antes del despliegue.
+>
+> ![](./media/image5.png)
 
-    - Skills profile
+6.  En la pestaña **Describe**, ingrese la descripción del propósito del
+    agente en lenguaje natural y luego haga clic en el botón
+    **Ejecutar**.  
+    Ingrese la siguiente descripción en el campo de chat: +++**An agent
+    that assists users in finding popular learning paths and modules
+    from Microsoft**+++.
 
-    - Recent work activity
+> ![](./media/image6.png)
 
-![](./media/image4.png)
+7.  Valide la respuesta del agente con respecto a la descripción
+    proporcionada. El chat sugerirá un nombre para el agente y le pedirá
+    confirmarlo. Para este laboratorio, escriba +++Use suggested name+++
+    en el campo y luego haga clic en el **botón Ejecutar**.
 
-### What you’ll notice:
+> ![](./media/image7.png)
 
-- Short learning suggestions
+8.  Haga clic en el botón **Create** ubicado en la parte superior
+    derecha de la ventana del generador de agentes para enviar el
+    agente.
 
-- Copilot usage tips
+**Nota:** En este ejercicio se utilizan las configuraciones
+predeterminadas para agilizar el proceso de creación.
 
-- Skill-based recommendations
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image8.png)
 
-## Step 3: Get personalized learning recommendations
+9.  Una vez que el agente se haya creado correctamente, haga clic en el
+    **botón Go to agent** para comenzar a interactuar con él. ![A
+    screenshot of a computer AI-generated content may be
+    incorrect.](./media/image9.png)
 
-1.  In the Learning agent chat window, enter the following prompt, and
-    click Generate.  
-    ***“Recommend learning content to improve my skills.”***
+**Nota:** Si el nombre del agente no aparece actualizado en la
+**interfaz de** **Copilot Chat**, pruebe los siguientes pasos:
 
-![](./media/image5.png)
+- **Actualice** la página**,** o en el panel de navegación izquierdo,
+  seleccione la pestaña **Agents** y elija su agente en la lista.
 
-2.  Based on your role, you’ll get the learning course suggestions
+> ![](./media/image10.png)
 
-![](./media/image6.png)
+10. Ahora se ha creado el agente **Learning Path Finder** con la
+    configuración predeterminada.
 
-![](./media/image7.png)
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image10.png)
 
-3.  Explore the follow up prompts suggested:
+### Probar su agente
 
-**Follow-up Prompt**: *“Show resources for leadership skills”*
+A continuación, se verificará que el agente responda según la
+configuración predeterminada.
 
-![](./media/image8.png)
+1.  Ingrese el siguiente *prompt* en el campo de chat del agente para
+    evaluar su respuesta y validarla:
 
-![](./media/image9.png)
+> **Prompt:** +++List the popular learning paths and modules offered by
+> Microsoft+++
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image11.png)
+>
+> ![](./media/image12.png)
 
-- Review the response generated for top recommended learning resources.
+2.  De manera similar, pruebe la respuesta del agente ingresando un
+    *prompt* irrelevante en el campo de chat:
 
-![](./media/image10.png)
+> Prompt: +++**Help me with instructions for baking cakes**+++
 
-4.  Select any recommendation (Follow up prompt) to explore further.
+- De forma predeterminada, el agente evita proporcionar respuestas
+  basadas en información ajena a los **Microsoft Learning** paths,
+  demostrando precisión y confiabilidad en su comportamiento
+  predeterminado.
 
-### Expected outcome
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image13.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image14.png)
+>
+> **Consejo:** Puede explorar más sobre los Microsoft learning paths
+> haciendo clic en la **Prompt Gallery**. Seleccione el agente
+> **Learning Path Finder**, desplácese hacia abajo, haga clic en **See
+> more**, y luego en **Prompt Gallery** para ver los prompts sugeridos.
+>
+> ![](./media/image15.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image16.png)
 
-- Learning content aligned to your skills and work context is surfaced.
+Ejercicio 2: Configurar los detalles del agente usando la pestaña
+Configure  
+En este ejercicio se configurarán los ajustes del agente para refinar su
+comportamiento.
 
-## Step 4: Learn how to use Copilot more effectively
+**Nota:** Si crea un agente desde la pestaña **Configure**, deberá
+definir el nombre, la descripción y el propósito del agente.
 
-1.  Enter the following prompt and click **Generate:**  
-    **Prompt: *“How can I use Copilot to work more effectively?”***
+1.  En el panel de navegación izquierdo, seleccione el agente **Learning
+    Path Finder** que se creó con la configuración predeterminada.
 
-![](./media/image11.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image17.png)
 
-2.  Review the response generated:
+2.  Haga clic en el ícono **de tres puntos (⋯)** junto al nombre del
+    agente y seleccione **Edit.**
 
-    - Practical Copilot tips
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image18.png)
 
-    - Task-based suggestions
-
-    - Contextual examples
-
-![](./media/image12.png)
-
-![](./media/image13.png)
-
-![](./media/image14.png)
-
-### Why these matters:
-
-- Learning agent helps users build Copilot proficiency, not just domain
-  skills.
-
-## Step 5: Practice with role-play simulations
-
-**Task: Attempt role play interaction**
-
-1.  In the Learning agent, enter the following prompt and click
-    **Generate.**  
-    **Prompt: *“Start a role play simulation for handling a workplace
-    scenario.”***
-
-![](./media/image15.png)
-
-2.  Observe whether the agent responds in a coaching or guided
-    conversation format.
-
-**Note**: “Role play in Learning agent is context-aware and
-prompt-driven. In production environments, it may appear as a
-recommended learning action. In this lab tenant, we trigger it through
-chat prompts, and availability may vary due to preview limitations.”
-
-![](./media/image16.png)
-
-3.  Follow the guided interaction with the AI coach.
-
-![](./media/image17.png)
-
-![](./media/image18.png)
+3.  Configure los ajustes de comportamiento del agente, incluido el tono
+    de las respuestas y el estilo de interacción. En este ejercicio, se
+    continuará con las instrucciones predeterminadas.
 
 ![](./media/image19.png)
 
-### Expected outcome
+4.  Cargue los archivos, carpetas o sitios recomendados por su
+    organización como **Knowledge Source** del agente. Haga clic en el
+    ícono de **Upload** para agregar archivos directamente desde su
+    **OneDrive.**
 
-You practice real-world conversations in a safe, guided environment.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image20.png)
 
-## Step 6: Learn in bite-sized or structured formats
+5.  Configure las fuentes de conocimiento que utilizará el agente, como
+    sitios de **SharePoint**, bibliotecas de documentos o sitios web
+    específicos. En este ejercicio, se utilizará un sitio web como
+    fuente de conocimiento para fundamentar las respuestas del agente.
 
-1.  Ask for short learning video with the following prompt, and click
-    **Generate**
+6.  Haga clic en el campo de búsqueda de **Knowledge source**, pegue el
+    siguiente enlace y presione **Enter**:
+    +++**https://learn.microsoft.com/en-us/training/**+++
 
-**Prompt: *“Recommend short videos to learn a new skill on Artificial
-Intelligence.”***
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image21.png)
 
-![](./media/image20.png)
+> **Nota:** La URL del sitio web no puede tener más de dos niveles de
+> profundidad. Además, el agente buscará en sitios web públicos si no se
+> agrega una URL y la búsqueda web está activada.
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image22.png)
 
-2.  Review the response generated:
+7.  Los cambios de configuración se guardan automáticamente a medida que
+    se editan. Para finalizar y aplicar todas las actualizaciones, haga
+    clic en el botón **Update** ubicado en la esquina superior derecha.
 
-    - You will find the top short video recommendations generated.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image23.png)
 
-![](./media/image21.png)
+**Nota:** Con esto, la configuración del agente queda completada y
+adaptada a las necesidades de la organización.
 
-![](./media/image22.png)
+8.  Haga clic en **Go to agent** para visualizar las actualizaciones en
+    la ventana de **Copilot Chat**, verificar que el agente funcione
+    según lo previsto y realizar los ajustes necesarios.
 
-3.  Ask for structured learning: enter the following prompt and click
-    **Generate**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image24.png)
 
-**Prompt: *“Create a learning plan to improve my skills.”***
+### Probar su agente personalizado 
 
-![](./media/image23.png)
+Pruebe el agente personalizado para verificar que las configuraciones
+aplicadas, las fuentes de conocimiento y los ajustes de comportamiento
+funcionen correctamente.
 
-4.  Review the responses generated for structured learning plan
-    generated for skills development.
+1.  Ingrese el siguiente *prompt* en el campo de chat del agente
+    **LearnAssistantBuddy** y evalúe la respuesta del agente: 
 
-![](./media/image24.png)
+> +++**List the popular learning paths and modules offered by
+> Microsoft**+++ 
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image25.png)
+>
+> ![](./media/image26.png)
 
-![](./media/image25.png)
+2.  Verifique la respuesta comparándola con la información disponible en
+    la URL utilizada como fuente de conocimiento. 
 
-![](./media/image26.png)
+>  
+>
+> ![](./media/image27.png) 
 
-![](./media/image27.png)
+3.  Ahora pruebe la respuesta del agente ingresando un prompt
+    irrelevante: 
 
-### Result:
+> **Prompt**: +++**Find out the top 10 tourist places in India**+++ 
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image28.png)
+>
+> **Nota:** El agente evita proporcionar respuestas basadas en la
+> instrucción *“Avoid discussing topics unrelated to Microsoft learning
+> paths and modules”*.
+>
+> ![](./media/image29.png)
+>
+> **Nota**: El conjunto de instrucciones predeterminado puede variar.
+> Asegúrese de que las instrucciones estén correctamente configuradas
+> para que el agente evite generar respuestas fuera del contexto. 
 
-Learning agent adapts to your preferred learning style:
+## Ejercicio 3: Administrar y compartir el agente
 
-- Quick chat-based learning
+A continuación, se desplegará el agente dentro de la organización y se
+gestionará su accesibilidad.
 
-- Course-like structured paths
+1.  Comparta el agente con usuarios o grupos específicos asignando los
+    permisos adecuados.
 
-## Step 7: Track learning and build habits
+2.  En el panel de navegación izquierdo, seleccione el agente
+    **LearnAssistantBuddy**, haga clic en el menú de **tres puntos (⋯)**
+    y elija **Share.**
 
-1.  Review learning reminders or nudges.
+> ![](./media/image30.png)
 
-2.  Observe gamification elements such as:
+3.  En el cuadro de diálogo **Share agent**, seleccione cómo desea
+    compartir el agente:
 
-    - Learning streaks
+- Elija **Anyone in your organization** para que esté disponible para
+  todos los usuarios.
 
-    - Progress indicators
+- O bien, seleccione **Specific users in your organization** o **Only
+  you**, según la preferencia de uso compartido.
 
-**Note**: In a **virtual machine or fresh tenant**, **full progress
-indicators and learning streaks may NOT visibly appear** during a short
-demo.
+- Haga clic en **Save** para confirmar la selección.
 
-### Benefit:
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image31.png)
 
-Encourages consistent learning without disrupting daily work.
+4.  Seleccione la primera opción, **Anyone in my organisation**, para
+    que el agente esté disponible para todos los usuarios, y luego haga
+    clic en **Save**.
 
-## Key Takeaways
+![](./media/image32.png)
 
-- Learning agent brings learning **directly into the flow of work**
+5.  Después de hacer clic en **Save**, copie el enlace generado y
+    compártalo con los miembros de su equipo para que puedan acceder al
+    agente.
 
-- Recommendations are **personalized and adaptive**
+![](./media/image33.png)
 
-- Role-play enables safe, hands-on skill practice
+## Pruébelo usted mismo: 
 
-- Copilot upskilling is embedded into daily tasks
+1.  Cree un agente denominado Product Buddy para obtener detalles de
+    productos.
 
-- Enterprise and third-party content are unified in one place
+2.  Asigne la fuente de conocimiento a la biblioteca de documentos
+    creada en el *laboratorio 0 - Preparación para la ejecución del
+    laboratorio*.
+
+3.  Pruebe el agente solicitando prompts relacionados con productos para
+    verificar su funcionamiento.
+
+Resumen  
+Al completar este laboratorio, se habrá adquirido experiencia práctica
+en el diseño, personalización e implementación de **Copilot Agents** que
+ofrecen asistencia contextual alineada con el conocimiento y los
+objetivos organizacionales.

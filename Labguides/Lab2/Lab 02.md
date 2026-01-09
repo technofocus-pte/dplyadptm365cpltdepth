@@ -1,505 +1,390 @@
-# Build Apps with Microsoft 365 Copilot – App Builder (Frontier)
+# Laboratorio 2: Usar el agente Researcher para obtener insights, organizar contenido y producir resultados de calidad profesional directamente en Microsoft 365 Copilot
 
-![](./media/21615369c6e5b29343e962a89fc62c5cca0980d7.png)
+**Duración: 25 minutos**
 
-## What is App Builder?
+![Researcher: A reasoning agent in Microsoft 365 Copilot -
+YouTube](./media/image1.jpeg)
 
-**App Builder** is a **no-code app creation agent** inside Microsoft 365
-Copilot.
+## Descripción general
 
-You simply **describe the app you want**, and Copilot:
+- En este laboratorio, se aprenderá a utilizar el **agente Researcher**
+  en Microsoft 365 para recopilar, resumir y analizar información
+  relacionada con la organización.
 
-- Designs the data structure
+- El agente Researcher puede recopilar datos relevantes de documentos,
+  correos electrónicos, chats y mensajes de Teams, ayudando a crear
+  resúmenes, informes y seguimientos sobre un proyecto o tema
+  específico.
 
-- Builds the user interface
+## Objetivos de aprendizaje
 
-- Creates a working app instantly
+Al finalizar este laboratorio, podrá:
 
-You don’t write code, design screens, or configure databases.
+- Localizar e iniciar el **agente Researcher** en Microsoft 365.
 
-## What You Will Build in This Exercise
+- Utilizar prompts para recopilar conversaciones recientes, documentos y
+  correos electrónicos.
 
-You will create a **simple Demo Signup App** that:
+- Interactuar mediante preguntas de seguimiento para refinar los
+  resultados.
 
-- Tracks demo requests
+- Generar resúmenes, informes o elementos de acción relacionados con un
+  tema.
 
-- Stores participant information
+- Explorar casos de uso avanzados de prompts, como actualizaciones de
+  progreso, preparación de reuniones y descubrimiento de documentos.
 
-- Lets users add and view entries
+## Requisitos previos
 
-- Can be shared with your team
+Antes de comenzar, asegúrese de lo siguiente:
 
-## Key Benefits of App Builder
+- Tener acceso a **Microsoft 365** con las funcionalidades de Copilot
+  habilitadas.
 
-- Rapid prototyping of ideas
+- Que su cuenta incluya permisos para usar el **agente Researcher**.
 
-- Turn data into interactive visuals
+- Estar autenticado en su cuenta de Microsoft 365.
 
-- Secure apps using Microsoft 365 data
+## Ejercicio 1: Acceder al agente Researcher
 
-- Instantly refine apps using chat
+1.  Navegue a +++<https://m365copilot.com/>+++ (página de Microsoft 365
+    Copilot).
 
-- Share apps across your organization
-
-## Prerequisites (Important)
-
-Before you start, ensure:
-
-## Access & Availability
-
-- You are part of the **Frontier program**
-
-- Region: **United States**
-
-- Language: **English**
-
-- You have a **Microsoft 365 Copilot license**
-
-**Note**: App Builder is powered by **GPT-5** and **cannot be disabled**
-for this experience.
-
-## Admin Notes (For Awareness)
-
-- App Builder follows your organization’s **Microsoft 365 app store
-  policies**
-
-- Apps are governed via **Power Platform ALM**
-
-- Admins can manage apps in:
-
-  - Microsoft 365 Admin Center
-
-  - Power Platform Admin Center
-
-![](./media/4b4561880a69e203667d69f7dfb767c989288bfe.png "Shape")
-
-# Step-by-Step: Build Your First App
-
-## Step 1: Add App Builder Agent
-
-1.  Sign in to **Microsoft 365 Copilot**
-
-> <https://www.microsoft365.com/>
-
-1.  **Sign in with your Microsoft 365 Copilot account**
-
-![](./media/03565757305398d3e082b6d631657917c4c72e75.png)
-
-2.  Click **Yes,** to stay signed in.
-
-![](./media/58e23cbb4979279bc5242d8e1205c7c428281233.png)
-
-3.  After you log in successfully, the **Copilot Chat** home page will
-    appear on your screen.
-
-![](./media/f084d05b125c9fe5c4cc177836575f9310e4ba4c.png)
-
-2.  In the **Microsoft 365 Copilot** left navigation pane, go to **New
-    Chat**, then select **All Agents**.
-
-![](./media/588c45eae0df01065ff444233074f8169d536f63.png)
-
-3.  **Explore the Agent Store:**  
-    Navigate to the **Agent Store** within Microsoft 365 Copilot to
-    browse and discover available agents. This section allows you to
-    view different Copilot agents, understand their capabilities, and
-    add them to your workspace for enhanced functionality.
-
-![](./media/529cd3d9bc77a699e64ed7dad1198b2f412fdf4f.png)
-
-4.  Locate App Builder (Frontier) in the Agent Store and click Add to
-    enable the agent. This action will activate the App Builder in your
-    Microsoft 365 Copilot environment, allowing you to start creating
-    apps using natural language prompts.
-
-![](./media/image1.png)
+2.  Ingrese el **User ID** en el campo correspondiente y haga clic en el
+    botón **Next** para continuar.
 
 ![](./media/image2.png)
 
-5.  You will see A**pp Builder (Frontier)** listed under the **Agents**
-    section, confirming that the agent has been successfully added to
-    your Microsoft 365 Copilot environment.
+3.  Ingrese la **Password** en el campo y luego haga clic en **Sign
+    in**.
 
-6.  Click on **App Builder (Frontier)** to open its home screen. The
-    home screen displays a **prompt box** where you can enter natural
-    language commands to start building your app.
+![](./media/image3.png)
 
-![](./media/image4.png)
+4.  Haga clic en **Yes** para permanecer autenticado.
 
-## Step 2: Describe the App You Want
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image4.png)
 
-1.  In the **App Builder** prompt box, copy paste the following prompt
-    and click **Send**
+> ![](./media/image5.png)
 
-*“I want to build a demo signup app that tracks demo requests.”*
+5.  En el **panel de navegación** izquierdo, busque **Agents**.
 
-![](./media/image5.png)
+    - Si **Researcher** aparece directamente bajo la sección **Agents**,
+      seleccione **Researcher**
 
-## Step 3: What App Builder Does Automatically
+> ![](./media/image6.png)
 
-App Builder instantly:
+- Si no aparece, seleccione **Agents → Explore agents** en el panel de
+  navegación.
 
-1.  Creates a **data schema**
+- En la ventana **Agent Store**, dentro de la sección **Built by
+  Microsoft**, seleccione **Researcher.**
 
-&nbsp;
+> ![](./media/image7.png)
 
-1.  Demo Name (Text) — example value shown as “Demo track” in the
-    screenshots.
-
-2.  Participant Name (Text) — name of the requester/attendee.
-
-3.  Email (Email) — requester’s email address.
-
-4.  Date (Date) — request or demo date.
-
-5.  Status (Choice) — recommended values: Requested, Scheduled,
-    Completed status.
-
-![](./media/image6.png)
-
-![](./media/image7.png)
+6.  La ventana del **agente** **Researcher** se abrirá en un nuevo
+    panel.
 
 ![](./media/image8.png)
 
-2.  User interface is automatically generated. Navigate to the **Request
-    Demo** tab in the **Demo Signup App’s** navigation pane to access a
-    **form** where you can submit demo signup details.
+## Ejercicio 2: Ejecutar el primer prompt de investigación
 
-- Enter the **Example signup details,** and click on **Submit Request**
-  button
+1.  En el **campo de prompt**, ingrese el siguiente comando y luego haga
+    clic en el botón **Execute**:
 
-> Name: Demouser
->
-> Email: Your ODL email address
->
-> Company: TF
->
-> Application name: Demo
->
-> Date: Current date
++++Help me gather and summarize all recent discussions, documents, and
+emails related to **Smart Agentic Call Centre Assistant** from the past
+90 days.+++
 
-![](./media/image12.png)
+![](./media/image9.png)
 
-3.  Click on **Review Request** tab in the **Demo Signup App navigation
-    pane.** Then, review the submitted demo requests in the **List** or
-    **Table View** to see all entries.
+2.  Espere a que el **agente** **Researcher** recopile y resuma los
+    datos. Revise cuidadosamente la respuesta del agente. El agente
+    puede formular preguntas aclaratorias. Ingrese +++**Go ahead**+++ en
+    el campo de prompt y haga clic en **Execute**.
 
-![](./media/image10.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image10.png)
 
-4.  After submitting, the demo request will appear in Pending status. To
-    schedule it, click the **check mark** icon.
+3.  **Revise la respuesta del agente** **Researcher**:  
+    La respuesta del agente abarca el progreso del proyecto, evidencia
+    documental, impacto del entrenamiento, insights estratégicos y
+    planes futuros, proporcionando un análisis situacional completo de
+    la iniciativa de IA para el centro de llamadas, que cubre desde la
+    planificación hasta la ejecución piloto.
+
+![A screenshot of a phone AI-generated content may be
+incorrect.](./media/image11.png)
+
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image12.png)
+
+## Ejercicio 3: Refinar y explorar solicitudes adicionales
+
+### Prompts de acción y resumen
+
+Ayude al **agente Researcher** a realizar una tarea o ejecutar una
+acción específica en función de los datos, hallazgos o situación.
+
+1.  Ingrese el siguiente prompt en el campo y haga clic en el botón
+    **Execute**:
+
++++List any action items for me.+++
 
 ![](./media/image13.png)
 
-**Note**: No setup or configuration needed.
-
-## Step 4: Review the Generated App
-
-You’ll see:
-
-- Input fields
-
-- A list or grid showing demo entries
-
-- Navigation automatically created
-
-**Note**: At this point, your app is **already functional**.
-
-## Step 5: Refine the App Using Chat
-
-Now enhance the app using natural language.
-
-### Example refinements:
-
-1.  Enter the prompt “*Show participant details as cards instead of a
-    table*” in the **App Builder (Frontier)** chat interface prompt box,
-    and click Send
-
 ![](./media/image14.png)
+
+2.  Ingrese el siguiente prompt en el campo y haga clic en el botón
+    **Execute**:
+
++++Summarize the key decisions from these communications.+++
 
 ![](./media/image15.png)
 
-2.  Sign up using the refined app generated by App Builder:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image16.png)
 
-&nbsp;
+3.  Ingrese el siguiente prompt en el campo y haga clic en el botón
+    **Execute**:
 
-1.  In the Demo Signup App pane, click the Submit Request button.
++++Draft an email to the team about the project participation.+++
 
-2.  Fill in all required details in the Request Demo form, including:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image17.png)
 
-> Name: xyz
->
-> Email Address: ODLE
->
-> Company Name
->
-> Application Name
->
-> Date
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image18.png)
 
-3.  After entering the details, click Submit Request to save your demo
-    signup.
+### Investigación general y recopilación de información
 
-![](./media/image16.png)
+Estos prompts ayudan a **recopilar, analizar y resumir** información de
+contexto sobre un tema, organización, mercado o tecnología antes de la
+toma de decisiones o elaboración de documentación.
 
-3.  Navigate to **Review Request** tab and view the demo requests in the
-    form of **Cards** in place of **lists**.
+1.  Ingrese el siguiente prompt en el campo y haga clic en **Execute**:
 
-![](./media/image18.png)
-
-4.  To schedule a demo request, click the check mark icon on the card.
-
-5.  Each card includes three action buttons:
-
-- **Check mark** – Schedule the request
-
-- **Cross mark** – Reject or delete the request
-
-- **Circle** – Move the request back to Pending status
-
-![](./media/image18.png)
-
-6.  Users can provide feedback on the app by navigating to the
-    **Feedback** option located at the top-right corner of the **Play
-    App** window. Click on **Feedback**, enter your comments or
-    suggestions in the provided form, and then click **Submit** to share
-    your input.
++++Summarize all recent documents, chats, and emails related to Smart
+Agentic Call Centre Assistant.+++
 
 ![](./media/image19.png)
 
-- Enter your feedback details and click **Submit**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image20.png)
 
-![](./media/image20.png)
+2.  Ingrese el siguiente prompt en el campo y haga clic en **Execute**:
+
++++Find and summarize feedback on our updated remote work policy.+++
 
 ![](./media/image21.png)
 
-7.  **Access SharePoint and DemoRequests List**: Locate the SharePoint
-    Link
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image22.png)
 
-- In the App Builder interface, after building your app, you’ll see an
-  automated link to the **SharePoint Demo Requests list.**
+Preparación de reunions
 
-- This link is generated alongside your app and is visible in the
-  navigation pane or under the Review Request section.
+Los prompts de preparación de reuniones ayudan a **recopilar información
+de contexto, resumir actualizaciones clave** e **identificar elementos
+de acción o puntos de discusión** antes de una reunión.  
+Garantizan que todos los participantes lleguen informados y preparados
+para contribuir de forma efectiva.
 
-- All your demo requests are stored in the **SharePoint Demo Requests**
-  lists. Clcik on the SharePoint lists to access the **DemoRequest**
-  data list.
+1.  Ingrese el siguiente prompt y haga clic en **Execute**:
 
-![](./media/fb1408d2d9c0a61e86bb08e29d2979130096927c.png)
-
-### Optional: Additional prompts for user 
-
-These prompts allow users to enhance the functionality of the app
-created with App Builder. By adding a **Status field** with predefined
-values—**Requested**, **Scheduled**, and **Completed**—you can track the
-progress of each demo request. Additionally, applying a **filter to view
-demos by status** makes it easier to organize and manage requests based
-on their current stage. The app updates instantly after each change,
-ensuring real-time visibility and smooth workflow without additional
-configuration.
-
-Prompt: *“Add a status field with values: Requested, Scheduled,
-Completed."*
-
-Prompt: *“Add a filter to view demos by status."*
-
-**Note**: The app updates instantly after each request.
-
-## Step 6: Test the App (Play Mode)
-
-From the App Builder interface, locate your created app (e.g., DemoTrack
-App)
-
-1.  On the **App Builder** home page, locate your app at the bottom of
-    the prompt box. Click the **ellipsis (⋯)** next to the app name, and
-    from the dropdown menu, select **Play** to open the app in play
-    mode.
++++Help me prepare for an upcoming meeting by summarizing recent
+communication and shared files about.+++
 
 ![](./media/image23.png)
 
-![](./media/image24.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image24.png)
 
-2.  Use the app like an end user:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image25.png)
 
-- Click on **Request Demo** tab, add signup details and click on
-  **Submit request**.
+2.  Ingrese el siguiente prompt y haga clic en **Execute**:
 
-![](./media/image25.png)
++++What topics have been discussed in past weekly team syncs?+++
 
-3.  **MyFirstDemo** app is submitted on pending mode by defualt.
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image26.png)
 
-![](./media/image26.png)
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image27.png)
 
-4.  Click the check mark icon to change the demo request status from
-    **Pending to Schedule** for the MyFirstDemo app.
+### Actualizaciones de progreso y estado
 
-- Use the Cross icon to reject or delete a demo request, and the Info
-  icon to view its detailed description.
+La sección **“Progress and Status Updates”** también es ideal para
+prompts de **acción** y **resumen**, ya que permite revisar **logros,
+identificar brechas y planificar los próximos pasos.**
 
-![](./media/image27.png)
+1.  Ingrese el siguiente prompt y haga clic en **Execute**:
 
-5.  Click the **SharePoint Demo Requests list** link that was
-    automatically created along with your app in the App Builder
-    interface.
++++Summarize the current status and blockers for Smart Agentic Call
+Centre assistant.+++
 
-![](./media/image28.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image28.png)
 
-6.  SharePoint list is automated, select **DemoRequests** list form the
-    left navigation
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image29.png)
 
-![](./media/image29.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image30.png)
 
-![](./media/image30.png)
+2.  Ingrese el siguiente prompt y haga clic en **Execute**:
 
-**Optional**: The DemoRequests list displays fields such as Demo Name,
-Participant Name, Email, Date, and Status.
+> +++What progress has been made on **Smart Agentic Call Centre
+> Assistant** based on email and Teams updates?+++
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image31.png)
+>
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image32.png)
 
-- Use filters to view requests by Status (Requested, Scheduled,
-  Completed).
+### Preguntas sin respuesta y brechas
 
-- Click any entry to see full details or manage actions like sorting and
-  exporting.
+Esta sección ayuda a identificar **información faltante, puntos poco
+claros o áreas que requieren investigación adicional** a partir de la
+investigación, reuniones o actividades de proyecto en curso.  
+Los **Summary Prompts** ayudan a expresar qué información es poco clara,
+mientras que los **Action Prompts** orientan hacia cómo resolver o
+explorar esas brechas.
 
-## Step 7: Share the App
+1.  Ingrese el siguiente prompt y haga clic en **Execute**.
 
-To share your app with others:
-
-1.  **Open the app in Edit mode:**
-
-- From the App Builder interface, locate the app you want to share.
-
-- Click the ellipsis (⋯) next to the app name and select **Edit** from
-  the dropdown menu.
-
-- This will open the app in Edit mode, allowing you to access sharing
-  options.
-
-2.  **Access the Share Option:**
-
-- In the top-right corner of the **Edit** mode screen, click Share.
-
-- The Share option is clearly visible in the toolbar for quick access.
-
-![](./media/image31.png)
-
-3.  **Generate a share link:**
-
-- After clicking Share, the system will generate a secure share link for
-  your app.
-
-- This link allows others in your organization to access and use the app
-  without additional setup.
-
-![](./media/image32.png)
++++What open questions remain about Smart agentic call centre
+assistant+++
 
 ![](./media/image33.png)
 
-4.  **Distribute the Link:**
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image34.png)
 
-- Copy the generated link and send it to your team or organization
-  members via email, chat, or any preferred communication channel.
+2.  Ingrese el siguiente prompt y haga clic en **Execute**.
 
-- Example link format:
++++Which action items from the last review meeting are still
+incomplete?+++
 
-> <https://m365.cloud.microsoft/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IjA2N2EyMmJjLWQxNzUtNGU3ZC1hMTM0LWMwZjQ4YzUwNTFmNyIsInNjZW5hcmlvIjoibGF1bmNoYXBwYnVpbGRlciIsInByb3BlcnRpZXMiOnsiYXBwUGxheVVyaSI6Imh0dHBzOi8vYXBwcy5wb3dlcmFwcHMuY29tL3BsYXkvZS9lOTYxZDNmMy1kMmIyLWU4YjctYjg5Ny1iZTRiNjAwNmQ4MDIvYXBwLzJiMGUyMzAyLTA4N2MtNDI5NS04ODNlLTliMjVjMzE5NjYzNT90ZW5hbnRJZD00Y2ZlMzcyYS0zN2E0LTQ0ZjgtOTFiMi01ZmFmMzQyNTNjNjImc291cmNlaGludD01JnNvdXJjZT1tMzY1JnNsaWQ9ZWExZiZzb3VyY2V0aW1lPTE3NjYxNDI1MTI5NzYifSwidmVyc2lvbiI6MX0>
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image35.png)
 
-**Note**: Anyone with the link can access all app data, so share
-responsibly and only with trusted users.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image36.png)
 
-5.  **For Shared Users:**
+### Descubrimiento de documentos e insights
 
-- Recipients simply click the link to open and start using the app
-  immediately.
+Esta sección ayuda a los usuarios o herramientas de IA a **explorar,
+analizar y extraer información** valiosa de documentos existentes,
+reportes o repositorios compartidos.  
+Se centra en identificar insights, patrones o referencias clave que
+puedan orientar la investigación, planificación o documentación de
+proyectos.
 
-- No installation or additional configuration is required.
+1.  Ingrese el siguiente prompt y haga clic en **Execute**.
 
-![](./media/image34.png)
++++Find the latest version of Smart Agentic Call Centre Assistant and
+summarize key updates.+++
 
-## Step 8: Iterate and Improve
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image37.png)
 
-This step focuses on enhancing and customizing your app after the
-initial build. App Builder allows you to refine the app at any time
-using natural language prompts, ensuring it evolves to meet your needs.
-Updates happen instantly and in real time, so you can test changes
-immediately without additional setup.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image38.png)
 
-1.  **Add a dashboard**: Create a simple dashboard that displays the
-    total number of demos categorized by status (Requested, Scheduled,
-    Completed). This provides quick insights into your demo pipeline.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image39.png)
 
-Prompt: *“Add a simple dashboard showing total demos per status”.*
+2.  Ingrese el siguiente prompt y haga clic en **Execute**.
 
-2.  **Optimize layout:** Make the app layout more compact and
-    mobile-friendly for better usability across devices.
++++Summarize contents of shared documents related to Smart Agentic Call
+Center Assistant.+++
 
-Prompt: “*Make the layout more compact and mobile-friendly".*
+![](./media/image40.png)
 
-3.  **Rename the app:** update the app name to something more
-    descriptive, such as “Sales Demo Tracker”, to align with its
-    purpose.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image41.png)
 
-Prompt: *“Rename this app to “Sales Demo Tracker”.*
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image42.png)
 
-These refinements help improve user experience, provide better
-visibility into data, and ensure the app remains relevant as
-requirements change.
+### Generar un borrador de comunicación
 
-## Step 9: Delete an App (If Needed)
+Utilice el **agente Researcher** para ayudar a comunicar los hallazgos a
+su equipo.
 
-Delete the app if the app is no longer required:
+1.  Ingrese el siguiente prompt y haga clic en **Execute**:
 
-1.  From the **App Builder interface**, scroll through the list of apps
-    displayed on the home page.
++++Draft an email to summarize project updates on Smart Agentic Call
+Center Assistant for the leadership team.+++
 
-2.  Find the app you created **DemoTrack** in the list at the bottom of
-    the prompt box.
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image43.png)
 
-![](./media/image35.png)
+![A screenshot of a phone AI-generated content may be
+incorrect.](./media/image44.png)
 
-3.  Click the **ellipsis (⋯)** next to the app name to access options
-    such as Play, Edit, or Delete.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image45.png)
 
-4.  Select the **Delete** icon, confirm deletion
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image46.png)
 
-**Note**: Deletion is permanent and cannot be undone.
+## Ejercicio 4: Revisar y validar los resultados
 
-## Beginner-Friendly Use Cases for App Builder
+1.  Evalúe si el resumen generado por el agente Researcher cumple con
+    sus expectativas.
 
-- Sales demo tracking
+2.  Si los resultados son demasiado amplios o faltan detalles clave,
+    refine el prompt.  
+    **Ejemplo:**+++Narrow this summary to focus only on deliverables and
+    project blockers.+++
 
-- Training attendance apps
+> ![](./media/image47.png)
 
-- Simple approval trackers
+3.  Exporte o copie el resumen para incluirlo en documentación, informes
+    o notas de reuniones.
 
-- Team task or issue logs
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image48.png)
 
-- Event registration apps
+## Ejercicio 5: Qué puede hacer con la respuesta
 
-- Internal feedback collection
+A continuación, se presenta una breve descripción de las tareas
+asociadas a cada ícono mostrado en la pantalla:
 
-## Best Practices for Beginners
+![](./media/image49.png)
 
-- Start with **simple apps**
+1.  **Ícono de portapapeles:** utilizado para **copiar o pegar**
+    contenido.
 
-- Clearly describe:
+2.  **Ícono de pulgar hacia arriba:** indica **aprobación o
+    conformidad** con un elemento o acción.
 
-  - What data you want to track
+3.  **Ícono de pulgar hacia abajo:** se usa para expresar
+    **desaprobación o inconformidad**.
 
-  - How users should interact
+4.  **Ícono de altavoz:** representa **configuraciones o control de
+    volumen**.
 
-- Refine incrementally using chat
+5.  **Ícono de lápiz:** comúnmente utilizado para **editar o redactar
+    contenido**.
 
-- Test before sharing widely
+6.  **Ícono de reloj con flecha:** el tooltip indica **“Add to recent
+    page”,** lo que significa que añade el elemento **actual a las
+    páginas recientes** para referencia rápida.
 
-## What You Learned
+## Conclusión
 
-By completing this exercise, you learned how to:
-
-- Create a working app using natural language
-
-- Let Copilot design data and UI automatically
-
-- Test and refine apps instantly
-
-- Share secure apps within Microsoft 365
+En conclusión, este laboratorio ofrece experiencia práctica con el
+**agente** **Researcher** en **Microsoft 365 Copilot**, demostrando cómo
+puede optimizar la recopilación, el análisis y la generación de informes
+dentro de una organización.  
+Mediante el uso de prompts simples, es posible acceder rápidamente a
+datos relevantes de múltiples fuentes de Microsoft 365, resumir
+actualizaciones de proyectos y generar resultados profesionales, como
+correos electrónicos o informes.  
+El ejercicio destaca cómo el agente **Researcher** mejora la
+productividad, la toma de decisiones y la colaboración, al transformar
+datos organizacionales dispersos en insights claros y accionables.

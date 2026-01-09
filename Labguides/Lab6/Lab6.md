@@ -1,369 +1,378 @@
-# Lab 6 - Extend Microsoft 365 Copilot Chat with a HR Agent built using Microsoft Copilot Studio
+# Laboratorio 5 - Extender Microsoft 365 Copilot Chat con un agente de RR. HH. creado mediante Microsoft Copilot Studio
 
-**Scenario**
+**Objetivo**
 
-**Zava** Ltd. is a global professional services and technology solutions **company** with a **distributed workforce**. The organization uses Microsoft 365, SharePoint, and Power Platform to manage HR operations, employee learning, and recruitment data.
+En este laboratorio, se explicará cómo extender **Microsoft 365
+Copilot** Chat mediante la creación e integración de un **agente
+declarativo personalizado** utilizando **Microsoft Copilot Studio.** Se
+configurará el entorno, se diseñará y publicará un nuevo agente de
+**asistencia para RR. HH**., y se enriquecerá con conocimiento
+organizacional desde **SharePoint**.
 
-Zava is looking to **enhance employee experience** by enabling quick, conversational access to **HR-related information** directly within **Microsoft 365 Copilot Chat**. **Employees** frequently ask questions about **HR policies**, career growth opportunities, learning pathways, and recruitment data stored across SharePoint sites.
+Al finalizar este laboratorio, se comprenderá cómo conectar agentes de
+Copilot Studio con Microsoft 365 Copilot para ofrecer respuestas
+contextuales, específicas de la organización, y automatizar consultas
+relacionadas con RR. HH.
 
-To address this, Zava’s IT and HR teams decide to build a **dedicated HR agent** using **Microsoft Copilot Studio**. This agent will be declaratively defined, hosted inside Microsoft 365 Copilot Chat, and enriched with organizational knowledge stored in SharePoint. The solution must be built in a secure, isolated Power Platform environment and seamlessly integrated into the Microsoft 365 experience.
+**Duración estimada** – 45 minutos
 
-**Objective**
+## Ejercicio 1: Crear un entorno de Power Platform
 
-By completing this lab, you will learn how to:
+Con Power Platform, es posible crear distintos entornos y cambiar entre
+ellos según sea necesario. Un entorno almacena aplicaciones, flujos,
+datos, agentes, etc., y cada entorno es completamente independiente. En
+este ejercicio, se creará un entorno dedicado en el que se completarán
+los ejercicios restantes.
 
--    Create and manage a dedicated **Power Platform environment** for **agent development**.
+1.  Abra un explorador y, utilizando las credenciales del **Resources**
+    tab, vaya
+    a +++[https://admin.powerplatform.com+++](https://admin.powerplatform.com+++/).
 
--    Build a **declarative agent** using **Microsoft Copilot Studio** for Microsoft 365 Copilot Chat.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image1.png)
 
--    Define **agent** purpose, tone, and behavioral goals using **natural language prompts**.
+2.  Seleccione **Manage** y luego seleccione **+ New** en
+    **Environments.**
 
--    **Publish** and **deploy** the agent into Microsoft 365 Copilot Chat
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image2.png)
 
--    Create and configure a **SharePoint communication site** to host **HR-related data**.
+3.  Ingrese el **Name** como +++**Dev env**+++, seleccione **Type** como
+    **Developer** y haga clic en **Next**. Seleccione **Save** en la
+    pantalla **Add Dataverse.**
 
--    Add SharePoint-based **knowledge sources** to a **Copilot Studio agent**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image3.png)
 
--    **Test** the agent’s ability to retrieve and reason over structured organizational data within Copilot Chat.
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image4.png)
 
-Estimated duration – 45 minutes
+4.  El nuevo entorno se creará y cambiará de **Preparing** a **Ready**
+    cuando esté disponible.
 
-## Exercise 1: Creating a Power Platform environment
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image5.png)
 
-With the Power Platform, you can create different environments and
-easily switch between them accordingly to your needs. An environment
-stores apps, flows, data, agents, etc. and each environment is
-completely isolated from any other environment. In this exercise, you
-will create a new dedicated environment in which you will perform the
-remaining exercises and tasks.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image6.png)
 
-1.  Open a browser, go to +++https://admin.powerplatform.com+++ and login using the below credentials.
+## Ejercicio 2: Crear un agente para Microsoft 365 Copilot Chat
 
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-      
-    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
-   
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image1.png)
+En este ejercicio, se creará un agente declarativo con Microsoft Copilot
+Studio y se alojará en Microsoft 365 Copilot Chat.
 
-2.  Select **Manage** and then select **+ New** under **Environments**.
+1.  Inicie sesión en
+    +++[https://copilotstudio.microsoft.com+++](https://copilotstudio.microsoft.com+++/) utilizando
+    las credenciales de la pestaña **Resources**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image2.png)
+![](./media/image7.png)
 
-3.  Provide the Name as +++Dev env+++, select the **Type** as
-    **Developer** and click on **Next**. Select **Save** in the **Add
-    Dataverse** screen.
+2.  Seleccione **Get Started** en la pantalla **Welcome to Microsoft
+    Copilot Studio**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image3.png)
+3.  Seleccione el entorno **Dev env** que fue creado en el ejercicio
+    anterior.
 
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image4.png)
+![](./media/image8.png)
 
-4.  The new environment gets created and changes from **Preparing** to
-    **Ready** state once it is ready.
+\[!Alerta\] **Importante:** Si Copilot Studio no muestra la opción para
+seleccionar **Environment,** siga los pasos indicados:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image5.png)
+> ![](./media/image9.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image6.png)
+Abra +++<https://admin.powerplatform.microsoft.com/+++>. Seleccione
+**Manage → Environments → Dev env** y copie el **Environment ID**.
 
-    >[!Alert] **Important:** The **Environment creation** takes around **10 minutes** to a maximum of **15 minutes**. Wait for that time period and then **refresh** the screen to view the created environment in the **Admin Center**.
-    
-## Exercise 2 : Creating an agent for Microsoft 365 Copilot Chat
+![](./media/image10.png)
 
-In this exercise you are going to create a declarative agent with
-Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
+Regrese a la pestaña de Copilot Studio y abra:
++++<https://copilotstudio.microsoft.com/environments/>\< EnvironmentID
+\>+++ (Reemplace \<**EnvironmentID**\> con el valor obtenido).
 
-1.  Login to +++https://copilotstudio.microsoft.com+++ using the login credentials below. (They are present in the  **Resources** tab as well).
+4.  Para crear un agente declarativo para Microsoft 365 Copilot Chat,
+    primero revise la lista de agentes en Copilot Studio y seleccione
+    **Microsoft 365 Copilot**.
 
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-      
-    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
+5.  Seleccione **Agents** en la barra de navegación izquierda y
+    seleccione **Microsoft 365 Copilot**.
 
-2. Select **Get Started** in the **Welcome to Microsoft Copilot Studio** screen. 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image11.png)
 
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im14.png)
+6.  Se abrirá una nueva sección de Microsoft Copilot Studio. Seleccione
+    **+ Add** para crear un nuevo agente para **Microsoft 365 Copilot
+    Chat**.
 
-3.  Select **Skip** in the Welcome sreen.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image12.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im15.png)
+7.  Copilot Studio solicita describir en lenguaje natural el propósito
+    del agente. Es posible definir los requisitos del agente. Pegue el
+    siguiente prompt para hacerlo:
 
-5.  Select the **Dev env** environment that we created in the previous
-    exercise.
+**+++You are an agent helping employees to find information about HR
+policies and procedures, about how to improve their career, and about
+how to define learning pathways.+++**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im40.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image13.png)
 
-    >[!Alert] **Important:** If the Copilot Studio and does not show up the option to select **Environment** as in the below screenshot, then follow the below steps.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/im5.png)
-    >
-    >Open +++https://admin.powerplatform.microsoft.com/+++. Select **Manage** -> **Environments** -> **Dev env** and select the value of the **Environment ID**.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/im6.png)
-    >
-    >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
-    
-6.  To create a declarative agent for Microsoft 365 Copilot Chat you
-    need to first browse the list of agents in Copilot Studio and then
-    select the agent with name **Microsoft 365 Copilot**. Select **Got it** in the version update pop up.
+8.  Cuando Copilot Studio lo solicite, asigne el nombre **Agentic HR**
+    al agente personalizado. Use el siguiente prompt:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im16.png)
++++Name it as Agentic HR+++
 
-7.  Select **Agents** from the left navigation bar.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image14.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im17.png)
+9.  Luego, indique tareas u objetivos específicos proporcionando la
+    siguiente instrucción:
 
-8.  Now, select **Microsoft 365 Copilot** from the list.
+**+++Emphasize everything that helps team building, inclusion, and the
+growth mindset+++**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im41.png)
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image15.png)
 
-9.  A new section of Microsoft Copilot Studio will open. From there,
-    select the **+ Add** command to create a new agent for Microsoft 365
-    Copilot Chat.
+10. Defina un tono profesional para su agente con la siguiente entrada:
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
+\*\*+++It should have a professional tone+++\*\*
 
-10.  Copilot Studio asks you to describe in natural language what is the
-    purpose of the agent. You can define your agent requirements. **Paste the prompt** below and hit **Send** to do so
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image16.png)
 
-    +++You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.+++
+11. Una vez finalizada la descripción, seleccione **Create** para crear
+    el agente. 
 
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image11.png)
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image17.png)
 
-11. When requested by Copilot Studio, give the name "Agentic HR" to your
-    custom agent. Use the following prompt.
+> ![](./media/image18.png)
 
-    +++Name it as Agentic HR+++
+## Ejercicio 3: Publicar el agente en Microsoft 365 Copilot Chat
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image12.png)
+1.  Seleccione **Publish** desde la página de información general del
+    agente.
 
-11. Then, instruct Copilot Studio to have specific tasks or goals with
-    the following instruction:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image19.png)
 
-    +++Emphasize everything that helps team building, inclusion, and the growth mindset+++
+2.  Seleccione **Publish** nuevamente en la pantalla **Publish agent**.
 
-    ![A screenshot of a chat AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image13.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image20.png)
 
-11.  Then, define a professional tone for your agent, providing the
-    following input:
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image21.png)
 
-    +++It should have a professional tone+++
+3.  Seleccione **Copy** en **Share link** para copiar el enlace y luego
+    seleccione **Done**.
 
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image14.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image22.png)
 
-11. Once you are done describing your agent, select
-    the **Create** command to create the actual agent. 
+4.  Abra una nueva pestaña, pegue la URL copiada y seleccione **Add**
+    para agregar **Agentic HR** a su lista de agentes.
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image15.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image23.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im19.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image24.png)
 
-## Exercise 3: Publishing the agent in Microsoft 365 Copilot Chat
+5.  Seleccione **Skip** en la pantalla de introducción.
 
-1.  Select **Publish** from the agent overview page.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image25.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im20.png)
+6.  El agente **Agentic HR** queda agregado.
 
-2.  Select **Publish** in the **Publish agent** screen.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image26.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image18.png)
+## Ejercicio 4: Crear un sitio de SharePoint
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image19.png)
+1.  En un nuevo explorador, navegue a
+    +++<https://m365.cloud.microsoft/chat/+++> Seleccione **Apps** y
+    luego seleccione **SharePoint** cuando carguen las aplicaciones.
 
-3.  Select **Copy** under **Share link** to copy the link and then
-    select **Done**.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image27.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image20.png)
+2.  Seleccione **+ Create site**.
 
-4.  Open a new tab and paste the copied url. Select **Add** to add the
-    **Agentic HR** to your list agents.
+![A screenshot of a browser AI-generated content may be
+incorrect.](./media/image28.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image21.png)
+3.  En **Select the site type**, seleccione **Communication site**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image22.png)
+![A screenshot of a web page AI-generated content may be
+incorrect.](./media/image29.png)
 
-5.  Select **Skip** in the introduction screen.
+4.  Seleccione una plantilla a utilizar.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image23.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image30.png)
 
-6.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
+5.  Seleccione **Use template**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im21.png)
+![A screenshot of a website AI-generated content may be
+incorrect.](./media/image31.png)
 
-## Exercise 4: Create SharePoint site
-
-1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ Select **Apps** from the left pane and then select **SharePoint** once the Apps are loaded.
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image25.png)
-
-2.  Select **+ Create site** from the SharePoint page.
-
-    ![A screenshot of a browser AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image26.png)
-
-3.  Select **Communication site** from the **Select the site type**
-    page.
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image27.png)
-
-4.  Select a **template** to be used.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image28.png)
-
-5.  Select **Use template**.
-
-    ![A screenshot of a website AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image29.png)
-
-6.  Enter +++Contoso site2-@lab.LabInstance.Id+++ as the **Site name** and select
+6.  Ingrese +++**Contoso site**+++ como **Site name** y seleccione
     **Next.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image30.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image32.png)
 
-7.  In the next screen, select **Create site**.
+7.  En la siguiente pantalla, seleccione **Create site**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image31.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image33.png)
 
-8.  Once created, note down the **url** of this site.
+8.  Una vez creado, anote la **URL** del sitio.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im22.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image34.png)
 
-9.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
+9.  Seleccione **Documents** en la barra de menú. Luego, seleccione
+    **Upload → Files.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im23.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image35.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im24.png)
+10. Seleccione el archivo **Sample-list-of-candidates.xlsx** desde
+    **C:\LabFiles**. Copie y guarde la URL completa.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im25.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image36.png)
 
-11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles**
-    to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Copy link** and save the link in a **notepad**.
+## Ejercicio 5: Agregar conocimiento al agente
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im26.png)
+En este ejercicio, se agregará al agente el conocimiento proveniente del
+sitio de SharePoint creado.
 
-## Exercise 5: Adding knowledge to the agent
+1.  Desde la página principal del **agente**, seleccione **+ Add
+    knowledge** en la sección **Knowledge.**
 
-In this exercise you are going to add knowledge from the Sharepoint site, to the agent that
-you created.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image37.png)
 
-1. Back in Copilot studio, from the **Agent** home page, select **+ Add knowledge** under the Knowledge section.
+2.  Seleccione **SharePoint** e ingrese la **URL** de la carpeta
+    **Documents** guardada previamente.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img11.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image38.png)
 
-2. Select **SharePoint**, enter the **url** of the tracker uploaded in the earlier exercise and then select **Add**. 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image39.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im27.png)
+3.  Nómbrelo como +++**HR Document**+++ y seleccione **Add to agent.**
 
-4. Select **Add to agent** in the next screen.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image40.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img16.png)
+4.  Ahora estará disponible en estado **Ready** en la sección
+    **Knowledge**.
 
-5. Select **Publish** to publish the agent.
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image41.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im28.png)
+5.  Seleccione **Publish** para publicar el agente.
 
-6. Select **Publish** again.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image42.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image51.png)
+6.  Seleccione nuevamente **Publish**.
 
-7. **Copy** the url and **open** it from a browser.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image43.png)
 
-    ![A screenshot of a computer program AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image52.png)
+7.  Copie la **URL** y ábrala en un **explorador**.
 
-8. This time, it will give an option to **Update now** since it is already added. Select it.
+![A screenshot of a computer program AI-generated content may be
+incorrect.](./media/image44.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image53.png)
+8.  En esta ocasión, se mostrará la opción **Update now** dado que ya se
+    encuentra agregado. Selecciónela.
 
-9. Select **Open** once it is updated.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image45.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image54.png)
+9.  Seleccione **Open** una vez actualizado.
 
-    >[!Alert] you may have to engage in the copilot conversation to get the expected results.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image46.png)
 
-10. In the **Agentic HR agent** screen, send the below message.
+10. En la pantalla del agente **Agentic HR**, envíe el siguiente
+    mensaje:
 
-    +++Show me a list of candidates for HR with role "HR Director” or "HR Manager”+++
-   
-    ![A screenshot of a computer AI-generated content may be
-   incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image55.png)
++++Show me a list of candidates for HR with role “HR Director” or ”HR
+Manager”+++
 
-    >[!Alert] **Important:** If you are asked for approval, perform the below steps. Else you can ignore these and check for the result as in the last step in this lab guide.
-    >
-    >In the Data to be shared with Agentic HR message, select **Allow once** (if prompted) option.
-    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image56.png)
-    >
-    >If it asks you to **sign in**, select the **Sign in to Agentic HR** option and then select **Connect** in the next screen.
-    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image57.png)
-    >
-    >    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image58.png)
-    >
-    >Select **Submit** once connected.
-    >![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image59.png)
-    >
-    >![A screenshot of a chat AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image60.png)
-    >
-    >Now, resend the below message to the agent.
-    >
-    >+++Show me a list of candidates for HR with role “HR Director” or ”HR Manager”+++
-    >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image61.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image47.png)
 
+11. En el mensaje **Data to be shared with Agentic HR**, seleccione
+    **Allow once** (si es solicitado).
 
-15. You will then receive the requested list
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image48.png)
 
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image62.png)
+12. Si se requiere iniciar sesión, seleccione **Sign in to Agentic HR**
+    y luego seleccione **Connect** en la siguiente pantalla.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image63.png)
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image49.png)
 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image50.png)
 
-## Summary
+13. Seleccione **Submit** una vez conectado.
 
-In this lab, you successfully **extended Microsoft 365 Copilot Chat** by creating an **Agentic HR declarative agent** using Microsoft Copilot Studio. You set up a dedicated Power Platform environment, designed and published an HR-focused agent, and integrated it into the Microsoft 365 Copilot experience.
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image51.png)
 
-You also created a SharePoint communication site, uploaded HR-related content, and connected it as a knowledge source for the agent. Finally, you validated the solution by querying the agent in Copilot Chat and receiving context-aware responses sourced from SharePoint.
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image52.png)
 
-This lab **demonstrates** how **Copilot Studio** enables organizations to build domain-specific agents that securely leverage enterprise knowledge and enhance productivity through conversational AI within Microsoft 365.
+14. Vuelva a enviar el siguiente mensaje al agente:
 
++++Show me a list of candidates for HR with role “HR Director” or ”HR
+Manager”+++
 
+![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image53.png)
 
+15. Recibirá la lista solicitada.
 
-===
+![A screenshot of a chat AI-generated content may be
+incorrect.](./media/image54.png)
+
+> ![A screenshot of a computer AI-generated content may be
+> incorrect.](./media/image55.png)
+
+**Resumen**
+
+En este laboratorio, se extendió **Microsoft 365 Copilot Chat** mediante
+un **agente personalizado de RR. HH**. creado en **Microsoft Copilot
+Studio**. Se creó un entorno dedicado en Power Platform, se diseñó y
+publicó un agente declarativo (*Agentic HR*) y se integró con Microsoft
+365 Copilot Chat. También se agregó conocimiento desde un sitio de
+SharePoint para enriquecer las respuestas del agente.
+
+Durante este ejercicio, se aprendió a:
+
+- Crear y administrar entornos de Power Platform.
+
+- Diseñar y publicar agentes declarativos en Microsoft Copilot Studio.
+
+- Integrar agentes con Microsoft 365 Copilot Chat.
+
+- Extender capacidades del agente mediante la conexión a fuentes de
+  datos organizacionales como SharePoint.
+
+Este ejercicio fundamental demuestra cómo las organizaciones pueden
+**personalizar la experiencia de Microsoft 365 Copilot** con
+inteligencia específica del dominio y con integración de conocimiento
+corporativo.
