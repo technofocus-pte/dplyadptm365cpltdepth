@@ -269,7 +269,7 @@ incorrect.](./media/im57.png)
 
 5. Select **Edit**.
 
-       ![A screenshot of a computer AI-generated content may be
+   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im58.png)
 
 6.  Enter **Name** and **Description** as below and select **Save**.
