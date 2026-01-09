@@ -443,7 +443,7 @@ data in Dataverse.
 1.  Select **Flows** from the left menu bar of the agent.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im70.png))
+incorrect.](./media/im70.png)
 
 2.  Select **+ New agent flow**.
 
