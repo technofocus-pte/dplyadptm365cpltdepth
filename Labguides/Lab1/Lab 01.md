@@ -1,4 +1,4 @@
-# **Get Started with Workflows in Microsoft 365 Copilot**
+# Lab 1: **Get Started with Workflows in Microsoft 365 Copilot**
 
 ## **What is Workflows Agent?**
 
