@@ -1,4 +1,4 @@
-# Building and Managing Copilot Agents in Microsoft 365
+# Lab 2: Building and Managing Copilot Agents in Microsoft 365
 
 ## Introduction
 
