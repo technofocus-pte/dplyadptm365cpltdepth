@@ -1,4 +1,4 @@
-# Lab 7 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
+# Lab 6 - Build a poetic declarative agent using Microsoft 365 Agents Toolkit
 
 **Scenario**
 
