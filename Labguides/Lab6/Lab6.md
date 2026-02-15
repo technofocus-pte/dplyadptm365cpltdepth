@@ -71,8 +71,71 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image6.png)
 
     >[!Alert] **Important:** The **Environment creation** takes around **10 minutes** to a maximum of **15 minutes**. Wait for that time period and then **refresh** the screen to view the created environment in the **Admin Center**.
-    
-## Exercise 2 : Creating an agent for Microsoft 365 Copilot Chat
+
+## Exercise 2: Create SharePoint site
+
+1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ Select **Apps** from the left pane and then select **SharePoint** once the Apps are loaded.
+
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image25.png)
+
+2.  Select **+ Create site** from the SharePoint page.
+
+    ![A screenshot of a browser AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image26.png)
+
+3.  Select **Communication site** from the **Select the site type**
+    page.
+
+    ![A screenshot of a web page AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image27.png)
+
+4.  Select a **template** to be used.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image28.png)
+
+5.  Select **Use template**.
+
+    ![A screenshot of a website AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image29.png)
+
+6.  Enter +++Contoso site2-@lab.LabInstance.Id+++ as the **Site name** and select
+    **Next.**
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image30.png)
+
+7.  In the next screen, select **Create site**.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image31.png)
+
+8.  Once created, note down the **url** of this site.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im22.png)
+
+9.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im23.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im24.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im25.png)
+
+11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles\Labfiles**
+    to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Share** and then select  **Copy link** in the next screen, and save the link in a **notepad**.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im48.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im49.png)
+
+## Exercise 3 : Creating an agent for Microsoft 365 Copilot Chat
 
 In this exercise you are going to create a declarative agent with
 Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
@@ -142,106 +205,9 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     -    Instruction - +++Emphasize everything that helps team building, inclusion, and the growth mindset. Have a professional tone.+++
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im45.png)
+incorrect.](./media/im46.png)
 
-## Exercise 3: Publishing the agent in Microsoft 365 Copilot Chat
-
-1.  Select **Publish** from the agent overview page.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im20.png)
-
-2.  Select **Publish** in the **Publish agent** screen.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image18.png)
-
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image19.png)
-
-3.  Select **Copy** under **Share link** to copy the link and then
-    select **Done**.
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image20.png)
-
-4.  Open a new tab and paste the copied url. Select **Add** to add the
-    **Agentic HR** to your list agents.
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image21.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image22.png)
-
-5.  Select **Skip** in the introduction screen.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image23.png)
-
-6.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im21.png)
-
-## Exercise 4: Create SharePoint site
-
-1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ Select **Apps** from the left pane and then select **SharePoint** once the Apps are loaded.
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image25.png)
-
-2.  Select **+ Create site** from the SharePoint page.
-
-    ![A screenshot of a browser AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image26.png)
-
-3.  Select **Communication site** from the **Select the site type**
-    page.
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image27.png)
-
-4.  Select a **template** to be used.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image28.png)
-
-5.  Select **Use template**.
-
-    ![A screenshot of a website AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image29.png)
-
-6.  Enter +++Contoso site2-@lab.LabInstance.Id+++ as the **Site name** and select
-    **Next.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image30.png)
-
-7.  In the next screen, select **Create site**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image31.png)
-
-8.  Once created, note down the **url** of this site.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im22.png)
-
-9.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im23.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im24.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im25.png)
-
-11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles\Labfiles**
-    to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Copy link** and save the link in a **notepad**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im26.png)
-
-## Exercise 5: Adding knowledge to the agent
+## Exercise 4: Adding knowledge to the agent
 
 In this exercise you are going to add knowledge from the Sharepoint site, to the agent that
 you created.
@@ -271,24 +237,30 @@ incorrect.](./media/im28.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image51.png)
 
-7. **Copy** the url and **open** it from a browser.
+7.  Select **Copy** under **Share link** to copy the link and then
+    select **Done**.
 
-    ![A screenshot of a computer program AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image52.png)
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image20.png)
 
-8. This time, it will give an option to **Update now** since it is already added. Select it.
+8.  Open a new tab and paste the copied url. Select **Add** to add the
+    **Agentic HR** to your list agents.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image53.png)
-
-9. Select **Open** once it is updated.
+    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image21.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image54.png)
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image22.png)
 
-    >[!Alert] you may have to engage in the copilot conversation to get the expected results.
+5.  Select **Skip** in the introduction screen.
 
-10. In the **Agentic HR agent** screen, send the below message.
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image23.png)
+
+6.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im21.png)
+
+7. In the **Agentic HR agent** screen, send the below message.
 
     +++Show me a list of candidates for HR with role "HR Director” or "HR Manager”+++
    
