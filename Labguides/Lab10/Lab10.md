@@ -1,4 +1,4 @@
-# Lab 10: Implement prompt action for a quiz generation agent’s topic
+# Lab 9: Implement prompt action for a quiz generation agent’s topic
 
 **Objective :** 
 
