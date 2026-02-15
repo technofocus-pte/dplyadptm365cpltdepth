@@ -212,7 +212,7 @@ incorrect.](./media/im46.png)
 In this exercise you are going to add knowledge from the Sharepoint site, to the agent that
 you created.
 
-1. From the Copilot studio **Agentic HR Agent** home page (+++https://copilotstudio.microsoft.com+++ -> **Agents** -> **Microsoft 365 Copilot** -> **Agents** tab -> **Agentic HR**), select **+ Add knowledge** under the Knowledge section.
+1. Select **+ Add knowledge** under the Knowledge section.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img11.png)
