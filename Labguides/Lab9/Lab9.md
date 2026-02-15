@@ -1,4 +1,4 @@
-# Lab 9 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
+# Lab 8 - Streamlining IT Support Operations with Autonomous Copilot Agent using Copilot Studio
 
 **Estimate Time: 60 mins**
 
