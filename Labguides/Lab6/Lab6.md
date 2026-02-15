@@ -133,45 +133,16 @@ incorrect.](./media/im41.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
 
-10.  Copilot Studio asks you to describe in natural language what is the
-    purpose of the agent. You can define your agent requirements. **Paste the prompt** below and hit **Send** to do so
+10. Enter the below details and select Create.
 
-    +++You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.+++
+    -    Name - +++Agentic HR+++
 
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image11.png)
+    -    Description - +++You are an agent helping employees to find information about HR policies and procedures, about how to improve their career, and about how to define learning pathways.+++
 
-11. When requested by Copilot Studio, give the name "Agentic HR" to your
-    custom agent. Use the following prompt.
-
-    +++Name it as Agentic HR+++
+    -    Instruction - +++Emphasize everything that helps team building, inclusion, and the growth mindset. Have a professional tone.+++
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image12.png)
-
-11. Then, instruct Copilot Studio to have specific tasks or goals with
-    the following instruction:
-
-    +++Emphasize everything that helps team building, inclusion, and the growth mindset+++
-
-    ![A screenshot of a chat AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image13.png)
-
-11.  Then, define a professional tone for your agent, providing the
-    following input:
-
-    +++It should have a professional tone+++
-
-   ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image14.png)
-
-11. Once you are done describing your agent, select
-    the **Create** command to create the actual agent. 
-
-    ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image15.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im19.png)
+incorrect.](./media/im45.png)
 
 ## Exercise 3: Publishing the agent in Microsoft 365 Copilot Chat
 
@@ -264,7 +235,7 @@ incorrect.](./media/im24.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im25.png)
 
-11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles**
+11. Select **Sample-list-of-candidates.xlsx** file from **C:\LabFiles\Labfiles**
     to be uploaded. Once **uploaded**, click on the **3 dots** next to the **document**, select **Copy link** and save the link in a **notepad**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -275,7 +246,7 @@ incorrect.](./media/im26.png)
 In this exercise you are going to add knowledge from the Sharepoint site, to the agent that
 you created.
 
-1. Back in Copilot studio, from the **Agent** home page, select **+ Add knowledge** under the Knowledge section.
+1. From the Copilot studio **Agentic HR Agent** home page (+++https://copilotstudio.microsoft.com+++ -> **Agents** -> **Microsoft 365 Copilot** -> **Agents** tab -> **Agentic HR**), select **+ Add knowledge** under the Knowledge section.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img11.png)
