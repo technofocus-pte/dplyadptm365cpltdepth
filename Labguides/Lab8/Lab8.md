@@ -1,4 +1,4 @@
-# Lab 8 - Build MCP-Powered Agents in Microsoft Copilot Studio
+# Lab 7 - Build MCP-Powered Agents in Microsoft Copilot Studio
 
 **Scenario:**
 
