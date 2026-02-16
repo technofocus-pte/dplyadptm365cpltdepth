@@ -243,7 +243,7 @@ incorrect.](./media/im50.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im51.png)
 
-7.  Enter the below details and select **Create**.
+7.  Enter the below details and select **Save**.
 
 	- **Name** – +++Jokester+++
 
@@ -259,7 +259,7 @@ incorrect.](./media/im52.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im53.png)
 
-11.  Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio.
+11. Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio.
 
 	```
     You are a joke-telling assistant. Your sole purpose is to deliver appropriate, clever, and engaging jokes upon request. Follow these rules:
