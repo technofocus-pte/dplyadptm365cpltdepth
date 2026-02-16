@@ -74,48 +74,54 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
 
 ## Exercise 2: Create SharePoint site
 
-1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ Select **Apps** from the left pane and then select **SharePoint** once the Apps are loaded.
+1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ and login with the credentials below.
+
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++
+      
+    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
+
+2.  Select **Apps** from the left pane and then select **SharePoint** once the Apps are loaded.
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image25.png)
 
-2.  Select **+ Create site** from the SharePoint page.
+3.  Select **+ Create site** from the SharePoint page.
 
     ![A screenshot of a browser AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image26.png)
 
-3.  Select **Communication site** from the **Select the site type**
+4.  Select **Communication site** from the **Select the site type**
     page.
 
     ![A screenshot of a web page AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image27.png)
 
-4.  Select a **template** to be used.
+5.  Select a **template** to be used.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image28.png)
 
-5.  Select **Use template**.
+6.  Select **Use template**.
 
     ![A screenshot of a website AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image29.png)
 
-6.  Enter +++Contoso site2-@lab.LabInstance.Id+++ as the **Site name** and select
+7.  Enter +++Contoso site2-@lab.LabInstance.Id+++ as the **Site name** and select
     **Next.**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image30.png)
 
-7.  In the next screen, select **Create site**.
+8.  In the next screen, select **Create site**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image31.png)
 
-8.  Once created, note down the **url** of this site.
+9.  Once created, note down the **url** of this site.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im22.png)
 
-9.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
+10.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im23.png)
@@ -196,7 +202,7 @@ incorrect.](./media/im41.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
 
-10. Enter the below details and select Create.
+10. Enter the below details and select **Create**.
 
     -    Name - +++Agentic HR+++
 
