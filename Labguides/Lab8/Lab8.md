@@ -278,14 +278,6 @@ incorrect.](./media/im53.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im54.png)
 
-5.  The **agent** gets **created** as per the instructions provided.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im44.png)
-
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image27.png)
-
 6.  Select **Settings** from the top right corner of the agent page.
 
 	![A screenshot of a computer AI-generated content may be
