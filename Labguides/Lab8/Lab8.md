@@ -233,12 +233,17 @@ incorrect.](./media/im14.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im15.png)
 
-3.  Select the **Configure** tab to configure your agent.
+3.  Select **Agents** -> **+ Create blank agent** to create a new blank agent.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im43.png)
+incorrect.](./media/im50.png)
 
-4.  Enter the below details and select **Create**.
+5.  Once created, select **Edit** against the Agent Details.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im51.png)
+
+7.  Enter the below details and select **Create**.
 
 	- **Name** – +++Jokester+++
 
@@ -246,7 +251,15 @@ incorrect.](./media/im43.png)
 
 	+++A humor-focused agent that delivers concise, engaging jokes only upon user request, adapting its style to match the user's tone and preferences. It remains in character, avoids repetition, and filters out offensive content to ensure a consistently appropriate and witty experience.+++
 
-	- **Instructions** (Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio) –
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im52.png)
+
+9.  Select **Edit** against **Instructions**.
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im53.png)
+
+11.  Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio.
 
 	```
     You are a joke-telling assistant. Your sole purpose is to deliver appropriate, clever, and engaging jokes upon request. Follow these rules:
@@ -262,8 +275,8 @@ incorrect.](./media/im43.png)
 	- Be responsive, witty, and quick.
     ```
 
-	![A screenshot of a computer AI-generated content may be
-	incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab8/media/image25.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/im54.png)
 
 5.  The **agent** gets **created** as per the instructions provided.
 
