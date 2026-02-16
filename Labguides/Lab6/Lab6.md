@@ -28,51 +28,9 @@ By completing this lab, you will learn how to:
 
 Estimated duration – 45 minutes
 
-## Exercise 1: Creating a Power Platform environment
+## Exercise 1: Create SharePoint site
 
-With the Power Platform, you can create different environments and
-easily switch between them accordingly to your needs. An environment
-stores apps, flows, data, agents, etc. and each environment is
-completely isolated from any other environment. In this exercise, you
-will create a new dedicated environment in which you will perform the
-remaining exercises and tasks.
-
-1.  Open a browser, go to +++https://admin.powerplatform.com+++ and login using the below credentials.
-
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-      
-    - Temporary Access Password - +++@lab.CloudPortalCredential(User1).TAP+++
-   
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image1.png)
-
-2.  Select **Manage** and then select **+ New** under **Environments**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image2.png)
-
-3.  Provide the Name as +++Dev env+++, select the **Type** as
-    **Developer** and click on **Next**. Select **Save** in the **Add
-    Dataverse** screen.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image3.png)
-
-    ![A screenshot of a web page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image4.png)
-
-4.  The new environment gets created and changes from **Preparing** to
-    **Ready** state once it is ready.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image5.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image6.png)
-
-    >[!Alert] **Important:** The **Environment creation** takes around **10 minutes** to a maximum of **15 minutes**. Wait for that time period and then **refresh** the screen to view the created environment in the **Admin Center**.
-
-## Exercise 2: Create SharePoint site
+In this exercise, you will create a Sharepoint site and upload the sample documents there which will be used later in this lab.
 
 1.  In a new browser, navigate to +++https://m365.cloud.microsoft/chat/+++ and login with the credentials below.
 
@@ -121,7 +79,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im22.png)
 
-10.  Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
+10. Select **Documents** from the menu bar. Select **+ Create or upload** -> **Files upload**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im23.png)
@@ -141,7 +99,7 @@ incorrect.](./media/im48.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im49.png)
 
-## Exercise 3 : Creating an agent for Microsoft 365 Copilot Chat
+## Exercise 2 : Creating an agent for Microsoft 365 Copilot Chat
 
 In this exercise you are going to create a declarative agent with
 Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
@@ -161,48 +119,32 @@ incorrect.](./media/im14.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im15.png)
-
-5.  Select the **Dev env** environment that we created in the previous
-    exercise.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/im40.png)
-
-    >[!Alert] **Important:** If the Copilot Studio and does not show up the option to select **Environment** as in the below screenshot, then follow the below steps.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/im5.png)
-    >
-    >Open +++https://admin.powerplatform.microsoft.com/+++. Select **Manage** -> **Environments** -> **Dev env** and select the value of the **Environment ID**.
-    >
-    >![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/im6.png)
-    >
-    >Navigate back to the Copilot Studio tab and open +++https://copilotstudio.microsoft.com/environments/< EnvironmentID >+++ (Replacing **< EnvironmentID >** with the value fetched above)
     
-6.  To create a declarative agent for Microsoft 365 Copilot Chat you
+4.  To create a declarative agent for Microsoft 365 Copilot Chat you
     need to first browse the list of agents in Copilot Studio and then
     select the agent with name **Microsoft 365 Copilot**. Select **Got it** in the version update pop up.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im16.png)
 
-7.  Select **Agents** from the left navigation bar.
+5.  Select **Agents** from the left navigation bar.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im17.png)
 
-8.  Now, select **Microsoft 365 Copilot** from the list.
+6.  Now, select **Microsoft 365 Copilot** from the list.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im41.png)
 
-9.  A new section of Microsoft Copilot Studio will open. From there,
+7.  A new section of Microsoft Copilot Studio will open. From there,
     select the **+ Add** command to create a new agent for Microsoft 365
     Copilot Chat.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/img1.png)
 
-10. Enter the below details and select **Create**.
+8. Enter the below details and select **Create**.
 
     -    Name - +++Agentic HR+++
 
@@ -213,7 +155,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im46.png)
 
-## Exercise 4: Adding knowledge to the agent
+## Exercise 3: Adding knowledge to the agent
 
 In this exercise you are going to add knowledge from the Sharepoint site, to the agent that
 you created.
@@ -256,17 +198,17 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image22.png)
 
-5.  Select **Skip** in the introduction screen.
+9.  Select **Skip** in the introduction screen.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image23.png)
 
-6.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
+10.  The **Agentic HR** agent is now added. Select **Agentic HR** from the left navigation pane.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im21.png)
 
-7. In the **Agentic HR agent** screen, send the below message.
+11. In the **Agentic HR agent** screen, send the below message.
 
     +++Show me a list of candidates for HR with role "HR Director” or "HR Manager”+++
    
@@ -296,7 +238,7 @@ incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365c
     >![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image61.png)
 
 
-15. You will then receive the requested list
+12. You will then receive the requested list
 
     ![](https://raw.githubusercontent.com/LODSContent/DPCP-030-dplyadptm365cpltdepth/main/Labguides/Lab6/media/image62.png)
 
