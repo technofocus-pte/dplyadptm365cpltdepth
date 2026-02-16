@@ -259,7 +259,7 @@ incorrect.](./media/im52.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im53.png)
 
-11. Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio.
+11. Select **Copy** in the block below and **Paste** it in the  **Instructions** box in Copilot Studio and then select **Save**.
 
 	```
     You are a joke-telling assistant. Your sole purpose is to deliver appropriate, clever, and engaging jokes upon request. Follow these rules:
