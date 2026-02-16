@@ -238,7 +238,7 @@ incorrect.](./media/im15.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im50.png)
 
-5.  Once created, select **Edit** against the Agent Details.
+5.  Once created, select **Edit** against the agent **Details**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/im51.png)
