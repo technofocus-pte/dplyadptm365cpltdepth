@@ -1,6 +1,6 @@
 # Laboratorio 9: Implementar una acción de prompt para el tema de un agente generador de cuestionarios
 
-**Objetivo:  **
+**Objetivo:**
 Las acciones de prompt son una de las formas de extender Microsoft
 Copilots. Lo hacen creando acciones en lenguaje natural específicas del
 negocio. Estas acciones son interpretadas por el modelo GPT para
@@ -44,7 +44,7 @@ Duración estimada - 40 minutos
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image4.png)
 
-6.  Introduzca +++[www.microsoft.com+++](http://www.microsoft.com)+++ y
+6.  Introduzca +++[www.microsoft.com](http://www.microsoft.com)+++ y
     seleccione **Add**.  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image5.png)
@@ -69,8 +69,7 @@ Duración estimada - 40 minutos
 Para ambas preguntas, obtendrá una respuesta genérica del agente, ya que
 utilizará su conocimiento general.
 
-## Ejercicio 2: Crear una acción de prompt para un tema de respuestas
-generativas
+## Ejercicio 2: Crear una acción de prompt para un tema de respuestas generativas
 
 Utilice **prompt** en **Copilot Studio** para crear acciones en lenguaje
 natural como extensiones de copilot. Estas acciones utilizan modelos de
