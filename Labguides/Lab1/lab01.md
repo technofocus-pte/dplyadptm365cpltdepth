@@ -24,13 +24,11 @@ horas**
 
 ### **Licencias y acceso**
 
-> Asegúrese de que:
->
-> • Tiene una licencia de Microsoft 365 Copilot
->
-> • Forma parte del programa Frontier
->
-> • Workflows Agent (Frontier) está disponible en su tenant
+Asegúrese de que:
+
+• Tiene una licencia de Microsoft 365 Copilot
+• Forma parte del programa Frontier
+• Workflows Agent (Frontier) está disponible en su tenant
 
 **Nota:** Workflows actualmente **solo está disponible en inglés.**
 
