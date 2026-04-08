@@ -1,6 +1,6 @@
 # Laboratorio 6 - Crear un agente declarativo poético utilizando Microsoft 365 Agents Toolkit
 
-Escenario  
+## Escenario  
 Una organización desea explorar cómo **Microsoft 365 Copilot** puede
 personalizarse utilizando **agentes declarativos** para ofrecer
 experiencias únicas, con marca y orientadas a la personalidad. Como
@@ -18,21 +18,21 @@ Chat**.
 
 **Objetivo**  
 Al completar este laboratorio, aprenderá a:  
-· **Crear un agente declarativo utilizando Microsoft 365 Agents
+- **Crear un agente declarativo utilizando Microsoft 365 Agents
 Toolkit** en Visual Studio Code.  
-**· Aprovisionar** y **probar** el agente **declarativo** dentro de
+- **Aprovisionar** y **probar** el agente **declarativo** dentro de
 Microsoft 365 Copilot Chat.  
-· **Definir el comportamiento del agente** mediante **prompts de
+- **Definir el comportamiento del agente** mediante **prompts de
 instrucciones** en el manifiesto del agente.  
-· **Personalizar** la personalidad del agente aplicando respuestas en
+- **Personalizar** la personalidad del agente aplicando respuestas en
 formato poético.  
-· **Agregar conversation starters** para guiar la interacción del
+- **Agregar conversation starters** para guiar la interacción del
 usuario.  
-· **Habilitar capacidades de búsqueda web** para el agente.  
-· **Validar el comportamiento del agente** después de cada mejora
+- **Habilitar capacidades de búsqueda web** para el agente.  
+- **Validar el comportamiento del agente** después de cada mejora
 mediante pruebas en tiempo real.
 
-Ejercicio 1: Crear un agente declarativo
+## Ejercicio 1: Crear un agente declarativo
 
 En este ejercicio, comenzará creando un agente declarativo básico desde
 Visual Studio Code.
@@ -86,14 +86,14 @@ Visual Studio Code.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image10.png)
 
-Si el aprovisionamiento falla y Visual Studio Code ofrece la opción
-**resolve with @m365agents**, selecciónela. El aprovisionamiento debería
-completarse correctamente.
+    Si el aprovisionamiento falla y Visual Studio Code ofrece la opción
+    **resolve with @m365agents**, selecciónela. El aprovisionamiento debería
+    completarse correctamente.
 
 11. **Inicie sesión** con las siguientes credenciales y cierre la
     ventana cuando finalice:  
-    · Username - +++@lab.CloudPortalCredential(User1).Username+++  
-    · TAP - +++@lab.CloudPortalCredential(User1).TAP+++  
+    - Username - +++@lab.CloudPortalCredential(User1).Username+++  
+    - TAP - +++@lab.CloudPortalCredential(User1).TAP+++  
     ![A black background with white text AI-generated content may be
     incorrect.](./media/image11.png)
 
@@ -131,7 +131,7 @@ En esta tarea, probará el agente declarativo creado.
 En este ejercicio, ha creado un agente declarativo básico y ha validado
 su funcionamiento.
 
-Ejercicio 2: Agregar instrucciones
+## Ejercicio 2: Agregar instrucciones
 
 En este ejercicio, agregará instrucciones al agente declarativo y
 mejorará su comportamiento.
@@ -140,16 +140,18 @@ mejorará su comportamiento.
     **appPackage/instructions.txt** y reemplace su contenido con el
     siguiente texto:
 
-You are a declarative agent and were created with Microsoft 365 Agents
-Toolkit. You are an expert at creating poems.
-
-Every time a user asks a question, you must turn the answer into a poem.
-The poem must not use the quote markdown and use regular text.  
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image17.png)
-
-El contenido de este archivo se inserta en la propiedad instructions del
-manifiesto del agente durante el aprovisionamiento.
+    ```
+    You are a declarative agent and were created with Microsoft 365 Agents
+    Toolkit. You are an expert at creating poems.
+    
+    Every time a user asks a question, you must turn the answer into a poem.
+    The poem must not use the quote markdown and use regular text.
+    ``` 
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image17.png)
+    
+    El contenido de este archivo se inserta en la propiedad instructions del
+    manifiesto del agente durante el aprovisionamiento.
 
 2.  Seleccione **Provision** en el panel **Lifecycle** de Agents
     Toolkit.  
@@ -177,52 +179,54 @@ manifiesto del agente durante el aprovisionamiento.
 8.  Abra el archivo **appPackage/declarativeAgent.json** y, después del
     nodo instructions, agregue una coma, presione Enter y pegue el
     siguiente código:
+    ```
+    "conversation_starters": [  
+        {  
+            "title": "Getting Started",  
+            "text": "How can I get started with Agents Toolkit?"  
+        },  
+        {  
+            "title": "Getting Help",  
+            "text": "How can I get help with Agents Toolkit?"  
+        }  
+    ]
+    ```
+    ![A screen shot of a computer AI-generated content may be
+    incorrect.](./media/image22.png)
 
-"conversation_starters": \[  
-{  
-"title": "Getting Started",  
-"text": "How can I get started with Agents Toolkit?"  
-},  
-{  
-"title": "Getting Help",  
-"text": "How can I get help with Agents Toolkit?"  
-}  
-\]  
-![A screen shot of a computer AI-generated content may be
-incorrect.](./media/image22.png)
-
-9.  Seleccione **Provision** en el panel Lifecycle de **Microsoft 365
+10.  Seleccione **Provision** en el panel Lifecycle de **Microsoft 365
     Agents Toolkit** y verifique que se complete correctamente.
 
-10. Los conversation starters estarán disponibles después de
+11. Los conversation starters estarán disponibles después de
     **actualizar** la página.
 
-11. **Actualice** la página de chat para comprobarlo.  
+12. **Actualice** la página de chat para comprobarlo.  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image23.png)
 
-Ejercicio 3: Agregar contenido web
+## Ejercicio 3: Agregar contenido web
 
 En este ejercicio, agregará la capacidad de búsqueda web al agente.
 
 1.  Abra el archivo **appPackage/declarativeAgent.json** y, después de
     conversation_starters, agregue una **coma**, presione Enter y pegue
     el siguiente arreglo:
-
-"capabilities": \[  
-{  
-"name": "WebSearch"  
-}  
-\]  
-![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image24.png)
+    ```
+    "capabilities": [  
+        {  
+            "name": "WebSearch"  
+        }  
+    ]  
+    ```
+    ![A screenshot of a computer program AI-generated content may be
+    incorrect.](./media/image24.png)
 
 2.  Seleccione **Provision** en el panel Lifecycle de **Microsoft 365
     Agents Toolkit** y verifique que se complete correctamente.  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image25.png)
 
-El agente tendrá acceso a contenido web después de recargar la página.
+    El agente tendrá acceso a contenido web después de recargar la página.
 
 3.  Pregunte al agente +++How can I build a declarative agent?+++ y
     observe que responde utilizando información web.  
@@ -231,7 +235,7 @@ El agente tendrá acceso a contenido web después de recargar la página.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image27.png)
 
-**Resumen**  
+## Resumen
 En este laboratorio, **creó** correctamente un **agente declarativo
 poético** utilizando **Microsoft 365 Agents Toolkit**. Creó y
 aprovisionó un agente básico, validó su integración con Microsoft 365
