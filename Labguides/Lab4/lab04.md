@@ -1,9 +1,8 @@
-# Laboratorio 4: Crear contenido visual utilizando la experiencia Create
-en Microsoft 365 Copilot
+# Laboratorio 4: Crear contenido visual utilizando la experiencia Create en Microsoft 365 Copilot
 
 ![](./media/image1.png)
 
-Objetivo del laboratorio (contexto ejecutivo)  
+## Objetivo del laboratorio (contexto ejecutivo)  
 En este laboratorio, aprenderá a utilizar la experiencia **Create en
 Microsoft 365 Copilot** para generar rápidamente **contenido visual de
 nivel ejecutivo**, sin necesidad de habilidades de diseño.  
@@ -19,7 +18,7 @@ Al finalizar este laboratorio, podrá:
 - Personalizar elementos visuales mediante plantillas  
 - Reutilizar contenido en comunicaciones de liderazgo
 
-Escenario ejecutivo en tiempo real (utilizado en todo el laboratorio)  
+## Escenario ejecutivo en tiempo real (utilizado en todo el laboratorio)  
 Usted es un **líder empresarial senior** (CXO / VP / Director).
 
 Este mes, es responsable de:  
@@ -43,9 +42,9 @@ Requisitos previos
 **Nota:** Algunas funcionalidades de **Create** pueden variar en planes
 Personal o Family.
 
-Ejecución paso a paso
+## Ejecución paso a paso
 
-Ejercicio 1: Acceder al módulo Create (punto de entrada ejecutivo)
+### Ejercicio 1: Acceder al módulo Create (punto de entrada ejecutivo)
 
 **Contexto del mundo real:**  
 Un ejecutivo necesita un único lugar para crear elementos visuales sin
@@ -75,7 +74,7 @@ cambiar de herramienta.
 
     ![](./media/image5.png)
 
-## Resultado esperado  
+### Resultado esperado  
 - Se abre el **panel de Create**, mostrando tipos de contenido como
 imágenes, banners y videos.
 
@@ -157,14 +156,14 @@ estratégica** en LinkedIn o Viva Engage.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image15.png)
 
-## Resultado esperado  
+### Resultado esperado  
 - Copilot genera una imagen profesional adecuada para redes sociales
 como LinkedIn.
 
 **Nota:** Después de crear correctamente una imagen, vuelva a la ventana
 **Create chat** para continuar con los siguientes ejercicios.
 
-## Ejercicio 3: Crear un banner para boletín interno de liderazgo
+### Ejercicio 3: Crear un banner para boletín interno de liderazgo
 
 **Escenario ejecutivo:**
 Como CHRO o COO, envía una actualización mensual de liderazgo a todos
@@ -224,11 +223,11 @@ los empleados.
     **Nota:** Puede editar, guardar o reutilizar el banner directamente
     desde la vista previa sin salir de la experiencia Create.
 
-## Resultado esperado  
+### Resultado esperado  
 - Aparece un banner limpio y moderno que puede reutilizarse en boletines
 internos.
 
-## Ejercicio 4: Crear una imagen para campaña de cambio o iniciativa
+### Ejercicio 4: Crear una imagen para campaña de cambio o iniciativa
 
 **Escenario ejecutivo:**  
 Como **CIO o** **líder de transformación**, está implementando un
@@ -264,12 +263,12 @@ Como **CIO o** **líder de transformación**, está implementando un
     desde la barra **Transform with AI** en el lado derecho de la ventana
     **Create an Image.**
 
-## Resultado esperado  
+### Resultado esperado  
 - Un **elemento visual de gestión del cambio**.  
 - Adecuado para encabezados de correo, publicaciones en intranet o
 presentaciones.
 
-## Ejercicio 5: Crear un video corto de actualización ejecutiva
+### Ejercicio 5: Crear un video corto de actualización ejecutiva
 
 Escenario ejecutivo:  
 Como **patrocinador ejecutivo**, desea compartir una **actualización en
@@ -285,8 +284,8 @@ video** en lugar de un correo extenso.
     “Create a short executive update video. Use a clean, modern style with light background music.
     Include on-screen text: “Executive Update: Key Priorities This Month”
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image27.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image27.png)
 
 3.  Seleccione **Generate** y espere mientras Copilot crea el video.
 
@@ -352,7 +351,6 @@ incorrect.](./media/image27.png)
 **Nota:** La exportación puede tardar algún tiempo.  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image41.png)  
-    
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image42.png)
 
