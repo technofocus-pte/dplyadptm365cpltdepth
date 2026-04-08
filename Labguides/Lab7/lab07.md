@@ -103,7 +103,7 @@ Visual Studio Code.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image12.png)
 
-Tarea 1: Probar el agente
+## Tarea 1: Probar el agente
 
 En esta tarea, probará el agente declarativo creado.
 
