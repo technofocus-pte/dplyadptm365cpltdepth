@@ -130,7 +130,7 @@ tenant disponibles.
 
     - Actividad laboral reciente
 
-  ![](./media/image10.png)
+    ![](./media/image10.png)
 
 ### Lo que notará:
 
@@ -158,16 +158,16 @@ tenant disponibles.
 
 3.  Explore los prompts de seguimiento sugeridos:
 
-  **Follow-up Prompt**: “Show resources for leadership skills”
-
-  ![](./media/image14.png)
-
-  ![](./media/image15.png)
-
-  - Revise la respuesta generada con los principales recursos de
-    aprendizaje recomendados.
-
-    ![](./media/image16.png)
+    **Follow-up Prompt**: “Show resources for leadership skills”
+  
+    ![](./media/image14.png)
+  
+    ![](./media/image15.png)
+  
+    - Revise la respuesta generada con los principales recursos de
+      aprendizaje recomendados.
+  
+        ![](./media/image16.png)
 
 4.  Seleccione cualquier recomendación (Follow up prompt) para explorar
     más a fondo.
@@ -184,7 +184,7 @@ tenant disponibles.
 1.  Introduzca el siguiente prompt y haga clic en Generate**:**  
     **Prompt: “How can I use Copilot to work more effectively?”**
 
-  ![](./media/image17.png)
+    ![](./media/image17.png)
 
 2.  Revise la respuesta generada:
 
@@ -194,11 +194,11 @@ tenant disponibles.
 
     - Ejemplos contextuales
 
-  ![](./media/image18.png)
-
-  ![](./media/image19.png)
-
-  ![](./media/image20.png)
+    ![](./media/image18.png)
+  
+    ![](./media/image19.png)
+  
+    ![](./media/image20.png)
 
 ### Por qué esto es importante:
 
@@ -231,11 +231,11 @@ tenant disponibles.
 
 3.  Siga la interacción guiada con el asistente de IA.
 
-    ![](./media/image23.png)
-  
-    ![](./media/image24.png)
-  
-    ![](./media/image25.png)
+      ![](./media/image23.png)
+    
+      ![](./media/image24.png)
+    
+      ![](./media/image25.png)
 
 ### Resultado esperado
 
@@ -255,9 +255,9 @@ Practica conversaciones del mundo real en un entorno seguro y guiado.
     - Encontrará las principales recomendaciones de videos cortos
       generadas.
 
-  ![](./media/image27.png)
-
-  ![](./media/image28.png)
+    ![](./media/image27.png)
+  
+    ![](./media/image28.png)
 
 3.  Solicite aprendizaje estructurado: introduzca el siguiente prompt y
     haga clic en **Generate.**
@@ -269,13 +269,13 @@ Practica conversaciones del mundo real en un entorno seguro y guiado.
 4.  Revise las respuestas generadas para el plan de aprendizaje
     estructurado para el desarrollo de habilidades.
 
-  ![](./media/image30.png)
-
-  ![](./media/image31.png)
-
-  ![](./media/image32.png)
-
-  ![](./media/image33.png)
+    ![](./media/image30.png)
+  
+    ![](./media/image31.png)
+  
+    ![](./media/image32.png)
+  
+    ![](./media/image33.png)
 
 ### Resultado:
 
