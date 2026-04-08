@@ -479,10 +479,10 @@ registro de incidencias y almacenar datos en Dataverse.
     Configure el campo **Current Status** como **Unresolved**
 
     **Sección** **Variable de entrada**  
-    > Employee Name → Nombre (Entrada dinámica)  
-    > Email Address → Correo electrónico (Entrada dinámica)  
-    > Employee ID → ID (Entrada dinámica)  
-    > Descripción del problema técnico→ Detalles (Entrada dinámica)
+    Employee Name → Nombre (Entrada dinámica)  
+    Email Address → Correo electrónico (Entrada dinámica)  
+    Employee ID → ID (Entrada dinámica)  
+    Descripción del problema técnico→ Detalles (Entrada dinámica)
     ![A blue
     line on a white background AI-generated content may be
     incorrect.](./media/image68.png)  
@@ -599,7 +599,7 @@ implementación.
 
 11. Desde la página **Overview** del agente, seleccione los tres puntos
     junto al trigger agregado - **When a new channel message is added**
-    y seleccione **Edit in Power Automate.  **
+    y seleccione **Edit in Power Automate.**
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image87.png)
 
