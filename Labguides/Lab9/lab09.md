@@ -2,7 +2,7 @@
 
 **Tiempo estimado: 60 minutos**
 
-**Objetivo  **
+**Objetivo**
 El objetivo de este laboratorio es permitir a los participantes
 optimizar las operaciones de soporte de IT en Contoso Solutions mediante
 la creación de un agente autónomo de Copilot. Los participantes
