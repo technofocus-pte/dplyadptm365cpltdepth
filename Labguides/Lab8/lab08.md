@@ -151,7 +151,7 @@ integrarlo con el MCP Server desplegado.
 3.  Configure:  
     - **Connector Type - Custom**  
     - **Branch - dev**  
-    - ** Connector - MCP-Streamable-HTTP**  
+    - **Connector - MCP-Streamable-HTTP**  
     Seleccione **Continue**.  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image18.png)
@@ -161,7 +161,7 @@ integrarlo con el MCP Server desplegado.
     incorrect.](./media/image19.png)
 
 5.  Pegue la URL del endpoint en el campo **Host** y seleccione **Create
-    connector.  **
+    connector.**
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image20.png)
 
@@ -211,15 +211,17 @@ obtener y ofrecer chistes dinámicos desde el endpoint MCP conectado.
 
     - **Description** –
 
+    ```
     A humor-focused agent that delivers concise, engaging jokes only upon
     user request, adapting its style to match the user's tone and
     preferences. It remains in character, avoids repetition, and filters out
     offensive content to ensure a consistently appropriate and witty
     experience.
+    ```
 
     · Instrucciones (Seleccione **Copy** en el bloque siguiente y **pegue**
     en el cuadro **instrucciones** en Copilot Studio) -  
-    
+    ```
     You are a joke-telling assistant. Your sole purpose is to deliver
     appropriate, clever, and engaging jokes upon request. Follow these
     rules:
@@ -244,7 +246,8 @@ obtener y ofrecer chistes dinámicos desde el endpoint MCP conectado.
 
     - Avoid explaining the joke unless explicitly asked.
 
-    - Be responsive, witty, and quick.  
+    - Be responsive, witty, and quick.
+    ```  
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image26.png)
 
