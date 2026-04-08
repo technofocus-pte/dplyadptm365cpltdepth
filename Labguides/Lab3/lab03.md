@@ -90,25 +90,25 @@ tenant disponibles.
 2.  En el panel de navegación izquierdo de M365 Copilot, vaya a **New
     chat** y seleccione **All agents**.
 
-  ![](./media/image5.png)
+    ![](./media/image5.png)
 
 3.  Explore Agent store
 
-  ![](./media/image6.png)
+    ![](./media/image6.png)
 
 4.  Busque **Learning** en **Agent store** y seleccione **Learning
     (Frontier)**.
 
-  ![](./media/image7.png)
+    ![](./media/image7.png)
 
 5.  Haga clic en el botón **Add** para habilitar el agente.
 
-  ![](./media/image8.png)
+    ![](./media/image8.png)
 
 6.  Visualice **Learning (Frontier)** habilitado en la sección
     **Agents** en el panel de navegación izquierdo de M365 Copilot.
 
-  ![](./media/image9.png)
+    ![](./media/image9.png)
 
 ### Resultado esperado
 
@@ -120,7 +120,7 @@ tenant disponibles.
 
 1.  Revise la **pantalla de bienvenida** y los prompts sugeridos.
 
-  ![](./media/image9.png)
+    ![](./media/image9.png)
 
 2.  Observe el aprendizaje recomendado basado en:
 
@@ -148,13 +148,13 @@ tenant disponibles.
     prompt y haga clic en Generate.  
     ***“Recommend learning content to improve my skills.”***
 
-  ![](./media/image11.png)
+    ![](./media/image11.png)
 
 2.  Según su rol, recibirá sugerencias de cursos de aprendizaje.
 
-  ![](./media/image12.png)
-
-  ![](./media/image13.png)
+    ![](./media/image12.png)
+  
+    ![](./media/image13.png)
 
 3.  Explore los prompts de seguimiento sugeridos:
 
@@ -182,7 +182,7 @@ tenant disponibles.
 ## Paso 4: Aprender a utilizar Copilot de manera más efectiva
 
 1.  Introduzca el siguiente prompt y haga clic en Generate**:**  
-  **Prompt: “How can I use Copilot to work more effectively?”**
+    **Prompt: “How can I use Copilot to work more effectively?”**
 
   ![](./media/image17.png)
 
@@ -216,26 +216,26 @@ tenant disponibles.
     **Prompt: *“Start a role play simulation for handling a workplace
     scenario.”***
 
-  ![](./media/image21.png)
+    ![](./media/image21.png)
 
 2.  Observe si el agente responde en un formato de conversación guiada o
     de coaching.
 
-  **Nota:** “Role play en Learning agent es consciente del contexto y está
-  basado en prompts. En entornos de producción, puede aparecer como una
-  acción de aprendizaje recomendada. En este tenant de laboratorio, se
-  activa mediante prompts en el chat y su disponibilidad puede variar
-  debido a limitaciones de vista previa.”
+    **Nota:** “Role play en Learning agent es consciente del contexto y está
+    basado en prompts. En entornos de producción, puede aparecer como una
+    acción de aprendizaje recomendada. En este tenant de laboratorio, se
+    activa mediante prompts en el chat y su disponibilidad puede variar
+    debido a limitaciones de vista previa.”
 
-  ![](./media/image22.png)
+    ![](./media/image22.png)
 
 3.  Siga la interacción guiada con el asistente de IA.
 
-  ![](./media/image23.png)
-
-  ![](./media/image24.png)
-
-  ![](./media/image25.png)
+    ![](./media/image23.png)
+  
+    ![](./media/image24.png)
+  
+    ![](./media/image25.png)
 
 ### Resultado esperado
 
@@ -246,9 +246,9 @@ Practica conversaciones del mundo real en un entorno seguro y guiado.
 1.  Solicite un video corto de aprendizaje con el siguiente prompt y
     haga clic en **Generate**.
 
-  **Prompt: "Recommend short videos to learn a new skill on Artificial Intelligence.”**
-
-  ![](./media/image26.png)
+    **Prompt: "Recommend short videos to learn a new skill on Artificial Intelligence.”**
+  
+    ![](./media/image26.png)
 
 2.  Revise la respuesta generada:
 
@@ -262,9 +262,9 @@ Practica conversaciones del mundo real en un entorno seguro y guiado.
 3.  Solicite aprendizaje estructurado: introduzca el siguiente prompt y
     haga clic en **Generate.**
 
-  **Prompt: “Create a learning plan to improve my skills.”**
-
-  ![](./media/image29.png)
+    **Prompt: “Create a learning plan to improve my skills.”**
+  
+    ![](./media/image29.png)
 
 4.  Revise las respuestas generadas para el plan de aprendizaje
     estructurado para el desarrollo de habilidades.
@@ -305,9 +305,7 @@ Fomenta el aprendizaje continuo sin interrumpir el trabajo diario.
 
 - Learning agent integra el aprendizaje directamente en el flujo de
   trabajo.
-
-• Las recomendaciones son personalizadas y adaptativas.  
-• La simulación de roles permite practicar habilidades de forma
-segura.  
-• La capacitación en Copilot se integra en las tareas diarias.  
-• El contenido empresarial y de terceros se unifica en un solo lugar.
+- Las recomendaciones son personalizadas y adaptativas.  
+- La simulación de roles permite practicar habilidades de forma segura.  
+- La capacitación en Copilot se integra en las tareas diarias.  
+- El contenido empresarial y de terceros se unifica en un solo lugar.
