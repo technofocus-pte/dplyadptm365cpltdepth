@@ -1,7 +1,0 @@
-"CustomerID,Name,Email,City,State,LoyaltyTier,SignupDate"
-"C001,JohnMiller,john.miller@email.com,Seattle,WA,Gold,2024-01-15"
-"C002,EmilyDavis,emily.davis@email.com,SanFrancisco,CA,Silver,2024-02-20"
-"C003,MichaelJohnson,michael.j@email.com,NewYork,NY,Platinum,2023-12-05"
-"C004,SarahWilson,sarah.w@email.com,Chicago,IL,Bronze,2024-03-10"
-"C005,DavidBrown,david.b@email.com,Austin,TX,Gold,2024-01-25"
-"C006,JessicaTaylor,jess.t@email.com,Miami,FL,Silver,2024-02-14"
