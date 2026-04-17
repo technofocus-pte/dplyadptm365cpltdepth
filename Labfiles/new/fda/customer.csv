@@ -1,0 +1,13 @@
+CustomerID,Name,Email,City,State,LoyaltyTier,SignupDate
+C001,JohnMiller,john.miller@email.com,Seattle,WA,Gold,2024-01-15
+C002,EmilyDavis,emily.davis@email.com,SanFrancisco,CA,Silver,2024-02-20
+C003,MichaelJohnson,michael.j@email.com,NewYork,NY,Platinum,2023-12-05
+C004,SarahWilson,sarah.w@email.com,Chicago,IL,Bronze,2024-03-10
+C005,DavidBrown,david.b@email.com,Austin,TX,Gold,2024-01-25
+C006,JessicaTaylor,jess.t@email.com,Miami,FL,Silver,2024-02-14
+C007,ChrisAnderson,chris.a@email.com,Denver,CO,Gold,2023-11-11
+C008,AshleyThomas,ashley.t@email.com,LosAngeles,CA,Bronze,2024-03-01
+C009,DanielMartinez,daniel.m@email.com,Phoenix,AZ,Platinum,2023-10-20
+C010,MeganWhite,megan.w@email.com,Boston,MA,Silver,2024-02-28
+C011,KevinHarris,kevin.h@email.com,Portland,OR,Gold,2024-03-05
+C012,LauraClark,laura.c@email.com,Atlanta,GA,Bronze,2024-03-18

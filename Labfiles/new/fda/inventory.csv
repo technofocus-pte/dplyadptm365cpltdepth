@@ -1,0 +1,13 @@
+ProductID,WarehouseLocation,StockAvailable,ReorderLevel
+P001,SeattleWH,25,10
+P002,SanFranciscoWH,8,15
+P003,DenverWH,12,10
+P004,ChicagoWH,5,8
+P005,AtlantaWH,50,20
+P006,NewYorkWH,18,10
+P007,AustinWH,30,15
+P008,LosAngelesWH,20,10
+P009,PhoenixWH,7,12
+P010,BostonWH,40,20
+P011,DenverWH,9,10
+P012,SeattleWH,22,12

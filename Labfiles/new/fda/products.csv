@@ -1,0 +1,13 @@
+ProductID,ProductName,Category,Price,Brand
+P001,TrekBackpack40L,Backpacks,85,Osprey
+P002,TrekBackpack60L,Backpacks,120,Osprey
+P003,UltralightTent2P,Tents,150,REI
+P004,FamilyCampingTent4P,Tents,250,REI
+P005,SleepingBagBasic,Accessories,45,Columbia
+P006,SleepingBagPro,Accessories,90,NorthFace
+P007,PortableCookingKit,Accessories,60,Coleman
+P008,HikingBootsMen,Footwear,110,Merrell
+P009,HikingBootsWomen,Footwear,105,Salomon
+P010,LEDCampingLantern,Accessories,35,BlackDiamond
+P011,TrekkingPolesSet,Accessories,70,BlackDiamond
+P012,HydrationPack2L,Accessories,55,CamelBak
